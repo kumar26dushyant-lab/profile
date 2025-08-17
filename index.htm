@@ -3,141 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dushyant Sharma - Dynamic Professional Profile</title>
+    <meta name="description" content="Dushyant Sharma's professional IT leadership profile with expertise in AI, SaaS, and Agile.">
+    <meta name="keywords" content="Dushyant Sharma, IT leadership, AI, SaaS, Agile, Healthcare, Finance">
+    <title>Dushyant Sharma - Professional Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Arial', sans-serif; background: #f0f4f8; color: #333; line-height: 1.6; overflow-x: hidden; }
-        .hero { background: linear-gradient(to right, #007bff, #00c6ff); color: white; padding: 150px 0; text-align: center; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+ICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMDAsNTBMMTEwLDUwTDExMCw2MEwxMDAsNjBaTTEwMCwxNTBMMTIwLDE1MEwxMjAsMTYwTDEwMCwxNjBaTTEwMCwxMDBMMTQwLDEwMEwxNDAsMTEwTDEwMCwxMTBaTTEwMCwxMDBMMTQwLDEwMEwxNDAsMTEwTDEwMCwxMTBaIiAvPiAgIDwvZz48L3N2Zz4=') repeat; opacity: 0.1; }
-        .hero h1 { font-size: 4rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .hero p.lead { font-size: 1.8rem; animation: fadeInUp 1s ease-out; }
-        .section-title { text-align: center; margin-bottom: 50px; color: #007bff; position: relative; }
-        .section-title::after { content: ''; display: block; width: 50px; height: 3px; background: #00c6ff; margin: 10px auto 0; }
-        .timeline { position: relative; max-width: 1200px; margin: 0 auto; padding: 20px 0; }
-        .timeline::after { content: ''; position: absolute; width: 4px; background: linear-gradient(to bottom, #007bff, #00c6ff); top: 0; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 1; box-shadow: 0 0 10px rgba(0,123,255,0.5); }
-        .timeline-item { position: relative; margin-bottom: 40px; opacity: 0; transition: opacity 0.5s ease; }
+        body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1f2937; line-height: 1.7; }
+        .navbar { background: #4f46e5; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .navbar-brand, .nav-link { color: #ffffff !important; }
+        .nav-link:hover { color: #facc15 !important; }
+        .hero { background: linear-gradient(to right, #4f46e5, #7c3aed); color: #ffffff; padding: 150px 0; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+ICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wLDEwMEwxMDAsMjAwTDEwMCwwTDEwMCwyMDBaIiAvPiAgIDwvZz48L3N2Zz4=') repeat; opacity: 0.08; }
+        .hero h1 { font-size: 3.8rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero p.lead { font-size: 1.6rem; font-weight: 300; }
+        .section-title { text-align: center; margin-bottom: 50px; color: #4f46e5; font-weight: 600; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: #facc15; margin: 10px auto 0; }
+        .timeline { max-width: 1200px; margin: 0 auto; padding: 20px 0; position: relative; }
+        .timeline::before { content: ''; position: absolute; width: 4px; background: rgba(79,70,229,0.3); top: 0; bottom: 0; left: 30px; }
+        .timeline-item { margin-bottom: 40px; position: relative; opacity: 0; }
         .timeline-item.visible { opacity: 1; }
-        .timeline-item::before { content: ''; position: absolute; width: 20px; height: 20px; background: #fff; border: 4px solid #007bff; border-radius: 50%; left: 50%; transform: translateX(-50%); z-index: 2; top: 0; box-shadow: 0 0 15px rgba(0,123,255,0.7); }
-        .timeline-item:nth-child(odd) .card { left: 0; right: 50%; margin-right: 30px; }
-        .timeline-item:nth-child(even) .card { left: 50%; right: 0; margin-left: 30px; }
-        .card { transition: transform 0.3s ease, box-shadow 0.3s ease; border: none; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); background: white; overflow: hidden; }
-        .card:hover { transform: scale(1.05); box-shadow: 0 12px 24px rgba(0,123,255,0.2); }
-        .card-body { position: relative; }
-        .card-body::before { content: '\f0b1'; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 10px; right: 10px; font-size: 2rem; color: rgba(0,123,255,0.1); }
-        .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
-        .skill-card { text-align: center; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .skill-card:hover { transform: translateY(-10px); }
-        .skill-card i { font-size: 4rem; color: #007bff; margin-bottom: 15px; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-        .chart-container { max-width: 600px; margin: 0 auto; }
-        footer { background: linear-gradient(to right, #007bff, #00c6ff); color: white; padding: 40px 0; text-align: center; position: relative; }
-        footer::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%); }
+        .timeline-item:nth-child(odd) .card { transform: translateX(-100px); }
+        .timeline-item:nth-child(even) .card { transform: translateX(100px); }
+        .timeline-item.visible:nth-child(odd) .card { transform: translateX(20px); }
+        .timeline-item.visible:nth-child(even) .card { transform: translateX(60px); }
+        .timeline-item::before { content: ''; position: absolute; width: 12px; height: 12px; background: #facc15; border-radius: 50%; left: 24px; top: 20px; z-index: 2; border: 2px solid #4f46e5; }
+        .card { background: #ffffff; border: 1px solid #4f46e5; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; padding-left: 40px; }
+        .card:hover { transform: scale(1.05) !important; box-shadow: 0 10px 20px rgba(79,70,229,0.3); }
+        .card-body { padding: 20px; position: relative; }
+        .card-body h5 { position: relative; display: inline-block; }
+        .card-body h5::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #4f46e5; transition: width 0.3s ease; }
+        .card-body:hover h5::after { width: 100%; }
+        .card-body::before { content: '\f0b1'; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 15px; right: 15px; font-size: 2.5rem; color: rgba(79,70,229,0.1); }
+        .card-body ul { max-height: 0; overflow: hidden; font-size: 0.95rem; transition: max-height 0.5s ease, opacity 0.5s ease; opacity: 0; }
+        .card-body.active ul { max-height: 1000px; opacity: 1; }
+        .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .skill-card { text-align: center; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .skill-card:hover { transform: translateY(-8px); }
+        .skill-card i { font-size: 3.5rem; color: #4f46e5; margin-bottom: 15px; transition: transform 0.3s; }
+        .skill-card:hover i { transform: scale(1.2); }
+        .progress { height: 10px; border-radius: 5px; background: #e5e7eb; }
+        .progress-bar { background: #4f46e5; transition: width 1.5s ease-in-out; }
+        .education-certifications { background: #f9fafb; padding: 20px 0; }
+        .education-certifications h2 { color: #4f46e5; }
+        footer { background: linear-gradient(to right, #4f46e5, #7c3aed); color: #ffffff; padding: 40px 0; text-align: center; position: relative; }
+        footer::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+ICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wLDEwMEwxMDAsMjAwTDEwMCwwTDEwMCwyMDBaIiAvPiAgIDwvZz48L3N2Zz4=') repeat; opacity: 0.08; }
         @media (max-width: 768px) {
-            .timeline::after { left: 25px; }
-            .timeline-item::before { left: 25px; }
-            .timeline-item:nth-child(odd) .card, .timeline-item:nth-child(even) .card { left: 0 !important; right: 0 !important; margin-left: 50px; margin-right: 20px; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p.lead { font-size: 1.2rem; }
+            .timeline::before { left: 20px; }
+            .timeline-item::before { left: 14px; }
+            .timeline-item:nth-child(odd) .card, .timeline-item:nth-child(even) .card { transform: none !important; padding-left: 30px; }
+            .timeline-item.visible:nth-child(odd) .card, .timeline-item.visible:nth-child(even) .card { transform: none !important; }
         }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
-    <!-- Hero Section with Parallax Effect -->
-    <section class="hero" data-aos="fade-in" data-aos-duration="1500">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dushyant Sharma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education-certifications">Education & Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
         <div class="container position-relative">
-            <h1 data-aos="zoom-in" data-aos-delay="300">Dushyant Sharma</h1>
-            <p class="lead" data-aos="fade-up" data-aos-delay="600">15+ Years in AI-Powered IT Leadership | Transforming SaaS, Healthcare & Finance</p>
-            <a href="mailto:imdushyant19@yahoo.co.in" class="btn btn-light mx-2" data-aos="fade-right" data-aos-delay="900"><i class="fas fa-envelope"></i> Email Me</a>
-            <a href="https://linkedin.com/in/dushyant-sharma-89659b23" class="btn btn-outline-light mx-2" data-aos="fade-left" data-aos-delay="900"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="tel:+91-8875674400" class="btn btn-outline-light mx-2" data-aos="fade-up" data-aos-delay="1200"><i class="fas fa-phone"></i> +91-8875674400</a>
+            <h1 class="animate">Dushyant Sharma</h1>
+            <p class="lead animate">15+ Years in AI-Powered IT Leadership | Transforming SaaS, Healthcare & Finance</p>
+            <a href="mailto:imdushyant19@yahoo.co.in" class="btn btn-light mx-2 animate"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="https://linkedin.com/in/dushyant-sharma-89659b23" class="btn btn-outline-light mx-2 animate"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="tel:+91-8875674400" class="btn btn-outline-light mx-2 animate"><i class="fas fa-phone"></i> +91-8875674400</a>
         </div>
     </section>
 
     <!-- Professional Summary -->
-    <section class="container my-5" data-aos="fade-up">
-        <h2 class="section-title">Professional Summary</h2>
+    <section class="container my-5" id="summary">
+        <h2 class="section-title animate">Professional Summary</h2>
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <p class="lead text-center" data-aos="fade-up" data-aos-delay="200">With 15+ years of experience in IT (SaaS) and ITES leadership, I excel in Program Management, Agile Operations, AI Transformations, and leading global teams in Banking & Finance, Healthcare, and Insurance.</p>
-                <p class="text-center" data-aos="fade-up" data-aos-delay="400">Business Domain Expertise - Banking & Finance, Healthcare, and Insurance (P&C, Health, Life)</p>
+                <p class="lead text-center animate">With 15+ years of experience in IT (SaaS) and ITES leadership, I excel in Program Management for Cornerstone, Definitive Healthcare, and HighLevel technical support, AI implementation, Agile Projects, Process, Customers, and Operations Management, transformation through the deployment of AI Tools and Bots, capitalizing on cost advantages, leadership of result-oriented teams across various geographical locations, engagement with customers and key stakeholders at a strategic level, and utilizing AI for data-driven decision-making.</p>
+                <p class="text-center animate">Business Domain Expertise - Banking & Finance, Healthcare, and Insurance (P&C, Health, Life)</p>
             </div>
         </div>
     </section>
 
-    <!-- Career Highlights with Chart Graphic -->
-    <section class="container my-5 bg-light py-5" data-aos="fade-up">
-        <h2 class="section-title">Career Highlights</h2>
+    <!-- Career Highlights with Progress Bars -->
+    <section class="container my-5 bg-light py-5" id="highlights">
+        <h2 class="section-title animate">Career Highlights</h2>
         <div class="row">
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-6">
                 <h4>Program Achievements</h4>
                 <ul>
-                    <li data-aos="fade-up" data-aos-delay="100">Reduced Support Tickets backlog by 35% (2022).</li>
-                    <li data-aos="fade-up" data-aos-delay="200">Customer satisfaction improvement elevated CSAT from 80% to 95% in 2023.</li>
-                    <li data-aos="fade-up" data-aos-delay="300">Customer Success targets achieved ARR of $5 million annually via Support efforts.</li>
-                    <li data-aos="fade-up" data-aos-delay="400">Improved the average resolution time from 22 days to 15 days using AI Tools (2023).</li>
-                    <li data-aos="fade-up" data-aos-delay="500">Framework agnostic approaches streamlined technical support with workflows, process docs, and a knowledge base (2023).</li>
+                    <li class="animate">Reduced Support Tickets backlog by 35% (2022).
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 35%"></div></div>
+                    </li>
+                    <li class="animate">Customer Success targets achieved ARR of $5 million annually via Support efforts.
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 50%"></div></div>
+                    </li>
+                    <li class="animate">Improved the average resolution time of tickets from 22 days to 15 days using AI Tools (2023).
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 32%"></div></div>
+                    </li>
+                    <li class="animate">Framework agnostic approaches streamlined technical support with workflows, process docs, and a knowledge base (2023).
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 40%"></div></div>
+                    </li>
+                    <li class="animate">Established a newly transitioned SaaS technical support project for 4 products at Bangalore site in Definitive Healthcare (2024).</li>
+                    <li class="animate">Implementation of AI Bot and workflows for live escalation process in HighLevel (2025).</li>
                 </ul>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6">
                 <h4>Scaled Operations and Projects</h4>
                 <ul>
-                    <li data-aos="fade-up" data-aos-delay="100">Led automation project in the BFSI vertical at Hexaware Technologies (2018).</li>
-                    <li data-aos="fade-up" data-aos-delay="200">Managed large business process transition operations for 11 US insurance clients with a team of 80 Engineers at DXC Technology (2016).</li>
+                    <li class="animate">Led automation project in the BFSI vertical at Hexaware Technologies (2018).
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 60%"></div></div>
+                    </li>
+                    <li class="animate">Managed large business process transition operations for 11 US insurance clients with a team of 80 Engineers at DXC Technology (2016).
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 80%"></div></div>
+                    </li>
                 </ul>
                 <h4>Project Transition and Transformation</h4>
                 <ul>
-                    <li data-aos="fade-up" data-aos-delay="300">Successfully handled BFSI project transitions at Genpact (2013 & 2015).</li>
+                    <li class="animate">Successfully handled BFSI project transitions at Genpact (2013 & 2015).
+                        <div class="progress mt-2"><div class="progress-bar" style="width: 70%"></div></div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="chart-container" data-aos="zoom-in" data-aos-delay="400">
-            <canvas id="csatChart"></canvas>
-        </div>
     </section>
 
-    <!-- Key Technical Skills with Icons -->
-    <section class="container my-5" data-aos="fade-up">
-        <h2 class="section-title">Key Technical Skills</h2>
+    <!-- Key Technical Skills -->
+    <section class="container my-5" id="skills">
+        <h2 class="section-title animate">Key Technical Skills</h2>
         <div class="skill-grid">
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+            <div class="skill-card animate">
                 <i class="fas fa-certificate"></i>
                 <h5>Certifications</h5>
-                <p>Generative AI (Microsoft), Agile Project Management with Microsoft Projects (PMI), Six Sigma (Genpact), Learning ITIL (LinkedIn Learning)</p>
+                <p>Generative AI (Microsoft), Agile Project Management (PMI), Six Sigma (Genpact), Learning ITIL</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+            <div class="skill-card animate">
                 <i class="fas fa-code"></i>
                 <h5>Languages</h5>
                 <p>Python, SQL</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+            <div class="skill-card animate">
                 <i class="fas fa-lock"></i>
                 <h5>Access Management Tools</h5>
                 <p>Okta, SailPoint, Graphite</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
+            <div class="skill-card animate">
                 <i class="fas fa-plug"></i>
                 <h5>API Integration Tools</h5>
                 <p>Workato, Postman, Microsoft Azure, Google Cloud</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="500">
+            <div class="skill-card animate">
                 <i class="fas fa-project-diagram"></i>
                 <h5>Project Management</h5>
-                <p>Asana, JIRA, Confluence, Microsoft Projects, Smartsheet</p>
+                <p>Asana, JIRA, Confluence, Microsoft Projects, Smartsheet, ClickUp</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="600">
+            <div class="skill-card animate">
                 <i class="fas fa-chart-bar"></i>
                 <h5>Data Visualization</h5>
                 <p>Tableau, DOMO, Looker by Google</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="700">
+            <div class="skill-card animate">
                 <i class="fas fa-headset"></i>
                 <h5>CRM & Service Management</h5>
-                <p>Salesforce, Zendesk, ServiceNow, Gainsight</p>
+                <p>Salesforce, Zendesk, ServiceNow, Gainsight, Freshdesk</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="800">
+            <div class="skill-card animate">
                 <i class="fas fa-users"></i>
                 <h5>Collaboration Suites</h5>
                 <p>Google Workspace, Microsoft Tools, Slack, Zoom, Webex</p>
@@ -145,14 +193,33 @@
         </div>
     </section>
 
-    <!-- Experience Timeline with Dynamic Animations -->
-    <section class="container my-5 timeline" data-aos="fade-up">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline-item" data-aos="slide-right" data-aos-delay="100">
+    <!-- Experience Timeline -->
+    <section class="container my-5 timeline" id="experience">
+        <h2 class="section-title animate">Experience</h2>
+        <div class="timeline-item animate" data-index="0">
             <div class="card">
                 <div class="card-body">
                     <h5>Senior Manager - Global Product Support Projects</h5>
-                    <p class="text-muted">Definitive Healthcare Corp. (NASDAQ: DH) | Apr 2024 – Present</p>
+                    <p class="text-muted">HighLevel (AI-as-a-Service, all-in-one marketing CRM platform) | Jan 2025 – Present</p>
+                    <ul>
+                        <li>Strategic Leadership & Team Management: Proven ability to lead, mentor, and motivate high-performing technical support engineering teams in SaaS environments.</li>
+                        <li>Utilized AI analytics and performance monitoring to gain actionable insights from customer interactions and support data, continually refining AI models and workflows for improved accuracy and effectiveness.</li>
+                        <li>AI-powered solutions to handle high volumes of support requests, ensuring seamless integration with existing systems and robust data privacy and security measures.</li>
+                        <li>Drive significant reductions in average response and resolution times by integrating AI-powered solutions like smart routing, product training, and knowledge base update.</li>
+                        <li>Monitoring KPIs and providing strategic recommendations to optimize operations.</li>
+                        <li>Manage escalations and ensure high-priority issues are resolved promptly and effectively.</li>
+                        <li>Cross-Functional Collaboration - Partner effectively with product, engineering, and AI teams to resolve complex technical issues and influence product enhancements.</li>
+                        <li>Monitoring KPIs and providing strategic recommendations to optimize operations.</li>
+                        <li>Developing strategies for seamless support delivery and process improvements.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item animate" data-index="1">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Senior Manager - Global Product Support Projects</h5>
+                    <p class="text-muted">Definitive Healthcare Corp. (NASDAQ: DH) | Apr 2024 – Jan 2025</p>
                     <ul>
                         <li>Established a new team of global technical support engineers, overseeing the hiring, training, and mentoring processes.</li>
                         <li>Migrating and leading technical support operations for 4 US Healthcare Market Intelligence SaaS products to India.</li>
@@ -167,7 +234,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="slide-left" data-aos-delay="200">
+        <div class="timeline-item animate" data-index="2">
             <div class="card">
                 <div class="card-body">
                     <h5>Manager - Global Support Projects</h5>
@@ -185,7 +252,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="slide-right" data-aos-delay="300">
+        <div class="timeline-item animate" data-index="3">
             <div class="card">
                 <div class="card-body">
                     <h5>Deputy Manager</h5>
@@ -200,7 +267,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="slide-left" data-aos-delay="400">
+        <div class="timeline-item animate" data-index="4">
             <div class="card">
                 <div class="card-body">
                     <h5>Associate Manager</h5>
@@ -216,7 +283,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="slide-right" data-aos-delay="500">
+        <div class="timeline-item animate" data-index="5">
             <div class="card">
                 <div class="card-body">
                     <h5>Assistant Manager</h5>
@@ -233,7 +300,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="slide-left" data-aos-delay="600">
+        <div class="timeline-item animate" data-index="6">
             <div class="card">
                 <div class="card-body">
                     <h5>Customer Relationship Officer</h5>
@@ -246,7 +313,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline-item" data-aos="slide-right" data-aos-delay="700">
+        <div class="timeline-item animate" data-index="7">
             <div class="card">
                 <div class="card-body">
                     <h5>Business Associate Editor - Healthcare</h5>
@@ -259,12 +326,17 @@
         </div>
     </section>
 
-    <!-- Licenses & Certifications -->
-    <section class="container my-5 bg-light py-5" data-aos="fade-up">
-        <h2 class="section-title">Licenses & Certifications</h2>
+    <!-- Education and Certifications -->
+    <section class="container my-5 education-certifications" id="education-certifications">
+        <h2 class="section-title animate">Education and Certifications</h2>
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <ul class="list-unstyled" data-aos="fade-up" data-aos-delay="200">
+                <h5 class="animate">Education</h5>
+                <p class="animate">Devi Ahilya Vishwavidyalaya</p>
+                <p class="animate">Bachelor of Commerce & Business Management</p>
+                <p class="text-muted animate">1999 - 2002</p>
+                <h5 class="mt-4 animate">Certifications</h5>
+                <ul class="list-unstyled animate">
                     <li><i class="fas fa-certificate text-primary me-2"></i> Learning ITIL – LinkedIn</li>
                     <li><i class="fas fa-certificate text-primary me-2"></i> Career Essentials in Generative AI by Microsoft and LinkedIn - Microsoft</li>
                     <li><i class="fas fa-certificate text-primary me-2"></i> Artificial Intelligence And Business Strategy: Case Studies - LinkedIn (AXuNVBF2q83yawxxBIsTBXEbpWsR)</li>
@@ -277,33 +349,17 @@
         </div>
     </section>
 
-    <!-- Education -->
-    <section class="container my-5" data-aos="fade-up">
-        <h2 class="section-title">Education</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5>Devi Ahilya Vishwavidyalaya</h5>
-                        <p>Bachelor of Commerce & Business Management</p>
-                        <p class="text-muted">1999 - 2002</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Honors & Awards -->
-    <section class="container my-5 bg-light py-5" data-aos="fade-up">
-        <h2 class="section-title">Honors & Awards</h2>
+    <section class="container my-5 bg-light py-5" id="awards">
+        <h2 class="section-title animate">Honors & Awards</h2>
         <div class="row">
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-6 animate">
                 <ul>
                     <li>Bronze Award - Genpact India (Feb 2012) - Excellent Performance as an SME & Team Lead in February & March 2011</li>
                     <li>Top Performer - Manager Contest - Genpact India (Jun 2014) - Fun@Work SPOC for a floor of 150 FTEs. Successfully led team engagement activities throughout the year!</li>
                 </ul>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6 animate">
                 <ul>
                     <li>Customer Award - Genpact India (Apr 2015) - Recognized by the customer as the best Team Manager</li>
                     <li>Kudos Award - DXC Technology (Mar 2017) - Rewarded with a Kudos title for establishing a large-sized newly transitioned business as a success. Added excellent value to the organization's growth.</li>
@@ -313,7 +369,7 @@
     </section>
 
     <!-- Footer -->
-    <footer data-aos="fade-up">
+    <footer>
         <div class="container position-relative">
             <p>&copy; 2025 Dushyant Sharma | All Rights Reserved</p>
             <p>Contact: <a href="mailto:imdushyant19@yahoo.co.in" class="text-white">imdushyant19@yahoo.co.in</a> | <a href="https://linkedin.com/in/dushyant-sharma-89659b23" class="text-white">LinkedIn</a> | +91-8875674400</p>
@@ -321,48 +377,43 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1200, once: true });
-
-        // CSAT Chart
-        const ctx = document.getElementById('csatChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['2022', '2023'],
-                datasets: [{
-                    label: 'CSAT Score (%)',
-                    data: [80, 95],
-                    backgroundColor: ['#007bff', '#00c6ff'],
-                    borderColor: ['#0056b3', '#0096cc'],
-                    borderWidth: 1,
-                    barThickness: 50
-                }]
-            },
-            options: {
-                animation: { duration: 2000, easing: 'easeOutBounce' },
-                scales: {
-                    y: { beginAtZero: true, max: 100, title: { display: true, text: 'CSAT (%)' } },
-                    x: { title: { display: true, text: 'Year' } }
-                },
-                plugins: {
-                    legend: { display: true },
-                    title: { display: true, text: 'Customer Satisfaction Improvement', font: { size: 18 } }
-                }
-            }
-        });
-
-        // Dynamic Timeline Visibility on Scroll
-        const timelineItems = document.querySelectorAll('.timeline-item');
+        // Animation on Scroll with Staggered Slide-In
+        const animateElements = document.querySelectorAll('.animate');
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                        entry.target.style.opacity = 1;
+                    }, entry.target.dataset.index ? entry.target.dataset.index * 150 : index * 150);
                 }
             });
         }, { threshold: 0.1 });
-        timelineItems.forEach(item => observer.observe(item));
+
+        animateElements.forEach((element, index) => {
+            element.style.opacity = 0;
+            element.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
+            observer.observe(element);
+        });
+
+        // Timeline Card Toggle
+        document.querySelectorAll('.timeline-item .card').forEach(card => {
+            card.addEventListener('click', () => {
+                const body = card.querySelector('.card-body');
+                body.classList.toggle('active');
+                const ul = body.querySelector('ul');
+                ul.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
     </script>
 </body>
 </html>
