@@ -3,1170 +3,636 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dushyant Sharma — AI Product Builder & SaaS Leader. 18+ years transforming enterprise complexity into AI-driven efficiency with a Human-in-the-Loop philosophy.">
-    <meta name="keywords" content="Dushyant Sharma, AI Product Builder, SaaS Leader, BFSI, Insurance, CRM, Human-in-the-Loop AI, HighLevel, EagleEye, Sarathi">
+    <meta name="description" content="Dushyant Sharma — AI Product Builder & Owner. 18+ years transforming enterprise complexity into AI-driven efficiency. Human-in-the-Loop AI for BFSI, Insurance & SaaS.">
+    <meta name="keywords" content="Dushyant Sharma, AI Product Builder, AI Product Owner, SaaS Leader, BFSI, Insurance, CRM, Human-in-the-Loop AI, HighLevel, EagleEye, Sarathi, Privacy, Security">
     <meta name="author" content="Dushyant Sharma">
-    <meta property="og:title" content="Dushyant Sharma — AI Product Builder & SaaS Leader">
-    <meta property="og:description" content="Transforming Enterprise Complexity into AI-Driven Efficiency. 18+ years of deep domain expertise in BFSI, Insurance, SaaS CRM & Global Customer Operations.">
+    <meta property="og:title" content="Dushyant Sharma — AI Product Builder & Owner">
+    <meta property="og:description" content="18+ years building Human-in-the-Loop AI products that cut costs and scale operations — for BFSI, Insurance & SaaS enterprises.">
     <meta property="og:type" content="website">
-    <title>Dushyant Sharma — AI Product Builder &amp; SaaS Leader</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Dushyant Sharma — AI Product Builder &amp; Owner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* ===== CSS VARIABLES ===== */
         :root {
-            --navy: #0a1628;
-            --navy-light: #111d35;
-            --navy-mid: #162544;
-            --accent: #00d4aa;
-            --accent-dim: rgba(0, 212, 170, 0.15);
-            --accent-glow: rgba(0, 212, 170, 0.4);
-            --blue: #3b82f6;
-            --blue-dim: rgba(59, 130, 246, 0.15);
-            --purple: #8b5cf6;
-            --white: #f1f5f9;
-            --gray: #94a3b8;
-            --gray-light: #cbd5e1;
-            --border: rgba(255, 255, 255, 0.06);
-            --card-bg: rgba(17, 29, 53, 0.6);
+            --bg: #FAFAF8;
+            --bg-alt: #F0EFEB;
+            --bg-dark: #1a1a2e;
+            --bg-dark-mid: #222240;
+            --text: #1a1a2e;
+            --text-secondary: #555566;
+            --text-light: #7a7a8c;
+            --accent: #0d9488;
+            --accent-light: #14b8a6;
+            --accent-bg: rgba(13, 148, 136, 0.08);
+            --accent-border: rgba(13, 148, 136, 0.2);
+            --white: #ffffff;
+            --border: #e8e8e0;
+            --shadow: rgba(26, 26, 46, 0.06);
+            --shadow-md: rgba(26, 26, 46, 0.1);
             --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             --mono: 'JetBrains Mono', monospace;
+            --radius: 12px;
+            --max-w: 1020px;
         }
-
-        /* ===== RESET & BASE ===== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        html { scroll-behavior: smooth; font-size: 16px; }
-
+        html { scroll-behavior: smooth; }
         body {
             font-family: var(--font);
-            background: var(--navy);
-            color: var(--gray-light);
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.7;
-            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
+        a { color: var(--accent); text-decoration: none; transition: 0.25s; }
+        a:hover { color: var(--accent-light); }
 
-        a { color: var(--accent); text-decoration: none; transition: color 0.3s; }
-        a:hover { color: #33e0bb; }
+        .container { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
+        .section { padding: 80px 0; }
 
-        img { max-width: 100%; display: block; }
-
-        /* ===== UTILITY ===== */
-        .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-        .section { padding: 100px 0; }
-        .section-label {
-            font-family: var(--mono);
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 12px;
-        }
-        .section-title {
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--white);
-            line-height: 1.25;
-            margin-bottom: 20px;
-        }
-        .section-subtitle {
-            font-size: 1.1rem;
-            color: var(--gray);
-            max-width: 600px;
-            line-height: 1.7;
-        }
-        .section-header { text-align: center; margin-bottom: 64px; }
-        .section-header .section-subtitle { margin: 0 auto; }
-
-        .accent { color: var(--accent); }
-        .highlight-box {
-            background: var(--accent-dim);
-            border-left: 3px solid var(--accent);
-            padding: 3px 10px;
-            border-radius: 0 6px 6px 0;
-            display: inline;
-        }
-
-        /* ===== NAVIGATION ===== */
+        /* NAV */
         .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 16px 0;
-            transition: all 0.35s ease;
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(250, 250, 248, 0.85);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid transparent;
+            padding: 14px 0; transition: all 0.3s;
         }
-        .nav.scrolled {
-            background: rgba(10, 22, 40, 0.92);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            padding: 10px 0;
-        }
-        .nav .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .nav-brand {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--white);
-            letter-spacing: -0.5px;
-        }
+        .nav.scrolled { border-bottom-color: var(--border); box-shadow: 0 1px 12px var(--shadow); }
+        .nav .container { display: flex; align-items: center; justify-content: space-between; }
+        .nav-brand { font-size: 1.1rem; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
         .nav-brand span { color: var(--accent); }
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            list-style: none;
-        }
-        .nav-links a {
-            color: var(--gray);
-            font-size: 0.88rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover { color: var(--white); }
+        .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+        .nav-links a { color: var(--text-secondary); font-size: 0.85rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--text); }
         .nav-cta {
-            background: var(--accent);
-            color: var(--navy) !important;
-            padding: 8px 20px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.85rem;
+            background: var(--accent); color: var(--white) !important;
+            padding: 8px 18px; border-radius: 8px; font-weight: 600; font-size: 0.82rem;
             transition: all 0.3s;
         }
-        .nav-cta:hover { background: #33e0bb; transform: translateY(-1px); box-shadow: 0 4px 20px var(--accent-glow); }
+        .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(13,148,136,0.3); }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+        .nav-toggle span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
 
-        .nav-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 4px;
-        }
-        .nav-toggle span {
-            width: 24px;
-            height: 2px;
-            background: var(--gray-light);
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-
-        /* ===== PROFILE PHOTO ===== */
-        .profile-photo-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 28px;
-        }
-        .profile-photo {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center 15%;
-            border: 3px solid rgba(0, 212, 170, 0.3);
-            box-shadow: 0 0 40px rgba(0, 212, 170, 0.15), 0 0 80px rgba(0, 0, 0, 0.4);
-            filter: brightness(1.05) contrast(1.08) saturate(0.85);
-            transition: all 0.4s ease;
-        }
-        .profile-photo:hover {
-            border-color: rgba(0, 212, 170, 0.6);
-            box-shadow: 0 0 50px rgba(0, 212, 170, 0.25), 0 0 100px rgba(0, 0, 0, 0.5);
-            transform: scale(1.04);
-        }
-        .profile-name-badge {
-            text-align: center;
-            margin-bottom: 8px;
-        }
-        .profile-name-badge h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 2px;
-        }
-        .profile-name-badge p {
-            font-size: 0.8rem;
-            color: var(--gray);
-            font-family: var(--mono);
-            letter-spacing: 0.5px;
-        }
-
-        /* ===== HERO ===== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            padding-top: 80px;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            opacity: 0.12;
-            pointer-events: none;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -20%;
-            left: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
-            opacity: 0.08;
-            pointer-events: none;
-        }
-        .hero .container { position: relative; z-index: 2; }
-        .hero-grid {
+        /* HERO */
+        .hero { padding: 140px 0 80px; }
+        .hero-layout {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
+            grid-template-columns: 1fr 300px;
+            gap: 56px;
             align-items: center;
         }
-        .hero-tag {
-            font-family: var(--mono);
-            font-size: 0.82rem;
-            color: var(--accent);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .hero-eyebrow {
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
+            color: var(--accent); text-transform: uppercase; letter-spacing: 2.5px;
+            margin-bottom: 16px;
+            display: flex; align-items: center; gap: 10px;
         }
-        .hero-tag::before {
-            content: '';
-            width: 30px;
-            height: 1px;
-            background: var(--accent);
-        }
+        .hero-eyebrow::before { content: ''; width: 24px; height: 2px; background: var(--accent); }
         .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            color: var(--white);
-            line-height: 1.15;
-            margin-bottom: 24px;
-            letter-spacing: -1px;
+            font-size: 2.8rem; font-weight: 900; color: var(--text);
+            line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 20px;
         }
-        .hero h1 em {
-            font-style: normal;
-            background: linear-gradient(135deg, var(--accent), var(--blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+        .hero h1 em { font-style: normal; color: var(--accent); }
         .hero-desc {
-            font-size: 1.15rem;
-            color: var(--gray);
-            line-height: 1.8;
-            margin-bottom: 40px;
-            max-width: 520px;
+            font-size: 1.05rem; color: var(--text-secondary);
+            line-height: 1.75; margin-bottom: 32px; max-width: 540px;
         }
-        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
-        .btn-primary-custom {
-            background: var(--accent);
-            color: var(--navy);
-            padding: 14px 32px;
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 0.95rem;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
+        .hero-desc strong { color: var(--text); font-weight: 600; }
+        .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--accent); color: var(--white);
+            padding: 13px 28px; border-radius: 10px;
+            font-weight: 700; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s;
         }
-        .btn-primary-custom:hover {
-            background: #33e0bb;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px var(--accent-glow);
-            color: var(--navy);
+        .btn-primary:hover { background: var(--accent-light); color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(13,148,136,0.25); }
+        .btn-ghost {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: transparent; color: var(--text-secondary);
+            padding: 13px 28px; border-radius: 10px;
+            font-weight: 600; font-size: 0.9rem;
+            border: 1px solid var(--border); cursor: pointer; transition: all 0.3s;
         }
-        .btn-outline-custom {
-            background: transparent;
-            color: var(--gray-light);
-            padding: 14px 32px;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border: 1px solid rgba(255,255,255,0.15);
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .btn-outline-custom:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            background: var(--accent-dim);
-        }
+        .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
 
-        /* Hero Stats */
-        .hero-visual {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-        .stat-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-        .stat-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border);
+        /* Hero Right */
+        .hero-right { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        .profile-img {
+            width: 220px; height: 264px;
             border-radius: 16px;
-            padding: 28px 24px;
-            text-align: center;
+            object-fit: cover; object-position: center 15%;
+            border: 4px solid var(--white);
+            box-shadow: 0 16px 48px var(--shadow-md), 0 2px 8px var(--shadow);
+            filter: saturate(0.88) contrast(1.06) brightness(1.02);
             transition: all 0.4s;
         }
-        .stat-card:hover {
-            border-color: rgba(0, 212, 170, 0.2);
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        .profile-img:hover { transform: translateY(-4px); box-shadow: 0 20px 60px var(--shadow-md); }
+        .hero-role-card {
+            background: var(--white); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 16px 20px;
+            width: 100%; text-align: center;
+            box-shadow: 0 4px 16px var(--shadow);
         }
-        .stat-number {
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: var(--accent);
-            line-height: 1;
-            margin-bottom: 6px;
-        }
-        .stat-label {
-            font-size: 0.82rem;
-            color: var(--gray);
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .hero-badge {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 20px 24px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        .hero-badge-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--accent-dim);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 1.3rem;
-            flex-shrink: 0;
-        }
-        .hero-badge-text { font-size: 0.92rem; color: var(--gray-light); line-height: 1.5; }
-        .hero-badge-text strong { color: var(--white); }
-
-        /* ===== INDUSTRY SECTION ===== */
-        .industry-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-        .industry-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px 32px;
-            transition: all 0.4s;
-            position: relative;
-            overflow: hidden;
-        }
-        .industry-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--blue));
-            opacity: 0;
-            transition: opacity 0.4s;
-        }
-        .industry-card:hover::before { opacity: 1; }
-        .industry-card:hover {
-            border-color: rgba(0, 212, 170, 0.15);
-            transform: translateY(-6px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-        }
-        .industry-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--accent-dim);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 1.5rem;
-            margin-bottom: 24px;
-        }
-        .industry-card h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 12px;
-        }
-        .industry-card p {
-            font-size: 0.95rem;
-            color: var(--gray);
-            line-height: 1.7;
-        }
-        .industry-tag {
-            display: inline-block;
-            font-family: var(--mono);
-            font-size: 0.72rem;
-            color: var(--accent);
-            background: var(--accent-dim);
-            padding: 4px 10px;
-            border-radius: 6px;
-            margin-top: 16px;
-            letter-spacing: 0.5px;
+        .hero-role-card .name { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 2px; }
+        .hero-role-card .role { font-size: 0.82rem; color: var(--text-light); }
+        .hero-role-card .company {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+            color: var(--accent); background: var(--accent-bg);
+            padding: 4px 10px; border-radius: 6px; margin-top: 8px;
         }
 
-        /* ===== PROOF POINTS ===== */
-        .proof-section { background: var(--navy-light); }
-        .proof-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
+        /* STATS BAR */
+        .stats-bar { background: var(--bg-dark); padding: 36px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+        .stat-item { text-align: center; padding: 8px 16px; position: relative; }
+        .stat-item:not(:last-child)::after {
+            content: ''; position: absolute; right: 0; top: 10%; height: 80%;
+            width: 1px; background: rgba(255,255,255,0.1);
         }
+        .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent-light); line-height: 1; margin-bottom: 4px; }
+        .stat-lbl { font-size: 0.75rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+
+        /* POSITIONING STRIP */
+        .positioning {
+            background: var(--accent-bg);
+            border-top: 1px solid var(--accent-border);
+            border-bottom: 1px solid var(--accent-border);
+            padding: 40px 0; text-align: center;
+        }
+        .positioning h2 { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+        .positioning p { font-size: 0.95rem; color: var(--text-secondary); max-width: 720px; margin: 0 auto; line-height: 1.7; }
+        .positioning p strong { color: var(--text); }
+        .positioning .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
+        .positioning .pill {
+            background: var(--white); border: 1px solid var(--accent-border);
+            padding: 6px 14px; border-radius: 20px;
+            font-size: 0.78rem; font-weight: 600; color: var(--accent);
+        }
+
+        /* SECTION HEADERS */
+        .s-label {
+            font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+            color: var(--accent); text-transform: uppercase;
+            letter-spacing: 2.5px; margin-bottom: 10px;
+        }
+        .s-title {
+            font-size: 1.8rem; font-weight: 800; color: var(--text);
+            letter-spacing: -0.5px; margin-bottom: 12px; line-height: 1.2;
+        }
+        .s-desc { font-size: 0.95rem; color: var(--text-secondary); max-width: 560px; line-height: 1.7; }
+        .s-header { margin-bottom: 44px; }
+        .s-center { text-align: center; }
+        .s-center .s-desc { margin: 0 auto; }
+
+        /* DOMAIN CARDS */
+        .domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .domain-card {
+            background: var(--white); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 32px 28px;
+            transition: all 0.35s; position: relative; overflow: hidden;
+        }
+        .domain-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 3px; background: var(--accent);
+            transform: scaleX(0); transition: transform 0.35s; transform-origin: left;
+        }
+        .domain-card:hover::before { transform: scaleX(1); }
+        .domain-card:hover { box-shadow: 0 12px 36px var(--shadow); transform: translateY(-4px); }
+        .domain-icon {
+            width: 44px; height: 44px; background: var(--accent-bg); border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent); font-size: 1.15rem; margin-bottom: 18px;
+        }
+        .domain-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+        .domain-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; }
+        .domain-tag {
+            display: inline-block; font-family: var(--mono); font-size: 0.68rem;
+            color: var(--accent); background: var(--accent-bg);
+            padding: 3px 8px; border-radius: 5px; margin-top: 14px; letter-spacing: 0.3px;
+        }
+
+        /* PROOF */
+        .proof-section { background: var(--bg-alt); }
+        .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .proof-card {
-            background: var(--navy-mid);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px 32px;
-            text-align: center;
-            transition: all 0.4s;
-            position: relative;
+            background: var(--white); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 32px 28px;
+            text-align: center; transition: all 0.35s;
         }
-        .proof-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(0, 212, 170, 0.15);
-        }
-        .proof-metric {
-            font-size: 3.2rem;
-            font-weight: 800;
-            color: var(--accent);
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-        .proof-metric-label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--white);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 16px;
-        }
-        .proof-desc {
-            font-size: 0.92rem;
-            color: var(--gray);
-            line-height: 1.7;
-        }
-        .proof-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--accent-dim);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 1.2rem;
-            margin: 0 auto 20px;
-        }
+        .proof-card:hover { box-shadow: 0 12px 36px var(--shadow); transform: translateY(-4px); }
+        .proof-num { font-size: 2.6rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 6px; }
+        .proof-label { font-size: 0.78rem; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; }
+        .proof-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.65; }
 
-        /* ===== PRODUCTS ===== */
-        .products-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-        }
+        /* PRODUCTS */
+        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
         .product-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 48px 40px;
-            transition: all 0.4s;
-            position: relative;
-            overflow: hidden;
+            background: var(--white); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 36px 32px; transition: all 0.35s;
         }
-        .product-card::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.5s;
-            pointer-events: none;
-        }
-        .product-card:hover::after { opacity: 0.08; }
-        .product-card:hover {
-            border-color: rgba(0, 212, 170, 0.2);
-            transform: translateY(-6px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
+        .product-card:hover { box-shadow: 0 12px 36px var(--shadow); transform: translateY(-4px); }
         .product-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--accent-dim);
-            color: var(--accent);
-            font-family: var(--mono);
-            font-size: 0.72rem;
-            font-weight: 500;
-            padding: 6px 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            display: inline-flex; align-items: center; gap: 5px;
+            background: var(--accent-bg); color: var(--accent);
+            font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
+            padding: 5px 10px; border-radius: 6px;
+            margin-bottom: 16px; letter-spacing: 0.8px; text-transform: uppercase;
         }
-        .product-card h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 16px;
-        }
-        .product-card h3 a { color: var(--white); }
+        .product-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+        .product-card h3 a { color: var(--text); }
         .product-card h3 a:hover { color: var(--accent); }
-        .product-card .product-desc {
-            font-size: 1rem;
-            color: var(--gray);
-            line-height: 1.8;
-            margin-bottom: 24px;
-        }
-        .product-features {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+        .product-card .pdesc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
+        .product-features { list-style: none; display: flex; flex-direction: column; gap: 8px; }
         .product-features li {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 0.9rem;
-            color: var(--gray-light);
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: var(--text-secondary);
         }
-        .product-features li i {
-            color: var(--accent);
-            margin-top: 4px;
-            font-size: 0.7rem;
-        }
+        .product-features li i { color: var(--accent); margin-top: 5px; font-size: 0.55rem; }
 
-        /* ===== SERVICES ===== */
-        .services-section { background: var(--navy-light); }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
+        /* SERVICES */
+        .services-section { background: var(--bg-alt); }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .service-card {
-            background: var(--navy-mid);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px 32px;
-            transition: all 0.4s;
-            position: relative;
+            background: var(--white); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 32px 28px; transition: all 0.35s;
         }
-        .service-card:hover {
-            border-color: rgba(0, 212, 170, 0.15);
-            transform: translateY(-6px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-        }
-        .service-number {
-            font-family: var(--mono);
-            font-size: 0.75rem;
-            color: var(--accent);
-            opacity: 0.6;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-        }
-        .service-card h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 14px;
-            line-height: 1.4;
-        }
-        .service-card p {
-            font-size: 0.92rem;
-            color: var(--gray);
-            line-height: 1.7;
-        }
+        .service-card:hover { box-shadow: 0 12px 36px var(--shadow); transform: translateY(-4px); }
+        .service-num { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); opacity: 0.5; margin-bottom: 16px; }
         .service-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--accent-dim);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+            width: 44px; height: 44px; background: var(--accent-bg); border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent); font-size: 1.1rem; margin-bottom: 16px;
         }
+        .service-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 10px; line-height: 1.35; }
+        .service-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.65; }
 
-        /* ===== TECH STACK ===== */
-        .tech-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 16px;
+        /* TECH */
+        .tech-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .tech-tag {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--white); border: 1px solid var(--border);
+            padding: 10px 18px; border-radius: 40px;
+            font-size: 0.84rem; font-weight: 500; color: var(--text-secondary);
+            transition: all 0.25s;
         }
-        .tech-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 12px 22px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--gray-light);
-            transition: all 0.3s;
-        }
-        .tech-pill:hover {
-            border-color: rgba(0, 212, 170, 0.3);
-            color: var(--white);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-        }
-        .tech-pill i { color: var(--accent); font-size: 1rem; }
+        .tech-tag:hover { border-color: var(--accent-border); color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 16px var(--shadow); }
+        .tech-tag i { color: var(--accent); font-size: 0.9rem; }
 
-        /* ===== CONTACT SECTION ===== */
-        .contact-section { background: var(--navy-light); }
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: start;
+        /* CONTACT */
+        .cta-section { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 80px 0; }
+        .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+        .cta-left h2 { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 16px; line-height: 1.2; }
+        .cta-left h2 span { color: var(--accent-light); }
+        .cta-left p { font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 28px; }
+        .cta-details { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+        .cta-details li {
+            display: flex; align-items: center; gap: 12px;
+            font-size: 0.9rem; color: rgba(255,255,255,0.7);
         }
-        .contact-info h2 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--white);
-            line-height: 1.2;
-            margin-bottom: 20px;
+        .cta-details li i {
+            width: 36px; height: 36px;
+            background: rgba(13,148,136,0.15); border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent-light); font-size: 0.85rem; flex-shrink: 0;
         }
-        .contact-info p {
-            font-size: 1.05rem;
-            color: var(--gray);
-            line-height: 1.8;
-            margin-bottom: 32px;
+        .cta-details li a { color: rgba(255,255,255,0.7); }
+        .cta-details li a:hover { color: var(--accent-light); }
+        .cta-form {
+            background: var(--bg-dark-mid); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px; padding: 36px;
         }
-        .contact-details {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+        .cta-form h3 { font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 4px; }
+        .cta-form .form-sub { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 24px; }
+        .fg { margin-bottom: 16px; }
+        .fg label { display: block; font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .fg input, .fg textarea, .fg select {
+            width: 100%; background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+            padding: 11px 14px; font-family: var(--font); font-size: 0.88rem;
+            color: #fff; outline: none; transition: border-color 0.3s;
         }
-        .contact-details li {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            font-size: 0.95rem;
-            color: var(--gray-light);
+        .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(13,148,136,0.15); }
+        .fg textarea { resize: vertical; min-height: 80px; }
+        .fg select option { background: var(--bg-dark); color: #fff; }
+        .form-btn {
+            width: 100%; background: var(--accent); color: var(--white);
+            padding: 12px; border: none; border-radius: 8px;
+            font-family: var(--font); font-size: 0.9rem; font-weight: 700;
+            cursor: pointer; transition: all 0.3s; margin-top: 4px;
         }
-        .contact-details li i {
-            width: 40px;
-            height: 40px;
-            background: var(--accent-dim);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 0.95rem;
-            flex-shrink: 0;
-        }
-        .contact-form-area {
-            background: var(--navy-mid);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px;
-        }
-        .contact-form-area h3 {
-            font-size: 1.2rem;
-            color: var(--white);
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        .contact-form-area .form-sub {
-            font-size: 0.88rem;
-            color: var(--gray);
-            margin-bottom: 28px;
-        }
-        .form-group {
-            margin-bottom: 18px;
-        }
-        .form-group label {
-            display: block;
-            font-size: 0.82rem;
-            font-weight: 600;
-            color: var(--gray-light);
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            background: var(--navy);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 12px 16px;
-            font-family: var(--font);
-            font-size: 0.92rem;
-            color: var(--white);
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px var(--accent-dim);
-        }
-        .form-group textarea { resize: vertical; min-height: 100px; }
-        .form-group select option { background: var(--navy); color: var(--white); }
-        .form-submit {
-            width: 100%;
-            background: var(--accent);
-            color: var(--navy);
-            padding: 14px;
-            border: none;
-            border-radius: 10px;
-            font-family: var(--font);
-            font-size: 0.95rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s;
-            margin-top: 8px;
-        }
-        .form-submit:hover {
-            background: #33e0bb;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px var(--accent-glow);
-        }
-        .form-notice {
-            font-size: 0.75rem;
-            color: var(--gray);
-            text-align: center;
-            margin-top: 14px;
-        }
+        .form-btn:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(13,148,136,0.3); }
+        .form-note { font-size: 0.7rem; color: rgba(255,255,255,0.35); text-align: center; margin-top: 12px; }
 
-        /* ===== FOOTER ===== */
-        .footer {
-            padding: 40px 0;
-            border-top: 1px solid var(--border);
-            text-align: center;
-        }
-        .footer p {
-            font-size: 0.85rem;
-            color: var(--gray);
-        }
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin-bottom: 16px;
-        }
-        .footer-links a {
-            color: var(--gray);
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
+        /* FOOTER */
+        .footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; }
+        .footer-links a { color: var(--text-light); font-size: 1rem; }
         .footer-links a:hover { color: var(--accent); }
+        .footer p { font-size: 0.78rem; color: var(--text-light); }
 
-        /* ===== ANIMATIONS ===== */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
+        /* ANIMATIONS */
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-d1 { transition-delay: 0.08s; }
+        .reveal-d2 { transition-delay: 0.16s; }
+        .reveal-d3 { transition-delay: 0.24s; }
 
-        /* ===== RESPONSIVE ===== */
+        /* RESPONSIVE */
         @media (max-width: 1024px) {
-            .hero-grid { grid-template-columns: 1fr; gap: 48px; }
-            .hero h1 { font-size: 2.6rem; }
-            .stat-grid { grid-template-columns: repeat(4, 1fr); }
-            .profile-photo { width: 140px; height: 140px; }
-            .industry-grid { grid-template-columns: 1fr 1fr; }
-            .proof-grid { grid-template-columns: 1fr 1fr; }
-            .services-grid { grid-template-columns: 1fr 1fr; }
-            .contact-wrapper { grid-template-columns: 1fr; }
+            .hero-layout { grid-template-columns: 1fr 260px; gap: 40px; }
+            .profile-img { width: 180px; height: 216px; }
+            .domain-grid, .proof-grid, .services-grid { grid-template-columns: 1fr 1fr; }
         }
-
         @media (max-width: 768px) {
-            .section { padding: 72px 0; }
-            .section-title { font-size: 2rem; }
-            .hero { padding-top: 100px; min-height: auto; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2rem; }
-            .hero-desc { font-size: 1rem; }
-            .stat-grid { grid-template-columns: 1fr 1fr; }
-            .profile-photo { width: 120px; height: 120px; }
-            .industry-grid { grid-template-columns: 1fr; }
-            .proof-grid { grid-template-columns: 1fr; }
-            .products-grid { grid-template-columns: 1fr; }
-            .services-grid { grid-template-columns: 1fr; }
+            .section { padding: 60px 0; }
+            .hero { padding: 120px 0 60px; }
+            .hero-layout { grid-template-columns: 1fr; gap: 36px; }
+            .hero-right { order: -1; flex-direction: row; gap: 20px; }
+            .profile-img { width: 100px; height: 120px; border-radius: 12px; }
+            .hero-role-card { text-align: left; flex: 1; }
+            .hero h1 { font-size: 2.1rem; }
+            .s-title { font-size: 1.5rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .stat-item:nth-child(2)::after { display: none; }
+            .domain-grid, .proof-grid, .services-grid, .products-grid { grid-template-columns: 1fr; }
+            .cta-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .nav-links.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: rgba(10, 22, 40, 0.98);
-                backdrop-filter: blur(20px);
-                padding: 24px;
-                gap: 16px;
+                display: flex; flex-direction: column;
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: rgba(250,250,248,0.98); backdrop-filter: blur(16px);
+                padding: 20px 28px; gap: 14px;
                 border-bottom: 1px solid var(--border);
             }
             .nav-toggle { display: flex; }
-            .hero-buttons { flex-direction: column; }
-            .btn-primary-custom, .btn-outline-custom { justify-content: center; }
-            .contact-form-area { padding: 28px 20px; }
+            .hero-btns { flex-direction: column; }
+            .btn-primary, .btn-ghost { justify-content: center; }
         }
-
         @media (max-width: 480px) {
-            .hero h1 { font-size: 1.8rem; }
-            .section-title { font-size: 1.65rem; }
-            .stat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-            .stat-card { padding: 20px 16px; }
-            .stat-number { font-size: 1.8rem; }
-            .product-card { padding: 32px 24px; }
-            .proof-metric { font-size: 2.4rem; }
+            .hero h1 { font-size: 1.75rem; }
+            .stat-num { font-size: 1.6rem; }
+            .proof-num { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- ===== NAVIGATION ===== -->
+    <!-- NAV -->
     <nav class="nav" id="nav">
         <div class="container">
-            <a href="#" class="nav-brand">Dushyant<span>.</span></a>
+            <a href="#" class="nav-brand">DS<span>.</span></a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#industries">Expertise</a></li>
-                <li><a href="#proof">Impact</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#impact">Impact</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact" class="nav-cta">Book a Consultation</a></li>
+                <li><a href="#contact" class="nav-cta">Book Consultation</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
+    <!-- HERO -->
     <section class="hero" id="hero">
         <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <div class="hero-tag">AI Product Builder & SaaS Leader</div>
+            <div class="hero-layout">
+                <div>
+                    <div class="hero-eyebrow">AI Product Builder &amp; Owner</div>
                     <h1>Transforming Enterprise Complexity into <em>AI-Driven Efficiency</em></h1>
                     <p class="hero-desc">
-                        18+ years of building, shipping, and scaling AI-powered solutions across BFSI, Insurance, and SaaS.
-                        I architect <strong style="color:var(--white);">Human-in-the-Loop</strong> AI systems that deliver measurable cost reduction and operational efficiency — without sacrificing the human touch.
+                        18+ years building and owning AI products across BFSI, Insurance &amp; SaaS.
+                        I design <strong>Human-in-the-Loop</strong> AI systems that cut costs dramatically
+                        and scale operations — while keeping <strong>privacy, security, and human oversight</strong> at the center of every deployment.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn-primary-custom">
-                            <i class="fas fa-calendar-check"></i> Book a Strategy Consultation
-                        </a>
-                        <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank" class="btn-outline-custom">
-                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                        </a>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Strategy Consultation</a>
+                        <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank" class="btn-ghost"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="profile-photo-wrapper">
-                        <img src="profile.jpg" alt="Dushyant Sharma — AI Product Builder & SaaS Leader" class="profile-photo" width="160" height="160">
-                    </div>
-                    <div class="profile-name-badge">
-                        <h3>Dushyant Sharma</h3>
-                        <p>Senior Manager · HighLevel</p>
-                    </div>
-                    <div class="stat-grid">
-                        <div class="stat-card">
-                            <div class="stat-number">18+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">CSAT Achieved</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">35%</div>
-                            <div class="stat-label">Backlog Reduced</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">$5M</div>
-                            <div class="stat-label">ARR via Support</div>
-                        </div>
-                    </div>
-                    <div class="hero-badge">
-                        <div class="hero-badge-icon"><i class="fas fa-building"></i></div>
-                        <div class="hero-badge-text">
-                            <strong>Currently: Senior Manager at HighLevel</strong><br>
-                            AI-as-a-Service CRM — Global Customer & Product Support
-                        </div>
+                <div class="hero-right">
+                    <img src="profile.jpg" alt="Dushyant Sharma" class="profile-img" width="220" height="264">
+                    <div class="hero-role-card">
+                        <div class="name">Dushyant Sharma</div>
+                        <div class="role">Senior Manager — Global Product Support</div>
+                        <div class="company"><i class="fas fa-building"></i> HighLevel (AI-as-a-Service CRM)</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== INDUSTRY WHISPERER SECTION ===== -->
-    <section class="section" id="industries">
+    <!-- STATS BAR -->
+    <div class="stats-bar">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Deep Domain Intelligence</div>
-                <h2 class="section-title reveal">The Industry Whisperer</h2>
-                <p class="section-subtitle reveal">I don't just understand AI — I understand <em>your</em> industry. Every solution I build starts with a deep diagnosis of sector-specific bottlenecks that generic tools miss entirely.</p>
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-num">18+</div><div class="stat-lbl">Years Experience</div></div>
+                <div class="stat-item"><div class="stat-num">95%</div><div class="stat-lbl">Enterprise CSAT</div></div>
+                <div class="stat-item"><div class="stat-num">35%</div><div class="stat-lbl">Backlog Reduced</div></div>
+                <div class="stat-item"><div class="stat-num">$5M</div><div class="stat-lbl">ARR via Support</div></div>
             </div>
-            <div class="industry-grid">
-                <!-- BFSI / Insurance -->
-                <div class="industry-card reveal reveal-delay-1">
-                    <div class="industry-icon"><i class="fas fa-shield-halved"></i></div>
+        </div>
+    </div>
+
+    <!-- POSITIONING STRIP -->
+    <div class="positioning">
+        <div class="container">
+            <h2><i class="fas fa-shield-halved" style="color:var(--accent);margin-right:8px;font-size:1.1rem;"></i> Human-in-the-Loop AI — Built for Trust</h2>
+            <p>Every AI product I build follows one principle: <strong>Responsive AI with human oversight.</strong> No black-box decisions. No unmonitored automation. Every workflow includes human checkpoints, full audit trails, and privacy-first data architecture — because enterprise AI must be <strong>explainable, secure, and compliant.</strong></p>
+            <div class="pills">
+                <span class="pill"><i class="fas fa-lock" style="margin-right:4px;font-size:0.65rem;"></i> Privacy-First Design</span>
+                <span class="pill"><i class="fas fa-eye" style="margin-right:4px;font-size:0.65rem;"></i> Human Oversight</span>
+                <span class="pill"><i class="fas fa-clipboard-check" style="margin-right:4px;font-size:0.65rem;"></i> Audit Trails</span>
+                <span class="pill"><i class="fas fa-user-shield" style="margin-right:4px;font-size:0.65rem;"></i> Regulatory Compliance</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOMAIN EXPERTISE -->
+    <section class="section" id="expertise">
+        <div class="container">
+            <div class="s-header s-center">
+                <div class="s-label reveal">Deep Domain Intelligence</div>
+                <h2 class="s-title reveal">The Industry Whisperer</h2>
+                <p class="s-desc reveal">I don't just understand AI — I understand <em>your</em> industry. Solutions start with sector-specific diagnosis, not generic tooling.</p>
+            </div>
+            <div class="domain-grid">
+                <div class="domain-card reveal reveal-d1">
+                    <div class="domain-icon"><i class="fas fa-shield-halved"></i></div>
                     <h3>BFSI &amp; Insurance</h3>
-                    <p>Regulatory friction and claims processing bottlenecks silently drain millions. I design AI workflows that automate compliance checks, accelerate P&C/Life/Health claims adjudication, and reduce manual review cycles — all while keeping auditors satisfied.</p>
-                    <span class="industry-tag">P&C · Life · Health · Compliance</span>
+                    <p>Automating compliance checks, accelerating P&amp;C/Life/Health claims adjudication, and cutting manual review cycles — while keeping auditors satisfied.</p>
+                    <span class="domain-tag">P&amp;C · Life · Health · Compliance</span>
                 </div>
-                <!-- SaaS / CRM -->
-                <div class="industry-card reveal reveal-delay-2">
-                    <div class="industry-icon"><i class="fas fa-robot"></i></div>
+                <div class="domain-card reveal reveal-d2">
+                    <div class="domain-icon"><i class="fas fa-robot"></i></div>
                     <h3>SaaS &amp; CRM Platforms</h3>
-                    <p>Your L1/L2 support teams are drowning in repetitive tickets while real issues get buried. I build agentic AI workflows that autonomously resolve routine queries, intelligently route complex cases, and turn your support org into a competitive advantage.</p>
-                    <span class="industry-tag">Agentic Workflows · Smart Routing · L1/L2 AI</span>
+                    <p>Building agentic AI workflows that auto-resolve L1/L2 tickets, intelligently route complex cases, and turn support into a competitive advantage.</p>
+                    <span class="domain-tag">Agentic Workflows · Smart Routing</span>
                 </div>
-                <!-- Customer Operations -->
-                <div class="industry-card reveal reveal-delay-3">
-                    <div class="industry-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="domain-card reveal reveal-d3">
+                    <div class="domain-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Customer Operations</h3>
-                    <p>Overflowing ticket backlogs and declining CSAT scores signal a system in distress. I deploy predictive AI models that anticipate issues before they escalate, prioritize intelligently, and systematically drive customer satisfaction upward.</p>
-                    <span class="industry-tag">Predictive AI · CSAT Optimization · OpEx Reduction</span>
+                    <p>Deploying predictive AI that anticipates issues before escalation, prioritizes intelligently, and systematically drives CSAT upward.</p>
+                    <span class="domain-tag">Predictive AI · CSAT · OpEx Reduction</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== PROVEN IMPACT SECTION ===== -->
-    <section class="section proof-section" id="proof">
+    <!-- PROVEN IMPACT -->
+    <section class="section proof-section" id="impact">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Measurable Results</div>
-                <h2 class="section-title reveal">Proven Impact, Not Promises</h2>
-                <p class="section-subtitle reveal">Every engagement is measured by business outcomes — cost saved, time recovered, satisfaction improved. Here's the track record.</p>
+            <div class="s-header s-center">
+                <div class="s-label reveal">Measurable Results</div>
+                <h2 class="s-title reveal">Proven Impact, Not Promises</h2>
+                <p class="s-desc reveal">Every engagement is measured by business outcomes — cost saved, time recovered, satisfaction improved.</p>
             </div>
             <div class="proof-grid">
-                <div class="proof-card reveal reveal-delay-1">
-                    <div class="proof-icon"><i class="fas fa-layer-group"></i></div>
-                    <div class="proof-metric">35%</div>
-                    <div class="proof-metric-label">Ticket Backlog Reduction</div>
-                    <p class="proof-desc">Deployed AI-powered resolution tools that intelligently triaged, auto-resolved, and escalated support tickets — eliminating 35% of chronic backlog within a single quarter.</p>
+                <div class="proof-card reveal reveal-d1">
+                    <div class="proof-num">35%</div>
+                    <div class="proof-label">Ticket Backlog Reduced</div>
+                    <p class="proof-desc">AI-powered triage and auto-resolution eliminated 35% of chronic backlog in a single quarter.</p>
                 </div>
-                <div class="proof-card reveal reveal-delay-2">
-                    <div class="proof-icon"><i class="fas fa-bolt"></i></div>
-                    <div class="proof-metric">22→15</div>
-                    <div class="proof-metric-label">Days to Resolution</div>
-                    <p class="proof-desc">Engineered custom AI workflows that slashed average issue resolution time from 22 days to 15 days — a 32% improvement in speed-to-resolution across enterprise accounts.</p>
+                <div class="proof-card reveal reveal-d2">
+                    <div class="proof-num">22→15</div>
+                    <div class="proof-label">Days to Resolution</div>
+                    <p class="proof-desc">Custom AI workflows cut average resolution from 22 to 15 days — a 32% speed improvement.</p>
                 </div>
-                <div class="proof-card reveal reveal-delay-3">
-                    <div class="proof-icon"><i class="fas fa-star"></i></div>
-                    <div class="proof-metric">95%</div>
-                    <div class="proof-metric-label">Enterprise CSAT Score</div>
-                    <p class="proof-desc">Achieved and sustained a 95% CSAT across enterprise support environments through AI-augmented processes, proactive communications, and rigorous SLA management.</p>
+                <div class="proof-card reveal reveal-d3">
+                    <div class="proof-num">95%</div>
+                    <div class="proof-label">Enterprise CSAT</div>
+                    <p class="proof-desc">Sustained 95% CSAT across enterprise accounts through AI-augmented processes and SLA rigor.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== FEATURED AI PRODUCTS ===== -->
+    <!-- AI PRODUCTS -->
     <section class="section" id="products">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Built, Shipped &amp; Running</div>
-                <h2 class="section-title reveal">AI Products I've Built</h2>
-                <p class="section-subtitle reveal">I don't just advise — I build. These are live, production-grade AI products that solve real problems every day.</p>
+            <div class="s-header s-center">
+                <div class="s-label reveal">Built, Shipped &amp; Running</div>
+                <h2 class="s-title reveal">AI Products I Own</h2>
+                <p class="s-desc reveal">I don't just advise — I build and own production-grade AI products solving real problems today.</p>
             </div>
             <div class="products-grid">
-                <!-- EagleEye -->
-                <div class="product-card reveal reveal-delay-1">
-                    <div class="product-badge"><i class="fas fa-signal"></i> Signal Detection Platform</div>
-                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.5;"></i></a></h3>
-                    <p class="product-desc">
-                        An AI-powered signal detection tool designed for managers and leaders who need instant visibility into team performance — without micromanaging. EagleEye surfaces the patterns that matter.
-                    </p>
+                <div class="product-card reveal reveal-d1">
+                    <div class="product-badge"><i class="fas fa-signal"></i> Signal Detection</div>
+                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem;opacity:0.4;"></i></a></h3>
+                    <p class="pdesc">AI-powered signal detection for managers — instant visibility into team performance without micromanaging.</p>
                     <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Real-time performance signal detection across teams</li>
+                        <li><i class="fas fa-circle"></i> Real-time performance signal detection</li>
                         <li><i class="fas fa-circle"></i> AI-driven anomaly alerts for early intervention</li>
-                        <li><i class="fas fa-circle"></i> Manager dashboards with actionable, data-backed insights</li>
-                        <li><i class="fas fa-circle"></i> Designed for SaaS support and operations leaders</li>
+                        <li><i class="fas fa-circle"></i> Privacy-first — no invasive monitoring</li>
+                        <li><i class="fas fa-circle"></i> Built for SaaS support &amp; ops leaders</li>
                     </ul>
                 </div>
-                <!-- Sarathi -->
-                <div class="product-card reveal reveal-delay-2">
-                    <div class="product-badge"><i class="fas fa-chart-candlestick" style="font-size:0.65rem;"></i> AI Trading Assistant</div>
+                <div class="product-card reveal reveal-d2">
+                    <div class="product-badge"><i class="fas fa-chart-bar"></i> AI Trading</div>
                     <h3>Sarathi</h3>
-                    <p class="product-desc">
-                        A sophisticated AI-driven trading bot and assistant built specifically for the Indian stock market (NSE). Sarathi combines deep technical analysis with regulatory compliance to deliver intelligent, risk-managed trading signals.
-                    </p>
+                    <p class="pdesc">AI-driven trading assistant for Indian stock market (NSE) — technical analysis meets regulatory compliance.</p>
                     <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> NSE-focused with full Indian market compliance integration</li>
-                        <li><i class="fas fa-circle"></i> Technical analysis engine with multi-indicator strategies</li>
-                        <li><i class="fas fa-circle"></i> Risk management with configurable position-sizing rules</li>
-                        <li><i class="fas fa-circle"></i> Human-in-the-loop trade confirmation and override controls</li>
+                        <li><i class="fas fa-circle"></i> NSE-focused with full Indian market compliance</li>
+                        <li><i class="fas fa-circle"></i> Multi-indicator technical analysis engine</li>
+                        <li><i class="fas fa-circle"></i> Risk management &amp; position-sizing rules</li>
+                        <li><i class="fas fa-circle"></i> Human-in-the-loop trade confirmation</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SERVICE OFFERINGS ===== -->
+    <!-- SERVICES -->
     <section class="section services-section" id="services">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">How I Can Help</div>
-                <h2 class="section-title reveal">Service Offerings</h2>
-                <p class="section-subtitle reveal">Strategic, hands-on engagements designed to move your organization from legacy workflows to AI-powered operations — with measurable ROI.</p>
+            <div class="s-header s-center">
+                <div class="s-label reveal">How I Can Help</div>
+                <h2 class="s-title reveal">Service Offerings</h2>
+                <p class="s-desc reveal">Strategic, hands-on engagements that move your org from legacy workflows to AI-powered operations with measurable ROI.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card reveal reveal-delay-1">
-                    <div class="service-number">01</div>
+                <div class="service-card reveal reveal-d1">
+                    <div class="service-num">01</div>
                     <div class="service-icon"><i class="fas fa-compass"></i></div>
                     <h3>AI Strategy &amp; Roadmap</h3>
-                    <p>Building the "Human-in-the-Loop" architecture your SaaS company needs. I map your current operations, identify high-impact AI intervention points, and design a phased deployment roadmap that prioritizes quick wins and long-term scalability.</p>
+                    <p>Building the Human-in-the-Loop architecture for SaaS companies — phased deployment prioritizing quick wins and long-term scale.</p>
                 </div>
-                <div class="service-card reveal reveal-delay-2">
-                    <div class="service-number">02</div>
+                <div class="service-card reveal reveal-d2">
+                    <div class="service-num">02</div>
                     <div class="service-icon"><i class="fas fa-cubes"></i></div>
                     <h3>AI Product Ownership</h3>
-                    <p>Leading the full transition from legacy workflows to Agentic AI models. I own the product lifecycle — from discovery and requirements to build, launch, and iteration — ensuring every AI feature delivers business value, not just technical novelty.</p>
+                    <p>Leading the full transition from legacy workflows to Agentic AI. I own the product lifecycle — discovery to launch to iteration.</p>
                 </div>
-                <div class="service-card reveal reveal-delay-3">
-                    <div class="service-number">03</div>
+                <div class="service-card reveal reveal-d3">
+                    <div class="service-num">03</div>
                     <div class="service-icon"><i class="fas fa-gears"></i></div>
                     <h3>Operational Transformation</h3>
-                    <p>Targeted reduction of OpEx through AI-powered support optimization and CRM workflow automation. I restructure your ticket routing, deploy intelligent escalation flows, and build self-healing systems that reduce cost while improving customer experience.</p>
+                    <p>Targeted OpEx reduction through AI-powered support optimization and CRM workflow automation. Less cost, better CX.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== TECH STACK ===== -->
+    <!-- TECH STACK -->
     <section class="section" id="tech">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Tools &amp; Technologies</div>
-                <h2 class="section-title reveal">Tech Stack</h2>
-                <p class="section-subtitle reveal">The technologies I use to design, build, and scale AI-driven solutions across enterprise environments.</p>
+            <div class="s-header s-center">
+                <div class="s-label reveal">Tools &amp; Technologies</div>
+                <h2 class="s-title reveal">Tech Stack</h2>
             </div>
-            <div class="tech-grid reveal">
-                <div class="tech-pill"><i class="fab fa-python"></i> Python</div>
-                <div class="tech-pill"><i class="fas fa-database"></i> SQL</div>
-                <div class="tech-pill"><i class="fas fa-brain"></i> Generative AI</div>
-                <div class="tech-pill"><i class="fab fa-microsoft"></i> Microsoft Azure AI</div>
-                <div class="tech-pill"><i class="fab fa-salesforce"></i> Salesforce</div>
-                <div class="tech-pill"><i class="fas fa-headset"></i> Zendesk</div>
-                <div class="tech-pill"><i class="fas fa-plug"></i> Workato</div>
-                <div class="tech-pill"><i class="fas fa-cloud"></i> Google Cloud</div>
-                <div class="tech-pill"><i class="fas fa-envelope-open-text"></i> Postman</div>
-                <div class="tech-pill"><i class="fas fa-chart-bar"></i> Tableau</div>
-                <div class="tech-pill"><i class="fas fa-tasks"></i> JIRA / Confluence</div>
-                <div class="tech-pill"><i class="fas fa-shield-halved"></i> Okta / SailPoint</div>
-                <div class="tech-pill"><i class="fas fa-ticket"></i> ServiceNow</div>
-                <div class="tech-pill"><i class="fas fa-chart-pie"></i> Looker</div>
+            <div class="tech-wrap reveal">
+                <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
+                <div class="tech-tag"><i class="fas fa-database"></i> SQL</div>
+                <div class="tech-tag"><i class="fas fa-brain"></i> Generative AI</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Microsoft Azure AI</div>
+                <div class="tech-tag"><i class="fab fa-salesforce"></i> Salesforce</div>
+                <div class="tech-tag"><i class="fas fa-headset"></i> Zendesk</div>
+                <div class="tech-tag"><i class="fas fa-plug"></i> Workato</div>
+                <div class="tech-tag"><i class="fas fa-ticket"></i> ServiceNow</div>
+                <div class="tech-tag"><i class="fas fa-chart-bar"></i> Tableau</div>
+                <div class="tech-tag"><i class="fas fa-tasks"></i> JIRA</div>
+                <div class="tech-tag"><i class="fas fa-shield-halved"></i> Okta</div>
+                <div class="tech-tag"><i class="fas fa-cloud"></i> Google Cloud</div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section class="section contact-section" id="contact">
+    <!-- CONTACT -->
+    <section class="cta-section" id="contact">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info reveal">
-                    <div class="section-label">Get In Touch</div>
-                    <h2>Let's Build Your <span class="accent">AI Future</span></h2>
-                    <p>Whether you're exploring AI for the first time or looking to scale existing deployments, I'd love to understand your challenges and explore how we can create measurable impact together.</p>
-                    <ul class="contact-details">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:imdushyant19@yahoo.co.in">imdushyant19@yahoo.co.in</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank">linkedin.com/in/dushyant-sharma</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+918875674400">+91-8875674400</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>India (Available for Global Engagements)</span>
-                        </li>
+            <div class="cta-grid">
+                <div class="cta-left reveal">
+                    <div class="s-label" style="color:var(--accent-light);">Get In Touch</div>
+                    <h2>Let's Build Your <span>AI Future</span></h2>
+                    <p>Whether you're exploring AI for the first time or scaling existing deployments — let's explore how Human-in-the-Loop AI can create measurable impact for your business.</p>
+                    <ul class="cta-details">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:imdushyant19@yahoo.co.in">imdushyant19@yahoo.co.in</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank">linkedin.com/in/dushyant-sharma</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+918875674400">+91-8875674400</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> India (Available Globally)</li>
                     </ul>
                 </div>
-                <div class="contact-form-area reveal reveal-delay-2">
+                <div class="cta-form reveal reveal-d2">
                     <h3>Book a Strategy Consultation</h3>
-                    <p class="form-sub">Fill out the form and I'll get back to you within 24 hours.</p>
+                    <p class="form-sub">I'll respond within 24 hours.</p>
                     <form id="contactForm" action="https://formsubmit.co/imdushyant19@yahoo.co.in" method="POST">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="New Strategy Consultation Request — dushyantsharma.com">
+                        <input type="hidden" name="_subject" value="New Strategy Consultation Request">
                         <input type="hidden" name="_captcha" value="true">
                         <input type="hidden" name="_template" value="table">
                         <input type="text" name="_honey" style="display:none">
-                        <div class="form-group">
+                        <div class="fg">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
+                        <div class="fg">
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="you@company.com" required>
                         </div>
-                        <div class="form-group">
-                            <label for="interest">I'm Interested In</label>
+                        <div class="fg">
+                            <label for="interest">Interested In</label>
                             <select id="interest" name="interest" required>
                                 <option value="" disabled selected>Select a service</option>
                                 <option value="AI Strategy & Roadmap">AI Strategy &amp; Roadmap</option>
@@ -1175,21 +641,19 @@
                                 <option value="General Consultation">General Consultation</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Tell Me About Your Challenge</label>
-                            <textarea id="message" name="message" placeholder="Briefly describe your current situation and what you're hoping to achieve..." required></textarea>
+                        <div class="fg">
+                            <label for="message">Your Challenge</label>
+                            <textarea id="message" name="message" placeholder="Briefly describe what you're looking to solve..." required></textarea>
                         </div>
-                        <button type="submit" class="form-submit">
-                            <i class="fas fa-paper-plane"></i>&nbsp; Send Consultation Request
-                        </button>
-                        <p class="form-notice">Submissions are sent directly to my inbox. I respond within 24 hours.</p>
+                        <button type="submit" class="form-btn"><i class="fas fa-paper-plane"></i>&nbsp; Send Request</button>
+                        <p class="form-note">Sent directly to my inbox. No spam, no third parties.</p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
@@ -1197,92 +661,36 @@
                 <a href="mailto:imdushyant19@yahoo.co.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/kumar26dushyant-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
-            <p>&copy; 2026 Dushyant Sharma. All rights reserved. &nbsp;|&nbsp; Built with purpose, powered by AI.</p>
+            <p>&copy; 2026 Dushyant Sharma &middot; AI Product Builder &amp; Owner</p>
         </div>
     </footer>
 
-    <!-- ===== SCRIPTS ===== -->
     <script>
-        // --- Navbar scroll effect ---
         const nav = document.getElementById('nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 60);
-        });
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));
 
-        // --- Mobile nav toggle ---
-        const navToggle = document.getElementById('navToggle');
-        const navLinks = document.getElementById('navLinks');
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        // Close mobile nav on link click
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('active'));
-        });
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => links.classList.toggle('active'));
+        links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('active')));
 
-        // --- Smooth scroll ---
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                const t = document.querySelector(a.getAttribute('href'));
+                if (t) t.scrollIntoView({ behavior: 'smooth' });
             });
         });
 
-        // --- Scroll reveal animations ---
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // --- Animated counter for stat numbers ---
-        function animateCounters() {
-            const statNumbers = document.querySelectorAll('.stat-number');
-            statNumbers.forEach(el => {
-                const text = el.textContent;
-                // Skip non-numeric-only values
-                if (text.includes('→') || text.includes('$')) return;
-                const target = parseInt(text);
-                if (isNaN(target)) return;
-                const suffix = text.replace(/[0-9]/g, '');
-                let current = 0;
-                const increment = Math.ceil(target / 40);
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
-                    el.textContent = current + suffix;
-                }, 35);
-            });
-        }
-
-        // Trigger counter animation when hero is visible
-        const heroObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    heroObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-        heroObserver.observe(document.querySelector('.hero'));
-
-        // --- Form submission feedback ---
-        const form = document.getElementById('contactForm');
-        form.addEventListener('submit', function () {
-            const btn = form.querySelector('.form-submit');
-            btn.textContent = 'Sending...';
-            btn.disabled = true;
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            const b = this.querySelector('.form-btn');
+            b.textContent = 'Sending...';
+            b.disabled = true;
         });
     </script>
 </body>
