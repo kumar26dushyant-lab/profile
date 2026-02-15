@@ -3,455 +3,1287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dushyant Sharma's professional IT leadership profile with expertise in AI, SaaS, and Agile.">
-    <meta name="keywords" content="Dushyant Sharma, IT leadership, AI, SaaS, Agile, Healthcare, Finance">
-    <title>Dushyant Sharma - Professional Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Dushyant Sharma — AI Product Builder & SaaS Leader. 18+ years transforming enterprise complexity into AI-driven efficiency with a Human-in-the-Loop philosophy.">
+    <meta name="keywords" content="Dushyant Sharma, AI Product Builder, SaaS Leader, BFSI, Insurance, CRM, Human-in-the-Loop AI, HighLevel, EagleEye, Sarathi">
+    <meta name="author" content="Dushyant Sharma">
+    <meta property="og:title" content="Dushyant Sharma — AI Product Builder & SaaS Leader">
+    <meta property="og:description" content="Transforming Enterprise Complexity into AI-Driven Efficiency. 18+ years of deep domain expertise in BFSI, Insurance, SaaS CRM & Global Customer Operations.">
+    <meta property="og:type" content="website">
+    <title>Dushyant Sharma — AI Product Builder &amp; SaaS Leader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1f2937; line-height: 1.7; }
-        .navbar { background: #4f46e5; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        .navbar-brand, .nav-link { color: #ffffff !important; }
-        .nav-link:hover { color: #facc15 !important; }
-        .hero { background: linear-gradient(to right, #4f46e5, #7c3aed); color: #ffffff; padding: 150px 0; text-align: center; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+ICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wLDEwMEwxMDAsMjAwTDEwMCwwTDEwMCwyMDBaIiAvPiAgIDwvZz48L3N2Zz4=') repeat; opacity: 0.08; }
-        .hero h1 { font-size: 3.8rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .hero p.lead { font-size: 1.6rem; font-weight: 300; }
-        .section-title { text-align: center; margin-bottom: 50px; color: #4f46e5; font-weight: 600; position: relative; }
-        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: #facc15; margin: 10px auto 0; }
-        .timeline { max-width: 1200px; margin: 0 auto; padding: 20px 0; position: relative; }
-        .timeline::before { content: ''; position: absolute; width: 4px; background: rgba(79,70,229,0.3); top: 0; bottom: 0; left: 30px; }
-        .timeline-item { margin-bottom: 40px; position: relative; opacity: 0; }
-        .timeline-item.visible { opacity: 1; }
-        .timeline-item:nth-child(odd) .card { transform: translateX(-100px); }
-        .timeline-item:nth-child(even) .card { transform: translateX(100px); }
-        .timeline-item.visible:nth-child(odd) .card { transform: translateX(20px); }
-        .timeline-item.visible:nth-child(even) .card { transform: translateX(60px); }
-        .timeline-item::before { content: ''; position: absolute; width: 12px; height: 12px; background: #facc15; border-radius: 50%; left: 24px; top: 20px; z-index: 2; border: 2px solid #4f46e5; }
-        .card { background: #ffffff; border: 1px solid #4f46e5; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; padding-left: 40px; }
-        .card:hover { transform: scale(1.05) !important; box-shadow: 0 10px 20px rgba(79,70,229,0.3); }
-        .card-body { padding: 20px; position: relative; }
-        .card-body h5 { position: relative; display: inline-block; }
-        .card-body h5::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #4f46e5; transition: width 0.3s ease; }
-        .card-body:hover h5::after { width: 100%; }
-        .card-body::before { content: '\f0b1'; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 15px; right: 15px; font-size: 2.5rem; color: rgba(79,70,229,0.1); }
-        .card-body ul { max-height: 0; overflow: hidden; font-size: 0.95rem; transition: max-height 0.5s ease, opacity 0.5s ease; opacity: 0; }
-        .card-body.active ul { max-height: 1000px; opacity: 1; }
-        .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-        .skill-card { text-align: center; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .skill-card:hover { transform: translateY(-8px); }
-        .skill-card i { font-size: 3.5rem; color: #4f46e5; margin-bottom: 15px; transition: transform 0.3s; }
-        .skill-card:hover i { transform: scale(1.2); }
-        .progress { height: 10px; border-radius: 5px; background: #e5e7eb; }
-        .progress-bar { background: #4f46e5; transition: width 1.5s ease-in-out; }
-        .education-certifications { background: #f9fafb; padding: 20px 0; }
-        .education-certifications h2 { color: #4f46e5; }
-        footer { background: linear-gradient(to right, #4f46e5, #7c3aed); color: #ffffff; padding: 40px 0; text-align: center; position: relative; }
-        footer::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+ICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wLDEwMEwxMDAsMjAwTDEwMCwwTDEwMCwyMDBaIiAvPiAgIDwvZz48L3N2Zz4=') repeat; opacity: 0.08; }
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --navy: #0a1628;
+            --navy-light: #111d35;
+            --navy-mid: #162544;
+            --accent: #00d4aa;
+            --accent-dim: rgba(0, 212, 170, 0.15);
+            --accent-glow: rgba(0, 212, 170, 0.4);
+            --blue: #3b82f6;
+            --blue-dim: rgba(59, 130, 246, 0.15);
+            --purple: #8b5cf6;
+            --white: #f1f5f9;
+            --gray: #94a3b8;
+            --gray-light: #cbd5e1;
+            --border: rgba(255, 255, 255, 0.06);
+            --card-bg: rgba(17, 29, 53, 0.6);
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font);
+            background: var(--navy);
+            color: var(--gray-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: #33e0bb; }
+
+        img { max-width: 100%; display: block; }
+
+        /* ===== UTILITY ===== */
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 100px 0; }
+        .section-label {
+            font-family: var(--mono);
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+        .section-header { text-align: center; margin-bottom: 64px; }
+        .section-header .section-subtitle { margin: 0 auto; }
+
+        .accent { color: var(--accent); }
+        .highlight-box {
+            background: var(--accent-dim);
+            border-left: 3px solid var(--accent);
+            padding: 3px 10px;
+            border-radius: 0 6px 6px 0;
+            display: inline;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: all 0.35s ease;
+        }
+        .nav.scrolled {
+            background: rgba(10, 22, 40, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 10px 0;
+        }
+        .nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.5px;
+        }
+        .nav-brand span { color: var(--accent); }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--gray);
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--white); }
+        .nav-cta {
+            background: var(--accent);
+            color: var(--navy) !important;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+        .nav-cta:hover { background: #33e0bb; transform: translateY(-1px); box-shadow: 0 4px 20px var(--accent-glow); }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .nav-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--gray-light);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        /* ===== PROFILE PHOTO ===== */
+        .profile-photo-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 15%;
+            border: 3px solid rgba(0, 212, 170, 0.3);
+            box-shadow: 0 0 40px rgba(0, 212, 170, 0.15), 0 0 80px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.05) contrast(1.08) saturate(0.85);
+            transition: all 0.4s ease;
+        }
+        .profile-photo:hover {
+            border-color: rgba(0, 212, 170, 0.6);
+            box-shadow: 0 0 50px rgba(0, 212, 170, 0.25), 0 0 100px rgba(0, 0, 0, 0.5);
+            transform: scale(1.04);
+        }
+        .profile-name-badge {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .profile-name-badge h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 2px;
+        }
+        .profile-name-badge p {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-family: var(--mono);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            opacity: 0.12;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+            opacity: 0.08;
+            pointer-events: none;
+        }
+        .hero .container { position: relative; z-index: 2; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .hero-tag {
+            font-family: var(--mono);
+            font-size: 0.82rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .hero-tag::before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--accent);
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.15;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+        .hero h1 em {
+            font-style: normal;
+            background: linear-gradient(135deg, var(--accent), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-desc {
+            font-size: 1.15rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 520px;
+        }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+        .btn-primary-custom {
+            background: var(--accent);
+            color: var(--navy);
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary-custom:hover {
+            background: #33e0bb;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+            color: var(--navy);
+        }
+        .btn-outline-custom {
+            background: transparent;
+            color: var(--gray-light);
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255,255,255,0.15);
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-outline-custom:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        /* Hero Stats */
+        .hero-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: center;
+            transition: all 0.4s;
+        }
+        .stat-card:hover {
+            border-color: rgba(0, 212, 170, 0.2);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .stat-label {
+            font-size: 0.82rem;
+            color: var(--gray);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .hero-badge {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .hero-badge-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-dim);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .hero-badge-text { font-size: 0.92rem; color: var(--gray-light); line-height: 1.5; }
+        .hero-badge-text strong { color: var(--white); }
+
+        /* ===== INDUSTRY SECTION ===== */
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .industry-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        .industry-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--blue));
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .industry-card:hover::before { opacity: 1; }
+        .industry-card:hover {
+            border-color: rgba(0, 212, 170, 0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        .industry-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--accent-dim);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+        }
+        .industry-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+        .industry-card p {
+            font-size: 0.95rem;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        .industry-tag {
+            display: inline-block;
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--accent);
+            background: var(--accent-dim);
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-top: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== PROOF POINTS ===== */
+        .proof-section { background: var(--navy-light); }
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .proof-card {
+            background: var(--navy-mid);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: center;
+            transition: all 0.4s;
+            position: relative;
+        }
+        .proof-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 170, 0.15);
+        }
+        .proof-metric {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .proof-metric-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .proof-desc {
+            font-size: 0.92rem;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        .proof-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-dim);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin: 0 auto 20px;
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        .product-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 48px 40px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s;
+            pointer-events: none;
+        }
+        .product-card:hover::after { opacity: 0.08; }
+        .product-card:hover {
+            border-color: rgba(0, 212, 170, 0.2);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        .product-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent-dim);
+            color: var(--accent);
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .product-card h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+        .product-card h3 a { color: var(--white); }
+        .product-card h3 a:hover { color: var(--accent); }
+        .product-card .product-desc {
+            font-size: 1rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+        .product-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--gray-light);
+        }
+        .product-features li i {
+            color: var(--accent);
+            margin-top: 4px;
+            font-size: 0.7rem;
+        }
+
+        /* ===== SERVICES ===== */
+        .services-section { background: var(--navy-light); }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .service-card {
+            background: var(--navy-mid);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            transition: all 0.4s;
+            position: relative;
+        }
+        .service-card:hover {
+            border-color: rgba(0, 212, 170, 0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        .service-number {
+            font-family: var(--mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            opacity: 0.6;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .service-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 14px;
+            line-height: 1.4;
+        }
+        .service-card p {
+            font-size: 0.92rem;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-dim);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* ===== TECH STACK ===== */
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+        .tech-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 12px 22px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gray-light);
+            transition: all 0.3s;
+        }
+        .tech-pill:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        .tech-pill i { color: var(--accent); font-size: 1rem; }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section { background: var(--navy-light); }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .contact-info h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            font-size: 1.05rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+        .contact-details {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .contact-details li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.95rem;
+            color: var(--gray-light);
+        }
+        .contact-details li i {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-dim);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+        .contact-form-area {
+            background: var(--navy-mid);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+        }
+        .contact-form-area h3 {
+            font-size: 1.2rem;
+            color: var(--white);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .contact-form-area .form-sub {
+            font-size: 0.88rem;
+            color: var(--gray);
+            margin-bottom: 28px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--gray-light);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            background: var(--navy);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-family: var(--font);
+            font-size: 0.92rem;
+            color: var(--white);
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-dim);
+        }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .form-group select option { background: var(--navy); color: var(--white); }
+        .form-submit {
+            width: 100%;
+            background: var(--accent);
+            color: var(--navy);
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-family: var(--font);
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 8px;
+        }
+        .form-submit:hover {
+            background: #33e0bb;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+        .form-notice {
+            font-size: 0.75rem;
+            color: var(--gray);
+            text-align: center;
+            margin-top: 14px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .footer p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+        .footer-links a {
+            color: var(--gray);
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--accent); }
+
+        /* ===== ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+            .hero h1 { font-size: 2.6rem; }
+            .stat-grid { grid-template-columns: repeat(4, 1fr); }
+            .profile-photo { width: 140px; height: 140px; }
+            .industry-grid { grid-template-columns: 1fr 1fr; }
+            .proof-grid { grid-template-columns: 1fr 1fr; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .hero p.lead { font-size: 1.2rem; }
-            .timeline::before { left: 20px; }
-            .timeline-item::before { left: 14px; }
-            .timeline-item:nth-child(odd) .card, .timeline-item:nth-child(even) .card { transform: none !important; padding-left: 30px; }
-            .timeline-item.visible:nth-child(odd) .card, .timeline-item.visible:nth-child(even) .card { transform: none !important; }
+            .section { padding: 72px 0; }
+            .section-title { font-size: 2rem; }
+            .hero { padding-top: 100px; min-height: auto; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-desc { font-size: 1rem; }
+            .stat-grid { grid-template-columns: 1fr 1fr; }
+            .profile-photo { width: 120px; height: 120px; }
+            .industry-grid { grid-template-columns: 1fr; }
+            .proof-grid { grid-template-columns: 1fr; }
+            .products-grid { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 22, 40, 0.98);
+                backdrop-filter: blur(20px);
+                padding: 24px;
+                gap: 16px;
+                border-bottom: 1px solid var(--border);
+            }
+            .nav-toggle { display: flex; }
+            .hero-buttons { flex-direction: column; }
+            .btn-primary-custom, .btn-outline-custom { justify-content: center; }
+            .contact-form-area { padding: 28px 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .section-title { font-size: 1.65rem; }
+            .stat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .stat-card { padding: 20px 16px; }
+            .stat-number { font-size: 1.8rem; }
+            .product-card { padding: 32px 24px; }
+            .proof-metric { font-size: 2.4rem; }
         }
     </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+<body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav">
         <div class="container">
-            <a class="navbar-brand" href="#">Dushyant Sharma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a href="#" class="nav-brand">Dushyant<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#industries">Expertise</a></li>
+                <li><a href="#proof">Impact</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="nav-cta">Book a Consultation</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education-certifications">Education & Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO SECTION ===== -->
     <section class="hero" id="hero">
-        <div class="container position-relative">
-            <h1 class="animate">Dushyant Sharma</h1>
-            <p class="lead animate">18+ Years in AI-Powered IT Leadership | Transforming SaaS, Healthcare & Finance</p>
-            <a href="mailto:imdushyant19@yahoo.co.in" class="btn btn-light mx-2 animate"><i class="fas fa-envelope"></i> Email Me</a>
-            <a href="https://linkedin.com/in/dushyant-sharma-89659b23" class="btn btn-outline-light mx-2 animate"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="tel:+91-8875674400" class="btn btn-outline-light mx-2 animate"><i class="fas fa-phone"></i> +91-8875674400</a>
-        </div>
-    </section>
-
-    <!-- Professional Summary -->
-    <section class="container my-5" id="summary">
-        <h2 class="section-title animate">Professional Summary</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <p class="lead text-center animate">With 18+ years of experience in IT (SaaS) and ITES leadership, I excel in Program Management for Cornerstone, Definitive Healthcare, and HighLevel technical support, AI implementation, Agile Projects, Process, Customers, and Operations Management, transformation through the deployment of AI Tools and Bots, capitalizing on cost advantages, leadership of result-oriented teams across various geographical locations, engagement with customers and key stakeholders at a strategic level, and utilizing AI for data-driven decision-making.</p>
-                <p class="text-center animate">Business Domain Expertise - Banking & Finance, Healthcare, and Insurance (P&C, Health, Life)</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Career Highlights with Progress Bars -->
-    <section class="container my-5 bg-light py-5" id="highlights">
-        <h2 class="section-title animate">Career Highlights</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Program Achievements</h4>
-                <ul>
-                    <li class="animate">Reduced Support Tickets backlog by 35% (2022).
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 35%"></div></div>
-                    </li>
-                    <li class="animate">Customer Success targets achieved ARR of $5 million annually via Support efforts.
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 50%"></div></div>
-                    </li>
-                    <li class="animate">Improved the average resolution time of tickets from 22 days to 15 days using AI Tools (2023).
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 32%"></div></div>
-                    </li>
-                    <li class="animate">Framework agnostic approaches streamlined technical support with workflows, process docs, and a knowledge base (2023).
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 40%"></div></div>
-                    </li>
-                    <li class="animate">Established a newly transitioned SaaS technical support project for 4 products at Bangalore site in Definitive Healthcare (2024).</li>
-                    <li class="animate">Implementation of AI Bot and workflows for live escalation process in HighLevel (2025).</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h4>Scaled Operations and Projects</h4>
-                <ul>
-                    <li class="animate">Led automation project in the BFSI vertical at Hexaware Technologies (2018).
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 60%"></div></div>
-                    </li>
-                    <li class="animate">Managed large business process transition operations for 11 US insurance clients with a team of 80 Engineers at DXC Technology (2016).
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 80%"></div></div>
-                    </li>
-                </ul>
-                <h4>Project Transition and Transformation</h4>
-                <ul>
-                    <li class="animate">Successfully handled BFSI project transitions at Genpact (2013 & 2015).
-                        <div class="progress mt-2"><div class="progress-bar" style="width: 70%"></div></div>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">AI Product Builder & SaaS Leader</div>
+                    <h1>Transforming Enterprise Complexity into <em>AI-Driven Efficiency</em></h1>
+                    <p class="hero-desc">
+                        18+ years of building, shipping, and scaling AI-powered solutions across BFSI, Insurance, and SaaS.
+                        I architect <strong style="color:var(--white);">Human-in-the-Loop</strong> AI systems that deliver measurable cost reduction and operational efficiency — without sacrificing the human touch.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary-custom">
+                            <i class="fas fa-calendar-check"></i> Book a Strategy Consultation
+                        </a>
+                        <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank" class="btn-outline-custom">
+                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-photo-wrapper">
+                        <img src="profile.jpg" alt="Dushyant Sharma — AI Product Builder & SaaS Leader" class="profile-photo" width="160" height="160">
+                    </div>
+                    <div class="profile-name-badge">
+                        <h3>Dushyant Sharma</h3>
+                        <p>Senior Manager · HighLevel</p>
+                    </div>
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">18+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">CSAT Achieved</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">35%</div>
+                            <div class="stat-label">Backlog Reduced</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">$5M</div>
+                            <div class="stat-label">ARR via Support</div>
+                        </div>
+                    </div>
+                    <div class="hero-badge">
+                        <div class="hero-badge-icon"><i class="fas fa-building"></i></div>
+                        <div class="hero-badge-text">
+                            <strong>Currently: Senior Manager at HighLevel</strong><br>
+                            AI-as-a-Service CRM — Global Customer & Product Support
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Key Technical Skills -->
-    <section class="container my-5" id="skills">
-        <h2 class="section-title animate">Key Technical Skills</h2>
-        <div class="skill-grid">
-            <div class="skill-card animate">
-                <i class="fas fa-certificate"></i>
-                <h5>Certifications</h5>
-                <p>Generative AI (Microsoft), Agile Project Management (PMI), Six Sigma (Genpact), Learning ITIL</p>
+    <!-- ===== INDUSTRY WHISPERER SECTION ===== -->
+    <section class="section" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label reveal">Deep Domain Intelligence</div>
+                <h2 class="section-title reveal">The Industry Whisperer</h2>
+                <p class="section-subtitle reveal">I don't just understand AI — I understand <em>your</em> industry. Every solution I build starts with a deep diagnosis of sector-specific bottlenecks that generic tools miss entirely.</p>
             </div>
-            <div class="skill-card animate">
-                <i class="fas fa-code"></i>
-                <h5>Languages</h5>
-                <p>Python, SQL</p>
-            </div>
-            <div class="skill-card animate">
-                <i class="fas fa-lock"></i>
-                <h5>Access Management Tools</h5>
-                <p>Okta, SailPoint, Graphite</p>
-            </div>
-            <div class="skill-card animate">
-                <i class="fas fa-plug"></i>
-                <h5>API Integration Tools</h5>
-                <p>Workato, Postman, Microsoft Azure, Google Cloud</p>
-            </div>
-            <div class="skill-card animate">
-                <i class="fas fa-project-diagram"></i>
-                <h5>Project Management</h5>
-                <p>Asana, JIRA, Confluence, Microsoft Projects, Smartsheet, ClickUp</p>
-            </div>
-            <div class="skill-card animate">
-                <i class="fas fa-chart-bar"></i>
-                <h5>Data Visualization</h5>
-                <p>Tableau, DOMO, Looker by Google</p>
-            </div>
-            <div class="skill-card animate">
-                <i class="fas fa-headset"></i>
-                <h5>CRM & Service Management</h5>
-                <p>Salesforce, Zendesk, ServiceNow, Gainsight, Freshdesk</p>
-            </div>
-            <div class="skill-card animate">
-                <i class="fas fa-users"></i>
-                <h5>Collaboration Suites</h5>
-                <p>Google Workspace, Microsoft Tools, Slack, Zoom, Webex</p>
+            <div class="industry-grid">
+                <!-- BFSI / Insurance -->
+                <div class="industry-card reveal reveal-delay-1">
+                    <div class="industry-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>BFSI &amp; Insurance</h3>
+                    <p>Regulatory friction and claims processing bottlenecks silently drain millions. I design AI workflows that automate compliance checks, accelerate P&C/Life/Health claims adjudication, and reduce manual review cycles — all while keeping auditors satisfied.</p>
+                    <span class="industry-tag">P&C · Life · Health · Compliance</span>
+                </div>
+                <!-- SaaS / CRM -->
+                <div class="industry-card reveal reveal-delay-2">
+                    <div class="industry-icon"><i class="fas fa-robot"></i></div>
+                    <h3>SaaS &amp; CRM Platforms</h3>
+                    <p>Your L1/L2 support teams are drowning in repetitive tickets while real issues get buried. I build agentic AI workflows that autonomously resolve routine queries, intelligently route complex cases, and turn your support org into a competitive advantage.</p>
+                    <span class="industry-tag">Agentic Workflows · Smart Routing · L1/L2 AI</span>
+                </div>
+                <!-- Customer Operations -->
+                <div class="industry-card reveal reveal-delay-3">
+                    <div class="industry-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Customer Operations</h3>
+                    <p>Overflowing ticket backlogs and declining CSAT scores signal a system in distress. I deploy predictive AI models that anticipate issues before they escalate, prioritize intelligently, and systematically drive customer satisfaction upward.</p>
+                    <span class="industry-tag">Predictive AI · CSAT Optimization · OpEx Reduction</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section class="container my-5 timeline" id="experience">
-        <h2 class="section-title animate">Experience</h2>
-        <div class="timeline-item animate" data-index="0">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="GHL.png" alt="GHL" width="120" height="27"/>
-                    <h5>HighLevel (AI-as-a-Service, all-in-one marketing CRM platform)</h5>
-                    <p class="text-muted">Senior Manager - Global Customers/Product Support | Jan 2025 – Present</p>
-                    <ul>
-                        <li>Strategic Leadership, Projects & Stakeholders Management: Proven ability to lead, mentor, and motivate high-performing technical support L1, L2, and L3 engineering teams in Agile SaaS environments.</li>
-                        <li>AI-powered solutions to handle high volumes of support requests, ensuring seamless integration with existing systems and robust data privacy and security measures.</li>
-                        <li>Utilized AI analytics and performance monitoring to gain actionable insights from customer interactions and support data, continually refining AI models and workflows for improved accuracy and effectiveness.</li>
-                        <li>Drive significant reductions in average response and resolution times by integrating AI-powered solutions like smart routing, product training, and knowledge base update.</li>
-                        <li>Monitoring KPIs and providing strategic recommendations to optimize operations.</li>
-                        <li>Manage escalations and ensure high-priority issues are resolved promptly and effectively.</li>
-                        <li>Cross-Functional Collaboration - Partner effectively with product, engineering, and AI teams to resolve complex technical issues and influence product enhancements.</li>
-                        <li>Monitoring KPIs and providing strategic recommendations to optimize operations.</li>
-                        <li>Developing strategies for seamless support delivery and process improvements.</li>
-                    </ul>
+    <!-- ===== PROVEN IMPACT SECTION ===== -->
+    <section class="section proof-section" id="proof">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label reveal">Measurable Results</div>
+                <h2 class="section-title reveal">Proven Impact, Not Promises</h2>
+                <p class="section-subtitle reveal">Every engagement is measured by business outcomes — cost saved, time recovered, satisfaction improved. Here's the track record.</p>
+            </div>
+            <div class="proof-grid">
+                <div class="proof-card reveal reveal-delay-1">
+                    <div class="proof-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="proof-metric">35%</div>
+                    <div class="proof-metric-label">Ticket Backlog Reduction</div>
+                    <p class="proof-desc">Deployed AI-powered resolution tools that intelligently triaged, auto-resolved, and escalated support tickets — eliminating 35% of chronic backlog within a single quarter.</p>
+                </div>
+                <div class="proof-card reveal reveal-delay-2">
+                    <div class="proof-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="proof-metric">22→15</div>
+                    <div class="proof-metric-label">Days to Resolution</div>
+                    <p class="proof-desc">Engineered custom AI workflows that slashed average issue resolution time from 22 days to 15 days — a 32% improvement in speed-to-resolution across enterprise accounts.</p>
+                </div>
+                <div class="proof-card reveal reveal-delay-3">
+                    <div class="proof-icon"><i class="fas fa-star"></i></div>
+                    <div class="proof-metric">95%</div>
+                    <div class="proof-metric-label">Enterprise CSAT Score</div>
+                    <p class="proof-desc">Achieved and sustained a 95% CSAT across enterprise support environments through AI-augmented processes, proactive communications, and rigorous SLA management.</p>
                 </div>
             </div>
         </div>
-    </div>
-        <div class="timeline-item animate" data-index="1">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="DH.png" alt="DH" width="100" height="27"/>
-                    <h5>Definitive Healthcare Corp. (NASDAQ: DH)</h5>
-                    <p class="text-muted">Senior Manager - Global Product Support | Apr 2024 – Jan 2025</p>
-                    <ul>
-                        <li>Migrated and leading technical support operations for 4 US Healthcare Market Intelligence SaaS products to India.</li>
-                        <li>Established a new team of global technical support L1 & L2 engineers; overseeing the hiring, training, and mentoring processes.</li>
-                        <li>Utilize advanced analytics and AI-powered tools to monitor support metrics and identify areas for improvement.</li>
-                        <li>Manage escalations and ensure high-priority issues are resolved promptly and effectively.</li>
-                        <li>Conduct regular performance reviews and provide coaching and development opportunities for team members.</li>
-                        <li>Developing strategies for seamless support delivery and process improvements.</li>
-                        <li>Collaborating with cross-functional teams to enhance product and service quality.</li>
-                        <li>Monitoring KPIs and providing strategic recommendations to optimize operations.</li>
-                        <li>Promoting a customer-centric culture and maintaining strong stakeholder relationships.</li>
+    </section>
+
+    <!-- ===== FEATURED AI PRODUCTS ===== -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label reveal">Built, Shipped &amp; Running</div>
+                <h2 class="section-title reveal">AI Products I've Built</h2>
+                <p class="section-subtitle reveal">I don't just advise — I build. These are live, production-grade AI products that solve real problems every day.</p>
+            </div>
+            <div class="products-grid">
+                <!-- EagleEye -->
+                <div class="product-card reveal reveal-delay-1">
+                    <div class="product-badge"><i class="fas fa-signal"></i> Signal Detection Platform</div>
+                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.5;"></i></a></h3>
+                    <p class="product-desc">
+                        An AI-powered signal detection tool designed for managers and leaders who need instant visibility into team performance — without micromanaging. EagleEye surfaces the patterns that matter.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-circle"></i> Real-time performance signal detection across teams</li>
+                        <li><i class="fas fa-circle"></i> AI-driven anomaly alerts for early intervention</li>
+                        <li><i class="fas fa-circle"></i> Manager dashboards with actionable, data-backed insights</li>
+                        <li><i class="fas fa-circle"></i> Designed for SaaS support and operations leaders</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-        <div class="timeline-item animate" data-index="2">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="CSOD.png" alt="CSOD" width="90" height="48"/>
-                    <h5>Cornerstone OnDemand Inc.</h5>
-                    <p class="text-muted">Manager - Product Support | Apr 2019 – Mar 2024</p>
-                    <ul>
-                        <li>Established and led a team of 30 technical support L1, L2, L3 engineers across multiple regions, ensuring 24/7 global support coverage.</li>
-                        <li>Implemented AI-driven support tools, improved average response time within 1 hour and improved average resolution time within 8 hours.</li>
-                        <li>Developed strategies for optimized support coverage and smooth shift handovers.</li>
-                        <li>Partnered with product and engineering teams to address systemic issues, resulting in a 40% decrease in recurring support tickets.</li>
-                        <li>Collaborated with cross-functional teams to advocate for customer needs and product enhancements.</li>
-                        <li>Monitored KPIs, provided strategic recommendations, and maintained service excellence.</li>
-                        <li>Spearheaded process improvements, reducing ticket resolution time and enhancing customer satisfaction.</li>
-                        <li>Fostered a customer-centric culture and established strong stakeholder relationships.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="timeline-item animate" data-index="3">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="Hexaware.png" alt="Hexaware" width="90"/>
-                    <h5>Hexaware Technologies</h5>
-                    <p class="text-muted">Deputy Manager | May 2018 - Mar 2019</p>
-                    <ul>
-                        <li>Led Technical Support Operations for BFSI projects in North America.</li>
-                        <li>Executed Six Sigma and Automation initiatives, achieving significant financial impact.</li>
-                        <li>Managed Assistant Managers and Team Leads, focusing on development and succession planning.</li>
-                        <li>Conducted regular reviews with senior management to ensure alignment with objectives.</li>
-                        <li>Monitored program performance and addressed barriers to goal achievement.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="timeline-item animate" data-index="4">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="DXC Tech.png" alt="DXC Tech" width="60"/>
-                    <h5>DXC Technology</h5>
-                    <p class="text-muted">Associate Manager | Sep 2016 - Apr 2018</p>
-                    <ul>
-                        <li>Delivered customer projects for 11 US Insurance Clients.</li>
-                        <li>Developed a project from inception, including process documentation and workflow optimization.</li>
-                        <li>Managed client expectations, SLAs, and CSAT using process improvement tools.</li>
-                        <li>Cultivated professional relationships with key stakeholders.</li>
-                        <li>Handled client escalations and identified areas for improvement.</li>
-                        <li>Engaged in project management activities, including SOW creation and team building.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="timeline-item animate" data-index="5">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="Genpact.png" alt="Genpact" width="45"/>
-                    <h5>Genpact LLC</h5>                    
-                    <p class="text-muted">Assistant Manager | Apr 2010 - Sep 2016</p>
-                    <ul>
-                        <li>Progressed from Project Associate to key management roles.</li>
-                        <li>Served as SME/Trainer, Process Excellence SPOC, and Project Lead.</li>
-                        <li>Established new transitioned projects in Hyderabad and Jaipur.</li>
-                        <li>Implemented team management strategies for shrinkage management and talent retention.</li>
-                        <li>Led a Six Sigma project for process improvement and quality enhancement.</li>
-                        <li>Conducted performance analyses and provided feedback.</li>
-                        <li>Promoted a positive team environment and maintained client engagements.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="timeline-item animate" data-index="6">
-            <div class="card">
-                <div class="card-body">
-                <div>
-                    <img src="RAK Bank.png" alt="RAK Bank" width="70"/>
-                    <h5>RAKBANK, Dubai</h5>
-                    <p class="text-muted">Customer Relationship Officer | Dec 2008 - Oct 2009</p>
-                    <ul>
-                        <li>Selling banking products like Credit Cards, Personal Loans, Business Loans to the target customers from US, UK, Australia, & SA nationals residing in UAE.</li>
-                        <li>Front-line customer service; resolve their issues, provide information regarding banking products.</li>
-                        <li>Cross-selling to the existing customers and lead generation from personal sources and rapport creation.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="timeline-item animate" data-index="7">
-            <div class="card">
-                <div class="card-body">
-                    <h5>Spryance India</h5>
-                    <p class="text-muted">Business Associate Editor - Healthcare | Jan 2007 - Nov 2008</p>
-                    <ul>
-                        <li>Following HIPAA Guidelines for Medical Transcription work management with a team of 5 direct report transcribers with quality checks feedbacks, and service delivery within the turnaround time.</li>
+                <!-- Sarathi -->
+                <div class="product-card reveal reveal-delay-2">
+                    <div class="product-badge"><i class="fas fa-chart-candlestick" style="font-size:0.65rem;"></i> AI Trading Assistant</div>
+                    <h3>Sarathi</h3>
+                    <p class="product-desc">
+                        A sophisticated AI-driven trading bot and assistant built specifically for the Indian stock market (NSE). Sarathi combines deep technical analysis with regulatory compliance to deliver intelligent, risk-managed trading signals.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-circle"></i> NSE-focused with full Indian market compliance integration</li>
+                        <li><i class="fas fa-circle"></i> Technical analysis engine with multi-indicator strategies</li>
+                        <li><i class="fas fa-circle"></i> Risk management with configurable position-sizing rules</li>
+                        <li><i class="fas fa-circle"></i> Human-in-the-loop trade confirmation and override controls</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education and Certifications -->
-    <section class="container my-5 education-certifications" id="education-certifications">
-        <h2 class="section-title animate">Education and Certifications</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h5 class="animate">Education</h5>
-                <p class="animate">Devi Ahilya Vishwavidyalaya</p>
-                <p class="animate">Bachelor of Commerce & Business Management</p>
-                <p class="text-muted animate">1999 - 2002</p>
-                <h5 class="mt-4 animate">Certifications</h5>
-                <ul class="list-unstyled animate">
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Learning ITIL – LinkedIn</li>
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Career Essentials in Generative AI by Microsoft and LinkedIn - Microsoft</li>
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Artificial Intelligence And Business Strategy: Case Studies - LinkedIn (AXuNVBF2q83yawxxBIsTBXEbpWsR)</li>
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Agile Project Management with Microsoft Project – PMI & LinkedIn (ARX9dczZ8qT2ck4gDTHnfdUfFK9h)</li>
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Lean & Six Sigma Certifications - Genpact</li>
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Business Administration and Management - Genpact</li>
-                    <li><i class="fas fa-certificate text-primary me-2"></i> Certification in Property & Casualty Insurance - The Institutes Knowledge Group, Malvern, PA</li>
-                </ul>
+    <!-- ===== SERVICE OFFERINGS ===== -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label reveal">How I Can Help</div>
+                <h2 class="section-title reveal">Service Offerings</h2>
+                <p class="section-subtitle reveal">Strategic, hands-on engagements designed to move your organization from legacy workflows to AI-powered operations — with measurable ROI.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-number">01</div>
+                    <div class="service-icon"><i class="fas fa-compass"></i></div>
+                    <h3>AI Strategy &amp; Roadmap</h3>
+                    <p>Building the "Human-in-the-Loop" architecture your SaaS company needs. I map your current operations, identify high-impact AI intervention points, and design a phased deployment roadmap that prioritizes quick wins and long-term scalability.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-number">02</div>
+                    <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>AI Product Ownership</h3>
+                    <p>Leading the full transition from legacy workflows to Agentic AI models. I own the product lifecycle — from discovery and requirements to build, launch, and iteration — ensuring every AI feature delivers business value, not just technical novelty.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-number">03</div>
+                    <div class="service-icon"><i class="fas fa-gears"></i></div>
+                    <h3>Operational Transformation</h3>
+                    <p>Targeted reduction of OpEx through AI-powered support optimization and CRM workflow automation. I restructure your ticket routing, deploy intelligent escalation flows, and build self-healing systems that reduce cost while improving customer experience.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Honors & Awards -->
-    <section class="container my-5 bg-light py-5" id="awards">
-        <h2 class="section-title animate">Honors & Awards</h2>
-        <div class="row">
-            <div class="col-md-6 animate">
-                <ul>
-                    <li>Bronze Award - Genpact India (Feb 2012) - Excellent Performance as an SME & Team Lead in February & March 2011</li>
-                    <li>Top Performer - Manager Contest - Genpact India (Jun 2014) - Fun@Work SPOC for a floor of 150 FTEs. Successfully led team engagement activities throughout the year!</li>
-                </ul>
+    <!-- ===== TECH STACK ===== -->
+    <section class="section" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label reveal">Tools &amp; Technologies</div>
+                <h2 class="section-title reveal">Tech Stack</h2>
+                <p class="section-subtitle reveal">The technologies I use to design, build, and scale AI-driven solutions across enterprise environments.</p>
             </div>
-            <div class="col-md-6 animate">
-                <ul>
-                    <li>Customer Award - Genpact India (Apr 2015) - Recognized by the customer as the best Team Manager</li>
-                    <li>Kudos Award - DXC Technology (Mar 2017) - Rewarded with a Kudos title for establishing a large-sized newly transitioned business as a success. Added excellent value to the organization's growth.</li>
-                </ul>
+            <div class="tech-grid reveal">
+                <div class="tech-pill"><i class="fab fa-python"></i> Python</div>
+                <div class="tech-pill"><i class="fas fa-database"></i> SQL</div>
+                <div class="tech-pill"><i class="fas fa-brain"></i> Generative AI</div>
+                <div class="tech-pill"><i class="fab fa-microsoft"></i> Microsoft Azure AI</div>
+                <div class="tech-pill"><i class="fab fa-salesforce"></i> Salesforce</div>
+                <div class="tech-pill"><i class="fas fa-headset"></i> Zendesk</div>
+                <div class="tech-pill"><i class="fas fa-plug"></i> Workato</div>
+                <div class="tech-pill"><i class="fas fa-cloud"></i> Google Cloud</div>
+                <div class="tech-pill"><i class="fas fa-envelope-open-text"></i> Postman</div>
+                <div class="tech-pill"><i class="fas fa-chart-bar"></i> Tableau</div>
+                <div class="tech-pill"><i class="fas fa-tasks"></i> JIRA / Confluence</div>
+                <div class="tech-pill"><i class="fas fa-shield-halved"></i> Okta / SailPoint</div>
+                <div class="tech-pill"><i class="fas fa-ticket"></i> ServiceNow</div>
+                <div class="tech-pill"><i class="fas fa-chart-pie"></i> Looker</div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container position-relative">
-            <p>&copy; 2025 Dushyant Sharma | All Rights Reserved</p>
-            <p>Contact: <a href="mailto:imdushyant19@yahoo.co.in" class="text-white">imdushyant19@yahoo.co.in</a> | <a href="https://linkedin.com/in/dushyant-sharma-89659b23" class="text-white">LinkedIn</a> | +91-8875674400</p>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <div class="section-label">Get In Touch</div>
+                    <h2>Let's Build Your <span class="accent">AI Future</span></h2>
+                    <p>Whether you're exploring AI for the first time or looking to scale existing deployments, I'd love to understand your challenges and explore how we can create measurable impact together.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:imdushyant19@yahoo.co.in">imdushyant19@yahoo.co.in</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank">linkedin.com/in/dushyant-sharma</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918875674400">+91-8875674400</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India (Available for Global Engagements)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form-area reveal reveal-delay-2">
+                    <h3>Book a Strategy Consultation</h3>
+                    <p class="form-sub">Fill out the form and I'll get back to you within 24 hours.</p>
+                    <form id="contactForm" action="https://formsubmit.co/imdushyant19@yahoo.co.in" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Strategy Consultation Request — dushyantsharma.com">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In</label>
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="AI Strategy & Roadmap">AI Strategy &amp; Roadmap</option>
+                                <option value="AI Product Ownership">AI Product Ownership</option>
+                                <option value="Operational Transformation">Operational Transformation</option>
+                                <option value="General Consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Challenge</label>
+                            <textarea id="message" name="message" placeholder="Briefly describe your current situation and what you're hoping to achieve..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i>&nbsp; Send Consultation Request
+                        </button>
+                        <p class="form-notice">Submissions are sent directly to my inbox. I respond within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:imdushyant19@yahoo.co.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/kumar26dushyant-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2026 Dushyant Sharma. All rights reserved. &nbsp;|&nbsp; Built with purpose, powered by AI.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ===== SCRIPTS ===== -->
     <script>
-        // Animation on Scroll with Staggered Slide-In
-        const animateElements = document.querySelectorAll('.animate');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                        entry.target.style.opacity = 1;
-                    }, entry.target.dataset.index ? entry.target.dataset.index * 150 : index * 150);
+        // --- Navbar scroll effect ---
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // --- Mobile nav toggle ---
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        // Close mobile nav on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('active'));
+        });
+
+        // --- Smooth scroll ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-        }, { threshold: 0.1 });
-
-        animateElements.forEach((element, index) => {
-            element.style.opacity = 0;
-            element.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
-            observer.observe(element);
         });
 
-        // Timeline Card Toggle
-        document.querySelectorAll('.timeline-item .card').forEach(card => {
-            card.addEventListener('click', () => {
-                const body = card.querySelector('.card-body');
-                body.classList.toggle('active');
-                const ul = body.querySelector('ul');
-                ul.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
+        // --- Scroll reveal animations ---
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
             });
-        });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // --- Animated counter for stat numbers ---
+        function animateCounters() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(el => {
+                const text = el.textContent;
+                // Skip non-numeric-only values
+                if (text.includes('→') || text.includes('$')) return;
+                const target = parseInt(text);
+                if (isNaN(target)) return;
+                const suffix = text.replace(/[0-9]/g, '');
+                let current = 0;
+                const increment = Math.ceil(target / 40);
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    el.textContent = current + suffix;
+                }, 35);
             });
+        }
+
+        // Trigger counter animation when hero is visible
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        heroObserver.observe(document.querySelector('.hero'));
+
+        // --- Form submission feedback ---
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function () {
+            const btn = form.querySelector('.form-submit');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
