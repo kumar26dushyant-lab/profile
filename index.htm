@@ -337,9 +337,9 @@
         /* ======================== */
         .career-current { padding: 72px 0 64px; background: var(--bg); }
         .current-role-card {
-            display: flex; align-items: center; gap: 40px;
+            display: flex; align-items: flex-start; gap: 36px;
             background: var(--white); border: 2px solid var(--border);
-            border-radius: 20px; padding: 48px 52px;
+            border-radius: 20px; padding: 44px 48px;
             box-shadow: 0 8px 40px var(--shadow);
             border-left: 6px solid var(--career);
             position: relative; overflow: hidden;
@@ -350,10 +350,11 @@
             pointer-events: none;
         }
         .current-role-logo {
-            width: 140px; height: 140px; object-fit: contain;
-            border-radius: 20px; flex-shrink: 0; background: #fff;
-            padding: 16px; border: 3px solid var(--career);
+            width: 120px; height: 120px; object-fit: contain;
+            border-radius: 18px; flex-shrink: 0; background: #fff;
+            padding: 14px; border: 3px solid var(--career);
             box-shadow: 0 10px 40px rgba(79,70,229,0.18);
+            margin-top: 4px;
         }
         .current-role-info { flex: 1; position: relative; z-index: 1; }
         .current-role-tag {
@@ -372,9 +373,10 @@
         .current-role-info .company-name { font-size: 1.15rem; font-weight: 700; color: var(--career); margin-bottom: 6px; }
         .current-role-info .company-desc { font-size: 0.92rem; color: var(--text-light); font-style: italic; margin-bottom: 10px; }
         .current-role-info p { font-size: 1.05rem; color: var(--text-sec); line-height: 1.75; }
-        .role-highlights { list-style: none; margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
-        .role-highlights li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.98rem; color: var(--text-sec); line-height: 1.6; }
-        .role-highlights li i { color: var(--career); margin-top: 5px; font-size: 0.55rem; flex-shrink: 0; }
+        .role-highlights { list-style: none; margin-top: 18px; display: flex; flex-direction: column; gap: 11px; }
+        .role-highlights li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text-sec); line-height: 1.65; }
+        .role-highlights li i { color: var(--career); margin-top: 7px; font-size: 0.4rem; flex-shrink: 0; }
+        .role-highlights li strong { color: var(--text); }
 
         /* STATS */
         .stats-bar { background: var(--bg-dark); padding: 40px 0; }
@@ -517,8 +519,9 @@
             .hero-layout { grid-template-columns: 1fr 280px; gap: 48px; }
             .profile-img { width: 220px; height: 264px; }
             .domain-grid, .consult-grid { grid-template-columns: 1fr 1fr; }
-            .current-role-card { flex-direction: column; text-align: center; gap: 28px; }
+            .current-role-card { flex-direction: column; align-items: center; text-align: center; gap: 24px; }
             .current-role-card::after { display: none; }
+            .role-highlights li { text-align: left; }
         }
         @media (max-width: 768px) {
             .section { padding: 64px 0; }
@@ -548,8 +551,8 @@
             .btn-hero, .btn-outline { justify-content: center; }
             .logo-track { gap: 14px; }
             .career-arrow { display: none; }
-            .current-role-card { flex-direction: column; text-align: center; gap: 20px; padding: 32px 20px; }
-            .role-highlights { grid-template-columns: 1fr; }
+            .current-role-card { flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 28px 20px; }
+            .role-highlights li { text-align: left; }
             .identity-divider h2 { font-size: 1.7rem; }
             .consulting-section h2 { font-size: 2rem; }
             .consulting-section { padding: 72px 0; }
