@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dushyant Sharma — AI Product Builder & Solopreneur. Building Human-in-the-Loop AI products on weekends. 18+ years enterprise leadership across BFSI, Insurance & SaaS.">
-    <meta name="keywords" content="Dushyant Sharma, AI Product Builder, Solopreneur, Weekend Builder, SaaS Leader, BFSI, Insurance, CRM, Human-in-the-Loop AI, HighLevel, EagleEye, Sarathi">
+    <meta name="description" content="Dushyant Sharma — AI Product Builder & Solopreneur. Building Human-in-the-Loop AI products. 18+ years enterprise leadership across Healthcare, Banking, Insurance & SaaS.">
+    <meta name="keywords" content="Dushyant Sharma, AI Product Builder, Solopreneur, Weekend Builder, SaaS Leader, BFSI, US Healthcare, Insurance, CRM, Human-in-the-Loop AI, HighLevel, EagleEye, Sarathi">
     <meta name="author" content="Dushyant Sharma">
     <meta property="og:title" content="Dushyant Sharma — AI Product Builder & Solopreneur">
-    <meta property="og:description" content="Building Human-in-the-Loop AI products on weekends. 18+ years enterprise leadership across BFSI, Insurance & SaaS.">
+    <meta property="og:description" content="Building Human-in-the-Loop AI products. 18+ years enterprise leadership across Healthcare, Banking, Insurance & SaaS.">
     <meta property="og:type" content="website">
     <title>Dushyant Sharma — AI Product Builder &amp; Solopreneur</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
             --bg-dark: #1a1a2e;
             --bg-dark-mid: #222240;
             --text: #1a1a2e;
-            --text-secondary: #555566;
+            --text-secondary: #4a4a5c;
             --text-light: #7a7a8c;
             --accent: #0d9488;
             --accent-light: #14b8a6;
@@ -28,11 +28,11 @@
             --white: #ffffff;
             --border: #e8e8e0;
             --shadow: rgba(26, 26, 46, 0.06);
-            --shadow-md: rgba(26, 26, 46, 0.1);
+            --shadow-md: rgba(26, 26, 46, 0.12);
             --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             --mono: 'JetBrains Mono', monospace;
-            --radius: 12px;
-            --max-w: 1020px;
+            --radius: 14px;
+            --max-w: 1300px;
             --career-accent: #4f46e5;
             --career-accent-light: #6366f1;
             --career-accent-bg: rgba(79, 70, 229, 0.08);
@@ -51,104 +51,124 @@
         a { color: var(--accent); text-decoration: none; transition: 0.25s; }
         a:hover { color: var(--accent-light); }
 
-        .container { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
-        .section { padding: 72px 0; }
+        .container { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; }
+        .section { padding: 80px 0; }
 
         /* NAV */
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            background: rgba(250, 250, 248, 0.85);
-            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            background: rgba(250, 250, 248, 0.88);
+            backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
             border-bottom: 1px solid transparent;
-            padding: 14px 0; transition: all 0.3s;
+            padding: 16px 0; transition: all 0.3s;
         }
-        .nav.scrolled { border-bottom-color: var(--border); box-shadow: 0 1px 12px var(--shadow); }
+        .nav.scrolled { border-bottom-color: var(--border); box-shadow: 0 1px 16px var(--shadow); }
         .nav .container { display: flex; align-items: center; justify-content: space-between; }
-        .nav-brand { font-size: 1.1rem; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
+        .nav-brand { font-size: 1.2rem; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
         .nav-brand span { color: var(--accent); }
-        .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
-        .nav-links a { color: var(--text-secondary); font-size: 0.83rem; font-weight: 500; }
+        .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+        .nav-links a { color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; }
         .nav-links a:hover { color: var(--text); }
         .nav-cta {
             background: var(--accent); color: var(--white) !important;
-            padding: 8px 18px; border-radius: 8px; font-weight: 600; font-size: 0.82rem;
+            padding: 10px 22px; border-radius: 10px; font-weight: 700; font-size: 0.92rem;
             transition: all 0.3s;
         }
-        .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(13,148,136,0.3); }
+        .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(13,148,136,0.3); }
         .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-        .nav-toggle span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
+        .nav-toggle span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
 
         /* HERO */
-        .hero { padding: 130px 0 64px; }
+        .hero { padding: 140px 0 72px; }
         .hero-layout {
             display: grid;
-            grid-template-columns: 1fr 280px;
-            gap: 48px;
+            grid-template-columns: 1fr 320px;
+            gap: 64px;
             align-items: center;
         }
         .hero-eyebrow {
-            font-family: var(--mono); font-size: 0.76rem; font-weight: 500;
-            color: var(--accent); text-transform: uppercase; letter-spacing: 2.5px;
-            margin-bottom: 14px;
-            display: flex; align-items: center; gap: 10px;
+            font-family: var(--mono); font-size: 0.88rem; font-weight: 500;
+            color: var(--accent); text-transform: uppercase; letter-spacing: 3px;
+            margin-bottom: 16px;
+            display: flex; align-items: center; gap: 12px;
         }
-        .hero-eyebrow::before { content: ''; width: 24px; height: 2px; background: var(--accent); }
+        .hero-eyebrow::before { content: ''; width: 32px; height: 2px; background: var(--accent); }
         .hero h1 {
-            font-size: 2.65rem; font-weight: 900; color: var(--text);
-            line-height: 1.12; letter-spacing: -1.5px; margin-bottom: 18px;
+            font-size: 3.4rem; font-weight: 900; color: var(--text);
+            line-height: 1.1; letter-spacing: -2px; margin-bottom: 22px;
         }
         .hero h1 em { font-style: normal; color: var(--accent); }
         .hero-desc {
-            font-size: 1.02rem; color: var(--text-secondary);
-            line-height: 1.75; margin-bottom: 28px; max-width: 520px;
+            font-size: 1.2rem; color: var(--text-secondary);
+            line-height: 1.8; margin-bottom: 32px; max-width: 620px;
         }
-        .hero-desc strong { color: var(--text); font-weight: 600; }
+        .hero-desc strong { color: var(--text); font-weight: 700; }
         .weekend-badge {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: linear-gradient(135deg, var(--accent-bg), rgba(13,148,136,0.14));
-            border: 1px solid var(--accent-border);
-            padding: 8px 16px; border-radius: 40px;
-            font-size: 0.78rem; font-weight: 700; color: var(--accent);
-            margin-bottom: 20px; letter-spacing: 0.3px;
+            display: inline-flex; align-items: center; gap: 10px;
+            background: linear-gradient(135deg, var(--accent-bg), rgba(13,148,136,0.16));
+            border: 1.5px solid var(--accent-border);
+            padding: 10px 22px; border-radius: 40px;
+            font-size: 0.92rem; font-weight: 700; color: var(--accent);
+            margin-bottom: 22px; letter-spacing: 0.3px;
+            animation: pulse-badge 3s ease-in-out infinite;
         }
-        .weekend-badge i { font-size: 0.85rem; }
-        .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+        @keyframes pulse-badge {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(13,148,136,0.15); }
+            50% { box-shadow: 0 0 0 10px rgba(13,148,136,0); }
+        }
+        .weekend-badge i { font-size: 1rem; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
         .btn-primary {
             display: inline-flex; align-items: center; gap: 8px;
             background: var(--accent); color: var(--white);
-            padding: 13px 28px; border-radius: 10px;
-            font-weight: 700; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s;
+            padding: 15px 32px; border-radius: 12px;
+            font-weight: 700; font-size: 1.02rem; border: none; cursor: pointer; transition: all 0.3s;
         }
-        .btn-primary:hover { background: var(--accent-light); color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(13,148,136,0.25); }
+        .btn-primary:hover { background: var(--accent-light); color: var(--white); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(13,148,136,0.3); }
         .btn-ghost {
             display: inline-flex; align-items: center; gap: 8px;
             background: transparent; color: var(--text-secondary);
-            padding: 13px 28px; border-radius: 10px;
-            font-weight: 600; font-size: 0.9rem;
-            border: 1px solid var(--border); cursor: pointer; transition: all 0.3s;
+            padding: 15px 32px; border-radius: 12px;
+            font-weight: 600; font-size: 1.02rem;
+            border: 1.5px solid var(--border); cursor: pointer; transition: all 0.3s;
         }
         .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
 
         /* Hero Right */
-        .hero-right { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        .hero-right { display: flex; flex-direction: column; align-items: center; gap: 18px; }
         .profile-img {
-            width: 210px; height: 252px;
-            border-radius: 16px;
+            width: 240px; height: 288px;
+            border-radius: 18px;
             object-fit: cover; object-position: center 15%;
             border: 4px solid var(--white);
-            box-shadow: 0 16px 48px var(--shadow-md), 0 2px 8px var(--shadow);
+            box-shadow: 0 20px 56px var(--shadow-md), 0 2px 8px var(--shadow);
             filter: saturate(0.88) contrast(1.06) brightness(1.02);
             transition: all 0.4s;
         }
-        .profile-img:hover { transform: translateY(-4px); box-shadow: 0 20px 60px var(--shadow-md); }
+        .profile-img:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 28px 72px var(--shadow-md); }
         .hero-role-card {
-            background: var(--white); border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 14px 18px;
+            background: var(--white); border: 1.5px solid var(--border);
+            border-radius: var(--radius); padding: 16px 22px;
             width: 100%; text-align: center;
-            box-shadow: 0 4px 16px var(--shadow);
+            box-shadow: 0 6px 20px var(--shadow);
         }
-        .hero-role-card .name { font-weight: 700; font-size: 0.95rem; color: var(--text); margin-bottom: 2px; }
-        .hero-role-card .role { font-size: 0.78rem; color: var(--accent); font-weight: 600; }
+        .hero-role-card .name { font-weight: 800; font-size: 1.1rem; color: var(--text); margin-bottom: 3px; }
+        .hero-role-card .role { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+
+        /* VALUE PROPOSITION STRIP */
+        .value-strip {
+            background: var(--bg-dark);
+            padding: 28px 0;
+        }
+        .value-strip .container {
+            display: flex; justify-content: center; align-items: center;
+            gap: 48px; flex-wrap: wrap;
+        }
+        .value-item {
+            display: flex; align-items: center; gap: 10px;
+            color: rgba(255,255,255,0.8); font-size: 1rem; font-weight: 600;
+        }
+        .value-item i { color: var(--accent-light); font-size: 1rem; }
 
         /* ===================== */
         /* SOLOPRENEUR IDENTITY  */
@@ -157,88 +177,119 @@
         /* PHILOSOPHY STRIP */
         .philosophy {
             background: var(--accent-bg);
-            border-top: 1px solid var(--accent-border);
-            border-bottom: 1px solid var(--accent-border);
-            padding: 36px 0; text-align: center;
+            border-top: 1.5px solid var(--accent-border);
+            border-bottom: 1.5px solid var(--accent-border);
+            padding: 44px 0; text-align: center;
         }
-        .philosophy h2 { font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-        .philosophy p { font-size: 0.9rem; color: var(--text-secondary); max-width: 680px; margin: 0 auto; line-height: 1.7; }
+        .philosophy h2 { font-size: 1.5rem; font-weight: 800; color: var(--text); margin-bottom: 12px; }
+        .philosophy p { font-size: 1.05rem; color: var(--text-secondary); max-width: 780px; margin: 0 auto; line-height: 1.75; }
         .philosophy p strong { color: var(--text); }
-        .philosophy .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 14px; }
+        .philosophy .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; }
         .philosophy .pill {
             background: var(--white); border: 1px solid var(--accent-border);
-            padding: 5px 13px; border-radius: 20px;
-            font-size: 0.76rem; font-weight: 600; color: var(--accent);
+            padding: 7px 16px; border-radius: 22px;
+            font-size: 0.88rem; font-weight: 600; color: var(--accent);
         }
 
         /* SECTION HEADERS */
         .s-label {
-            font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+            font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
             color: var(--accent); text-transform: uppercase;
-            letter-spacing: 2.5px; margin-bottom: 10px;
+            letter-spacing: 3px; margin-bottom: 12px;
         }
         .s-title {
-            font-size: 1.7rem; font-weight: 800; color: var(--text);
-            letter-spacing: -0.5px; margin-bottom: 12px; line-height: 1.2;
+            font-size: 2.2rem; font-weight: 800; color: var(--text);
+            letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;
         }
-        .s-desc { font-size: 0.92rem; color: var(--text-secondary); max-width: 540px; line-height: 1.7; }
-        .s-header { margin-bottom: 40px; }
+        .s-desc { font-size: 1.08rem; color: var(--text-secondary); max-width: 640px; line-height: 1.75; }
+        .s-header { margin-bottom: 48px; }
         .s-center { text-align: center; }
         .s-center .s-desc { margin: 0 auto; }
 
-        /* PRODUCTS (HERO OF SOLOPRENEUR) */
-        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        /* PRODUCTS */
+        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
         .product-card {
-            background: var(--white); border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 32px 28px; transition: all 0.35s;
+            background: var(--white); border: 1.5px solid var(--border);
+            border-radius: var(--radius); padding: 40px 36px; transition: all 0.35s;
             position: relative; overflow: hidden;
         }
         .product-card::before {
             content: ''; position: absolute; top: 0; left: 0; right: 0;
-            height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-light));
+            height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light));
         }
-        .product-card:hover { box-shadow: 0 16px 48px var(--shadow-md); transform: translateY(-4px); }
+        .product-card:hover { box-shadow: 0 20px 56px var(--shadow-md); transform: translateY(-6px); }
         .product-badge {
-            display: inline-flex; align-items: center; gap: 5px;
+            display: inline-flex; align-items: center; gap: 6px;
             background: var(--accent-bg); color: var(--accent);
-            font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
-            padding: 5px 10px; border-radius: 6px;
-            margin-bottom: 14px; letter-spacing: 0.8px; text-transform: uppercase;
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
+            padding: 6px 14px; border-radius: 8px;
+            margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase;
         }
-        .product-card h3 { font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+        .product-card h3 { font-size: 1.5rem; font-weight: 800; color: var(--text); margin-bottom: 10px; }
         .product-card h3 a { color: var(--text); }
         .product-card h3 a:hover { color: var(--accent); }
-        .product-card .pdesc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 18px; }
-        .product-features { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .product-card .pdesc { font-size: 1.02rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 22px; }
+        .product-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
         .product-features li {
-            display: flex; align-items: flex-start; gap: 8px;
-            font-size: 0.82rem; color: var(--text-secondary);
+            display: flex; align-items: flex-start; gap: 10px;
+            font-size: 0.96rem; color: var(--text-secondary);
         }
-        .product-features li i { color: var(--accent); margin-top: 5px; font-size: 0.55rem; }
+        .product-features li i { color: var(--accent); margin-top: 6px; font-size: 0.5rem; }
 
-        /* SERVICES */
-        .services-section { background: var(--bg-alt); }
-        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .service-card {
-            background: var(--white); border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 28px 24px; transition: all 0.35s;
+        /* WEEKEND CONSULTING HIGHLIGHT */
+        .consulting-highlight {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            padding: 64px 0; text-align: center; position: relative; overflow: hidden;
         }
-        .service-card:hover { box-shadow: 0 12px 36px var(--shadow); transform: translateY(-4px); }
-        .service-num { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); opacity: 0.5; margin-bottom: 14px; }
-        .service-icon {
-            width: 40px; height: 40px; background: var(--accent-bg); border-radius: 10px;
+        .consulting-highlight::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08), transparent 60%),
+                        radial-gradient(circle at 80% 50%, rgba(255,255,255,0.05), transparent 50%);
+        }
+        .consulting-highlight .container { position: relative; z-index: 1; }
+        .consulting-eyebrow {
+            font-family: var(--mono); font-size: 0.85rem; font-weight: 500;
+            color: rgba(255,255,255,0.7); text-transform: uppercase;
+            letter-spacing: 3.5px; margin-bottom: 14px;
+        }
+        .consulting-highlight h2 {
+            font-size: 2.8rem; font-weight: 900; color: #fff;
+            letter-spacing: -1.5px; margin-bottom: 16px; line-height: 1.1;
+        }
+        .consulting-highlight p {
+            font-size: 1.15rem; color: rgba(255,255,255,0.75);
+            max-width: 680px; margin: 0 auto 36px; line-height: 1.7;
+        }
+        .consulting-highlight p strong { color: #fff; }
+        .consulting-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 24px; margin-top: 8px;
+        }
+        .consult-card {
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius); padding: 32px 28px;
+            text-align: left; transition: all 0.3s;
+        }
+        .consult-card:hover { background: rgba(255,255,255,0.16); transform: translateY(-4px); }
+        .consult-num {
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
+            color: rgba(255,255,255,0.4); margin-bottom: 14px;
+        }
+        .consult-icon {
+            width: 48px; height: 48px; background: rgba(255,255,255,0.12); border-radius: 12px;
             display: flex; align-items: center; justify-content: center;
-            color: var(--accent); font-size: 1rem; margin-bottom: 14px;
+            color: #fff; font-size: 1.2rem; margin-bottom: 18px;
         }
-        .service-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.35; }
-        .service-card p { font-size: 0.83rem; color: var(--text-secondary); line-height: 1.65; }
+        .consult-card h3 { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 10px; line-height: 1.3; }
+        .consult-card p { font-size: 0.96rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
 
         /* ========================= */
         /* IDENTITY DIVIDER          */
         /* ========================= */
         .identity-divider {
             background: var(--bg-dark);
-            padding: 48px 0;
+            padding: 56px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -246,22 +297,22 @@
         .identity-divider::before {
             content: '';
             position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-            width: 60px; height: 3px;
+            width: 80px; height: 3px;
             background: var(--career-accent-light);
         }
         .divider-eyebrow {
-            font-family: var(--mono); font-size: 0.7rem; font-weight: 500;
+            font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
             color: var(--career-accent-light); text-transform: uppercase;
-            letter-spacing: 3px; margin-bottom: 12px;
+            letter-spacing: 3.5px; margin-bottom: 14px;
         }
         .identity-divider h2 {
-            font-size: 1.6rem; font-weight: 800; color: #fff;
-            letter-spacing: -0.5px; margin-bottom: 8px;
+            font-size: 2rem; font-weight: 800; color: #fff;
+            letter-spacing: -0.5px; margin-bottom: 10px;
         }
         .identity-divider h2 span { color: var(--career-accent-light); }
         .identity-divider p {
-            font-size: 0.88rem; color: rgba(255,255,255,0.5);
-            max-width: 520px; margin: 0 auto;
+            font-size: 1.02rem; color: rgba(255,255,255,0.5);
+            max-width: 580px; margin: 0 auto;
         }
 
         /* =================== */
@@ -270,209 +321,257 @@
 
         /* CAREER CURRENT ROLE */
         .career-current {
-            padding: 56px 0 48px;
+            padding: 64px 0 56px;
             background: var(--bg);
         }
         .current-role-card {
-            display: flex; align-items: center; gap: 32px;
-            background: var(--white); border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 32px 36px;
-            box-shadow: 0 4px 24px var(--shadow);
-            border-left: 4px solid var(--career-accent);
+            display: flex; align-items: center; gap: 36px;
+            background: var(--white); border: 1.5px solid var(--border);
+            border-radius: 16px; padding: 40px 44px;
+            box-shadow: 0 6px 32px var(--shadow);
+            border-left: 5px solid var(--career-accent);
+            position: relative;
+        }
+        .current-role-glow {
+            position: absolute; top: -2px; right: -2px; bottom: -2px;
+            width: 120px; border-radius: 0 16px 16px 0;
+            background: linear-gradient(90deg, transparent, var(--career-accent-bg));
+            pointer-events: none;
         }
         .current-role-logo {
-            width: 72px; height: 72px; object-fit: contain;
-            border-radius: 12px; flex-shrink: 0;
-            background: #fff; padding: 8px;
+            width: 96px; height: 96px; object-fit: contain;
+            border-radius: 14px; flex-shrink: 0;
+            background: #fff; padding: 10px;
+            border: 1.5px solid var(--career-accent-border);
+            box-shadow: 0 4px 16px var(--shadow);
         }
         .current-role-info { flex: 1; }
         .current-role-tag {
-            display: inline-flex; align-items: center; gap: 5px;
+            display: inline-flex; align-items: center; gap: 6px;
             background: var(--career-accent-bg); color: var(--career-accent);
-            font-family: var(--mono); font-size: 0.68rem; font-weight: 600;
-            padding: 4px 10px; border-radius: 6px; margin-bottom: 8px;
-            text-transform: uppercase; letter-spacing: 0.8px;
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 700;
+            padding: 6px 14px; border-radius: 8px; margin-bottom: 10px;
+            text-transform: uppercase; letter-spacing: 1px;
+            animation: pulse-role 3s ease-in-out infinite;
+        }
+        @keyframes pulse-role {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(79,70,229,0.15); }
+            50% { box-shadow: 0 0 0 8px rgba(79,70,229,0); }
         }
         .current-role-info h3 {
-            font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 2px;
+            font-size: 1.45rem; font-weight: 800; color: var(--text); margin-bottom: 4px;
         }
         .current-role-info .company-name {
-            font-size: 0.92rem; font-weight: 600; color: var(--career-accent); margin-bottom: 6px;
+            font-size: 1.05rem; font-weight: 700; color: var(--career-accent); margin-bottom: 8px;
+        }
+        .current-role-info .company-desc {
+            font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-bottom: 8px;
         }
         .current-role-info p {
-            font-size: 0.85rem; color: var(--text-secondary); line-height: 1.65;
+            font-size: 1rem; color: var(--text-secondary); line-height: 1.7;
         }
 
         /* STATS BAR */
-        .stats-bar { background: var(--bg-dark); padding: 32px 0; }
+        .stats-bar { background: var(--bg-dark); padding: 36px 0; }
         .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-        .stat-item { text-align: center; padding: 8px 16px; position: relative; }
+        .stat-item { text-align: center; padding: 10px 20px; position: relative; }
         .stat-item:not(:last-child)::after {
             content: ''; position: absolute; right: 0; top: 10%; height: 80%;
             width: 1px; background: rgba(255,255,255,0.1);
         }
-        .stat-num { font-size: 1.85rem; font-weight: 800; color: var(--career-accent-light); line-height: 1; margin-bottom: 4px; }
-        .stat-lbl { font-size: 0.72rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+        .stat-num { font-size: 2.2rem; font-weight: 900; color: var(--career-accent-light); line-height: 1; margin-bottom: 6px; }
+        .stat-lbl { font-size: 0.82rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 500; }
 
         /* CAREER JOURNEY */
         .career-journey { background: var(--bg-alt); }
         .career-label-c {
-            font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+            font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
             color: var(--career-accent); text-transform: uppercase;
-            letter-spacing: 2.5px; margin-bottom: 10px;
+            letter-spacing: 3px; margin-bottom: 12px;
         }
         .career-title {
-            font-size: 1.7rem; font-weight: 800; color: var(--text);
-            letter-spacing: -0.5px; margin-bottom: 32px; line-height: 1.2;
+            font-size: 2.2rem; font-weight: 800; color: var(--text);
+            letter-spacing: -0.5px; margin-bottom: 36px; line-height: 1.2;
         }
         .logo-track {
             display: flex; flex-wrap: wrap; justify-content: center;
-            gap: 24px; align-items: center;
-            margin-bottom: 40px;
+            gap: 20px; align-items: center;
+            margin-bottom: 48px;
         }
         .logo-item {
-            display: flex; flex-direction: column; align-items: center; gap: 8px;
-            transition: all 0.3s;
+            display: flex; flex-direction: column; align-items: center; gap: 10px;
+            transition: all 0.3s; min-width: 100px;
         }
-        .logo-item:hover { transform: translateY(-4px); }
+        .logo-item:hover { transform: translateY(-6px); }
         .logo-item img {
-            width: 68px; height: 68px; object-fit: contain;
-            border-radius: 12px; background: var(--white);
-            border: 1px solid var(--border); padding: 10px;
-            box-shadow: 0 2px 10px var(--shadow);
+            width: 88px; height: 88px; object-fit: contain;
+            border-radius: 14px; background: var(--white);
+            border: 1.5px solid var(--border); padding: 12px;
+            box-shadow: 0 4px 14px var(--shadow);
             transition: all 0.3s;
         }
         .logo-item:hover img {
-            box-shadow: 0 8px 24px var(--shadow-md);
+            box-shadow: 0 10px 28px var(--shadow-md);
             border-color: var(--career-accent-border);
         }
         .logo-item span {
-            font-size: 0.7rem; font-weight: 600; color: var(--text-light);
-            text-align: center; max-width: 80px; line-height: 1.3;
+            font-size: 0.78rem; font-weight: 600; color: var(--text-light);
+            text-align: center; max-width: 100px; line-height: 1.3;
         }
-        .logo-item.current img { border-color: var(--career-accent); }
-        .logo-item.current span { color: var(--career-accent); font-weight: 700; }
+        .logo-item .logo-detail {
+            font-size: 0.62rem; color: var(--text-light); opacity: 0.7;
+            text-align: center; max-width: 110px; line-height: 1.25;
+            margin-top: -4px;
+        }
+        .logo-item.current img {
+            border-color: var(--career-accent);
+            border-width: 2px;
+            box-shadow: 0 6px 24px rgba(79,70,229,0.15);
+        }
+        .logo-item.current span { color: var(--career-accent); font-weight: 800; }
         .career-arrow {
-            color: var(--border); font-size: 0.9rem;
+            color: var(--border); font-size: 1rem;
         }
 
         /* DOMAIN CARDS */
-        .domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
         .domain-card {
-            background: var(--white); border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 28px 24px;
+            background: var(--white); border: 1.5px solid var(--border);
+            border-radius: var(--radius); padding: 36px 32px;
             transition: all 0.35s; position: relative; overflow: hidden;
         }
         .domain-card::before {
             content: ''; position: absolute; top: 0; left: 0; right: 0;
-            height: 3px; background: var(--career-accent);
+            height: 4px; background: var(--career-accent);
             transform: scaleX(0); transition: transform 0.35s; transform-origin: left;
         }
         .domain-card:hover::before { transform: scaleX(1); }
-        .domain-card:hover { box-shadow: 0 12px 36px var(--shadow); transform: translateY(-4px); }
+        .domain-card:hover { box-shadow: 0 16px 44px var(--shadow-md); transform: translateY(-6px); }
         .domain-icon {
-            width: 40px; height: 40px; background: var(--career-accent-bg); border-radius: 10px;
+            width: 48px; height: 48px; background: var(--career-accent-bg); border-radius: 12px;
             display: flex; align-items: center; justify-content: center;
-            color: var(--career-accent); font-size: 1.05rem; margin-bottom: 14px;
+            color: var(--career-accent); font-size: 1.2rem; margin-bottom: 18px;
         }
-        .domain-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-        .domain-card p { font-size: 0.84rem; color: var(--text-secondary); line-height: 1.65; }
+        .domain-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+        .domain-card p { font-size: 0.96rem; color: var(--text-secondary); line-height: 1.7; }
         .domain-tag {
-            display: inline-block; font-family: var(--mono); font-size: 0.66rem;
+            display: inline-block; font-family: var(--mono); font-size: 0.72rem;
             color: var(--career-accent); background: var(--career-accent-bg);
-            padding: 3px 8px; border-radius: 5px; margin-top: 12px; letter-spacing: 0.3px;
+            padding: 4px 10px; border-radius: 6px; margin-top: 14px; letter-spacing: 0.3px;
         }
 
         /* TECH */
-        .tech-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .tech-section { background: var(--bg-alt); }
+        .tech-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
         .tech-tag {
-            display: inline-flex; align-items: center; gap: 6px;
-            background: var(--white); border: 1px solid var(--border);
-            padding: 9px 16px; border-radius: 40px;
-            font-size: 0.82rem; font-weight: 500; color: var(--text-secondary);
+            display: inline-flex; align-items: center; gap: 7px;
+            background: var(--white); border: 1.5px solid var(--border);
+            padding: 10px 20px; border-radius: 40px;
+            font-size: 0.92rem; font-weight: 500; color: var(--text-secondary);
             transition: all 0.25s;
         }
-        .tech-tag:hover { border-color: var(--accent-border); color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 16px var(--shadow); }
-        .tech-tag i { color: var(--accent); font-size: 0.88rem; }
+        .tech-tag:hover { border-color: var(--accent-border); color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 18px var(--shadow); }
+        .tech-tag i { color: var(--accent); font-size: 0.95rem; }
+        .tech-category {
+            width: 100%; text-align: center;
+            font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+            color: var(--text-light); text-transform: uppercase;
+            letter-spacing: 2px; margin: 24px 0 12px; padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        .tech-category:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
 
         /* CONTACT */
-        .cta-section { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 72px 0; }
-        .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-        .cta-left h2 { font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 14px; line-height: 1.2; }
+        .cta-section { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 80px 0; }
+        .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+        .cta-left h2 { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 16px; line-height: 1.15; }
         .cta-left h2 span { color: var(--accent-light); }
-        .cta-left p { font-size: 0.92rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 24px; }
-        .cta-details { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+        .cta-left p { font-size: 1.05rem; color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 28px; }
+        .cta-details { list-style: none; display: flex; flex-direction: column; gap: 14px; }
         .cta-details li {
-            display: flex; align-items: center; gap: 12px;
-            font-size: 0.88rem; color: rgba(255,255,255,0.65);
+            display: flex; align-items: center; gap: 14px;
+            font-size: 1rem; color: rgba(255,255,255,0.65);
         }
         .cta-details li i {
-            width: 34px; height: 34px;
-            background: rgba(13,148,136,0.15); border-radius: 8px;
+            width: 40px; height: 40px;
+            background: rgba(13,148,136,0.15); border-radius: 10px;
             display: flex; align-items: center; justify-content: center;
-            color: var(--accent-light); font-size: 0.82rem; flex-shrink: 0;
+            color: var(--accent-light); font-size: 0.92rem; flex-shrink: 0;
         }
         .cta-details li a { color: rgba(255,255,255,0.65); }
         .cta-details li a:hover { color: var(--accent-light); }
         .cta-form {
             background: var(--bg-dark-mid); border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 16px; padding: 32px;
+            border-radius: 18px; padding: 36px;
         }
-        .cta-form h3 { font-size: 1.05rem; color: #fff; font-weight: 700; margin-bottom: 4px; }
-        .cta-form .form-sub { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
-        .fg { margin-bottom: 14px; }
-        .fg label { display: block; font-size: 0.73rem; font-weight: 600; color: rgba(255,255,255,0.45); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .cta-form h3 { font-size: 1.2rem; color: #fff; font-weight: 700; margin-bottom: 4px; }
+        .cta-form .form-sub { font-size: 0.88rem; color: rgba(255,255,255,0.4); margin-bottom: 24px; }
+        .fg { margin-bottom: 16px; }
+        .fg label { display: block; font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.45); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
         .fg input, .fg textarea, .fg select {
             width: 100%; background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
-            padding: 10px 14px; font-family: var(--font); font-size: 0.86rem;
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;
+            padding: 12px 16px; font-family: var(--font); font-size: 0.95rem;
             color: #fff; outline: none; transition: border-color 0.3s;
         }
         .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(13,148,136,0.15); }
-        .fg textarea { resize: vertical; min-height: 72px; }
+        .fg textarea { resize: vertical; min-height: 80px; }
         .fg select option { background: var(--bg-dark); color: #fff; }
         .form-btn {
             width: 100%; background: var(--accent); color: var(--white);
-            padding: 12px; border: none; border-radius: 8px;
-            font-family: var(--font); font-size: 0.88rem; font-weight: 700;
+            padding: 14px; border: none; border-radius: 10px;
+            font-family: var(--font); font-size: 1rem; font-weight: 700;
             cursor: pointer; transition: all 0.3s; margin-top: 4px;
         }
-        .form-btn:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(13,148,136,0.3); }
-        .form-note { font-size: 0.68rem; color: rgba(255,255,255,0.3); text-align: center; margin-top: 10px; }
+        .form-btn:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(13,148,136,0.3); }
+        .form-note { font-size: 0.74rem; color: rgba(255,255,255,0.3); text-align: center; margin-top: 12px; }
 
         /* FOOTER */
-        .footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; }
-        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 8px; }
-        .footer-links a { color: var(--text-light); font-size: 1rem; }
+        .footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 10px; }
+        .footer-links a { color: var(--text-light); font-size: 1.1rem; }
         .footer-links a:hover { color: var(--accent); }
-        .footer p { font-size: 0.76rem; color: var(--text-light); }
+        .footer p { font-size: 0.82rem; color: var(--text-light); }
 
         /* ANIMATIONS */
-        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-d1 { transition-delay: 0.08s; }
-        .reveal-d2 { transition-delay: 0.16s; }
-        .reveal-d3 { transition-delay: 0.24s; }
+        .reveal-d1 { transition-delay: 0.1s; }
+        .reveal-d2 { transition-delay: 0.2s; }
+        .reveal-d3 { transition-delay: 0.3s; }
+
+        /* TYPING CURSOR on hero eyebrow */
+        .typing-cursor::after {
+            content: '|'; animation: blink 1s step-end infinite; color: var(--accent); margin-left: 2px;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
 
         /* RESPONSIVE */
+        @media (max-width: 1200px) {
+            .container { padding: 0 32px; }
+            .hero h1 { font-size: 2.8rem; }
+            .consulting-highlight h2 { font-size: 2.2rem; }
+        }
         @media (max-width: 1024px) {
-            .hero-layout { grid-template-columns: 1fr 240px; gap: 36px; }
-            .profile-img { width: 170px; height: 204px; }
-            .domain-grid, .services-grid { grid-template-columns: 1fr 1fr; }
-            .current-role-card { flex-direction: column; text-align: center; gap: 20px; }
+            .hero-layout { grid-template-columns: 1fr 260px; gap: 40px; }
+            .profile-img { width: 200px; height: 240px; }
+            .domain-grid, .consulting-grid { grid-template-columns: 1fr 1fr; }
+            .current-role-card { flex-direction: column; text-align: center; gap: 24px; }
+            .current-role-glow { display: none; }
         }
         @media (max-width: 768px) {
             .section { padding: 56px 0; }
+            .container { padding: 0 24px; }
             .hero { padding: 110px 0 52px; }
             .hero-layout { grid-template-columns: 1fr; gap: 28px; }
             .hero-right { order: -1; flex-direction: row; gap: 16px; }
-            .profile-img { width: 90px; height: 108px; border-radius: 12px; }
+            .profile-img { width: 100px; height: 120px; border-radius: 14px; }
             .hero-role-card { text-align: left; flex: 1; }
-            .hero h1 { font-size: 2rem; }
-            .s-title, .career-title { font-size: 1.45rem; }
+            .hero h1 { font-size: 2.1rem; }
+            .s-title, .career-title { font-size: 1.6rem; }
             .stats-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
             .stat-item:nth-child(2)::after { display: none; }
-            .domain-grid, .services-grid, .products-grid { grid-template-columns: 1fr; }
+            .domain-grid, .consulting-grid, .products-grid { grid-template-columns: 1fr; }
             .cta-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .nav-links.active {
@@ -485,15 +584,19 @@
             .nav-toggle { display: flex; }
             .hero-btns { flex-direction: column; }
             .btn-primary, .btn-ghost { justify-content: center; }
-            .logo-track { gap: 16px; }
+            .logo-track { gap: 14px; }
             .career-arrow { display: none; }
-            .current-role-card { flex-direction: column; text-align: center; gap: 16px; padding: 24px 20px; }
-            .identity-divider h2 { font-size: 1.3rem; }
+            .current-role-card { flex-direction: column; text-align: center; gap: 20px; padding: 28px 24px; }
+            .identity-divider h2 { font-size: 1.5rem; }
+            .consulting-highlight h2 { font-size: 1.8rem; }
+            .value-strip .container { gap: 20px; }
+            .value-item { font-size: 0.85rem; }
         }
         @media (max-width: 480px) {
-            .hero h1 { font-size: 1.65rem; }
-            .stat-num { font-size: 1.5rem; }
-            .logo-item img { width: 52px; height: 52px; padding: 8px; }
+            .hero h1 { font-size: 1.75rem; }
+            .stat-num { font-size: 1.7rem; }
+            .logo-item img { width: 64px; height: 64px; padding: 10px; }
+            .consulting-highlight h2 { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -502,12 +605,12 @@
     <!-- NAV -->
     <nav class="nav" id="nav">
         <div class="container">
-            <a href="#" class="nav-brand">DS<span>.</span></a>
+            <a href="#" class="nav-brand">Dushyant Sharma<span>.</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#consulting">Consulting</a></li>
                 <li><a href="#career">Career</a></li>
-                <li><a href="#tech">Tech</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
                 <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -525,13 +628,14 @@
         <div class="container">
             <div class="hero-layout">
                 <div>
-                    <div class="hero-eyebrow">Solopreneur &amp; AI Product Builder</div>
-                    <div class="weekend-badge"><i class="fas fa-rocket"></i> Building Products on Weekends</div>
+                    <div class="hero-eyebrow typing-cursor">Solopreneur &amp; AI Product Builder</div>
+                    <div class="weekend-badge"><i class="fas fa-rocket"></i> Building AI Products on Weekends</div>
                     <h1>I Build <em>AI Products</em> That Solve Real Problems</h1>
                     <p class="hero-desc">
-                        Solopreneur by passion. I design and ship <strong>Human-in-the-Loop AI products</strong>
-                        that bring enterprise-grade intelligence to real-world operations —
-                        with <strong>privacy, security, and human oversight</strong> built into every layer.
+                        Solopreneur by passion, builder by instinct. I architect and ship
+                        <strong>Human-in-the-Loop AI products</strong> that bring enterprise-grade intelligence
+                        to real-world operations — with <strong>privacy, security, and human oversight</strong>
+                        baked into every decision layer.
                     </p>
                     <div class="hero-btns">
                         <a href="#products" class="btn-primary"><i class="fas fa-boxes-stacked"></i> See My Products</a>
@@ -539,26 +643,36 @@
                     </div>
                 </div>
                 <div class="hero-right">
-                    <img src="profile.jpg" alt="Dushyant Sharma" class="profile-img" width="210" height="252">
+                    <img src="profile.jpg" alt="Dushyant Sharma" class="profile-img" width="240" height="288">
                     <div class="hero-role-card">
                         <div class="name">Dushyant Sharma</div>
-                        <div class="role"><i class="fas fa-rocket" style="font-size:0.65rem;margin-right:3px;"></i> AI Product Builder &amp; Owner</div>
+                        <div class="role"><i class="fas fa-rocket" style="font-size:0.72rem;margin-right:4px;"></i> AI Product Builder &amp; Owner</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- VALUE PROPOSITION STRIP -->
+    <div class="value-strip">
+        <div class="container">
+            <div class="value-item"><i class="fas fa-brain"></i> Thinks in Systems</div>
+            <div class="value-item"><i class="fas fa-shield-halved"></i> Privacy-First Architect</div>
+            <div class="value-item"><i class="fas fa-lightbulb"></i> Human-in-the-Loop AI</div>
+            <div class="value-item"><i class="fas fa-cubes"></i> Zero-to-One Builder</div>
+        </div>
+    </div>
+
     <!-- AI PHILOSOPHY -->
     <div class="philosophy">
         <div class="container">
-            <h2><i class="fas fa-shield-halved" style="color:var(--accent);margin-right:8px;font-size:1rem;"></i> Human-in-the-Loop AI — Built for Trust</h2>
-            <p>Every product I build follows one principle: <strong>Responsive AI with human oversight.</strong> No black-box decisions. Every workflow includes human checkpoints, audit trails, and privacy-first architecture.</p>
+            <h2><i class="fas fa-shield-halved" style="color:var(--accent);margin-right:10px;font-size:1.15rem;"></i> Human-in-the-Loop AI — Built for Trust</h2>
+            <p>Every product I build follows one principle: <strong>Responsive AI with human oversight.</strong> No black-box decisions. Every workflow includes human checkpoints, full audit trails, and privacy-first data architecture — because enterprise AI must be <strong>explainable, secure, and compliant.</strong></p>
             <div class="pills">
-                <span class="pill"><i class="fas fa-lock" style="margin-right:4px;font-size:0.6rem;"></i> Privacy-First</span>
-                <span class="pill"><i class="fas fa-eye" style="margin-right:4px;font-size:0.6rem;"></i> Human Oversight</span>
-                <span class="pill"><i class="fas fa-clipboard-check" style="margin-right:4px;font-size:0.6rem;"></i> Audit Trails</span>
-                <span class="pill"><i class="fas fa-user-shield" style="margin-right:4px;font-size:0.6rem;"></i> Compliance Ready</span>
+                <span class="pill"><i class="fas fa-lock" style="margin-right:5px;font-size:0.7rem;"></i> Privacy-First Design</span>
+                <span class="pill"><i class="fas fa-eye" style="margin-right:5px;font-size:0.7rem;"></i> Human Oversight</span>
+                <span class="pill"><i class="fas fa-clipboard-check" style="margin-right:5px;font-size:0.7rem;"></i> Audit Trails</span>
+                <span class="pill"><i class="fas fa-user-shield" style="margin-right:5px;font-size:0.7rem;"></i> Regulatory Compliance</span>
             </div>
         </div>
     </div>
@@ -574,7 +688,7 @@
             <div class="products-grid">
                 <div class="product-card reveal reveal-d1">
                     <div class="product-badge"><i class="fas fa-signal"></i> Signal Detection</div>
-                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem;opacity:0.4;"></i></a></h3>
+                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;opacity:0.4;"></i></a></h3>
                     <p class="pdesc">AI-powered signal detection for managers — instant visibility into team performance without micromanaging.</p>
                     <ul class="product-features">
                         <li><i class="fas fa-circle"></i> Real-time performance signal detection</li>
@@ -598,30 +712,28 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section services-section" id="services">
+    <!-- WEEKEND CONSULTING — HIGHLIGHTED -->
+    <section class="consulting-highlight" id="consulting">
         <div class="container">
-            <div class="s-header s-center">
-                <div class="s-label reveal">Weekend Consulting</div>
-                <h2 class="s-title reveal">How I Can Help You</h2>
-                <p class="s-desc reveal">Strategic, hands-on engagements to move your org from legacy workflows to AI-powered operations.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal reveal-d1">
-                    <div class="service-num">01</div>
-                    <div class="service-icon"><i class="fas fa-compass"></i></div>
+            <div class="consulting-eyebrow reveal">Weekend Consulting</div>
+            <h2 class="reveal">Available for Strategic <br>AI Engagements</h2>
+            <p class="reveal">Hands-on, high-impact consulting to move your organization from legacy workflows to <strong>AI-powered operations</strong> with measurable ROI.</p>
+            <div class="consulting-grid">
+                <div class="consult-card reveal reveal-d1">
+                    <div class="consult-num">01</div>
+                    <div class="consult-icon"><i class="fas fa-compass"></i></div>
                     <h3>AI Strategy &amp; Roadmap</h3>
                     <p>Building Human-in-the-Loop AI architecture — phased deployment prioritizing quick wins and long-term scale.</p>
                 </div>
-                <div class="service-card reveal reveal-d2">
-                    <div class="service-num">02</div>
-                    <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                <div class="consult-card reveal reveal-d2">
+                    <div class="consult-num">02</div>
+                    <div class="consult-icon"><i class="fas fa-cubes"></i></div>
                     <h3>AI Product Ownership</h3>
                     <p>Full transition from legacy workflows to Agentic AI. I own the product lifecycle — from discovery to launch.</p>
                 </div>
-                <div class="service-card reveal reveal-d3">
-                    <div class="service-num">03</div>
-                    <div class="service-icon"><i class="fas fa-gears"></i></div>
+                <div class="consult-card reveal reveal-d3">
+                    <div class="consult-num">03</div>
+                    <div class="consult-icon"><i class="fas fa-gears"></i></div>
                     <h3>Operational Transformation</h3>
                     <p>Targeted OpEx reduction through AI-powered support optimization and CRM workflow automation.</p>
                 </div>
@@ -648,11 +760,13 @@
     <section class="career-current" id="career">
         <div class="container">
             <div class="current-role-card reveal">
+                <div class="current-role-glow"></div>
                 <img src="GHL.png" alt="HighLevel" class="current-role-logo">
                 <div class="current-role-info">
-                    <div class="current-role-tag"><i class="fas fa-briefcase" style="font-size:0.55rem;margin-right:3px;"></i> Current Role</div>
+                    <div class="current-role-tag"><i class="fas fa-briefcase" style="font-size:0.6rem;margin-right:4px;"></i> Current Full-Time Role</div>
                     <h3>Senior Manager — Global Customer Support</h3>
-                    <div class="company-name">HighLevel (AI-as-a-Service CRM)</div>
+                    <div class="company-name">HighLevel</div>
+                    <div class="company-desc">AI-as-a-Service, all-in-one marketing CRM platform designed to help businesses streamline their digital marketing efforts</div>
                     <p>Leading global support operations, driving AI-powered workflows, and maintaining 95% enterprise CSAT across the full product suite.</p>
                 </div>
             </div>
@@ -676,68 +790,81 @@
         <div class="container">
             <div class="s-header s-center">
                 <div class="career-label-c reveal">Career Journey</div>
-                <h2 class="career-title reveal">Brands I've Worked With</h2>
+                <h2 class="career-title reveal">Brands I've Built With</h2>
             </div>
             <div class="logo-track reveal">
                 <div class="logo-item">
-                    <img src="Genpact.png" alt="Genpact">
-                    <span>Genpact</span>
-                </div>
-                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="logo-item">
-                    <img src="Hexaware.png" alt="Hexaware">
-                    <span>Hexaware</span>
-                </div>
-                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="logo-item">
-                    <img src="DXC%20Tech.png" alt="DXC Technology">
-                    <span>DXC Technology</span>
-                </div>
-                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="logo-item">
-                    <img src="CSOD.png" alt="Cornerstone OnDemand">
-                    <span>Cornerstone OnDemand</span>
+                    <img src="Heartland.png" alt="Heartland Information Services">
+                    <span>Heartland</span>
+                    <div class="logo-detail">Medical Transcription Solutions, USA</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
                     <img src="RAK%20Bank.png" alt="RAK Bank">
                     <span>RAK Bank</span>
+                    <div class="logo-detail">Banking, Dubai</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="DH.png" alt="DH">
-                    <span>Dream Host</span>
+                    <img src="Genpact.png" alt="Genpact">
+                    <span>Genpact</span>
+                    <div class="logo-detail">Global IT Services, India</div>
+                </div>
+                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="logo-item">
+                    <img src="DXC%20Tech.png" alt="DXC Technology">
+                    <span>DXC Technology</span>
+                    <div class="logo-detail">Enterprise IT Services</div>
+                </div>
+                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="logo-item">
+                    <img src="Hexaware.png" alt="Hexaware Technologies">
+                    <span>Hexaware</span>
+                    <div class="logo-detail">Digital Transformation</div>
+                </div>
+                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="logo-item">
+                    <img src="CSOD.png" alt="Cornerstone OnDemand">
+                    <span>Cornerstone</span>
+                    <div class="logo-detail">Cloud AI People Development</div>
+                </div>
+                <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="logo-item">
+                    <img src="DH.png" alt="Definitive Healthcare">
+                    <span>Definitive HC</span>
+                    <div class="logo-detail">NASDAQ: DH — AI Healthcare Analytics</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item current">
                     <img src="GHL.png" alt="HighLevel">
                     <span>HighLevel</span>
+                    <div class="logo-detail">AI-as-a-Service Marketing CRM</div>
                 </div>
             </div>
 
-            <!-- DOMAIN EXPERTISE -->
-            <div class="s-header s-center" style="margin-top:20px;">
+            <!-- DOMAIN EXPERTISE — THE INDUSTRY WHISPERER -->
+            <div class="s-header s-center" style="margin-top:24px;">
                 <div class="career-label-c reveal">Deep Domain Intelligence</div>
                 <h2 class="career-title reveal">The Industry Whisperer</h2>
             </div>
             <div class="domain-grid">
                 <div class="domain-card reveal reveal-d1">
-                    <div class="domain-icon"><i class="fas fa-shield-halved"></i></div>
-                    <h3>BFSI &amp; Insurance</h3>
-                    <p>Automating compliance checks, accelerating claims adjudication, and cutting manual review cycles.</p>
-                    <span class="domain-tag">P&amp;C · Life · Health · Compliance</span>
+                    <div class="domain-icon"><i class="fas fa-hospital"></i></div>
+                    <h3>US Healthcare &amp; Commercial Intelligence</h3>
+                    <p>Advanced analytics for hospital systems, physician groups, and commercial intelligence platforms — driving data-driven decisions across the US healthcare ecosystem.</p>
+                    <span class="domain-tag">Healthcare Analytics · HIT · Medical Transcription</span>
                 </div>
                 <div class="domain-card reveal reveal-d2">
-                    <div class="domain-icon"><i class="fas fa-robot"></i></div>
-                    <h3>SaaS &amp; CRM Platforms</h3>
-                    <p>Building agentic AI workflows that auto-resolve tickets and turn support into competitive advantage.</p>
-                    <span class="domain-tag">Agentic Workflows · Smart Routing</span>
+                    <div class="domain-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Banking &amp; Financial Services</h3>
+                    <p>Automating compliance, risk assessment, and customer lifecycle management for banks and financial institutions across global markets.</p>
+                    <span class="domain-tag">BFSI · Compliance · Risk · Trade Finance</span>
                 </div>
                 <div class="domain-card reveal reveal-d3">
-                    <div class="domain-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Customer Operations</h3>
-                    <p>Deploying predictive AI that anticipates issues before escalation and drives CSAT upward.</p>
-                    <span class="domain-tag">Predictive AI · CSAT · OpEx</span>
+                    <div class="domain-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>US Insurance</h3>
+                    <p>Accelerating P&amp;C, Life, and Health claims adjudication with AI-powered triage, fraud detection, and regulatory compliance workflows.</p>
+                    <span class="domain-tag">P&amp;C · Life · Health · Claims · Compliance</span>
                 </div>
             </div>
         </div>
@@ -748,25 +875,45 @@
     <!-- ======================================== -->
 
     <!-- TECH STACK -->
-    <section class="section" id="tech">
+    <section class="section tech-section" id="tech">
         <div class="container">
             <div class="s-header s-center">
                 <div class="s-label reveal">Tools &amp; Technologies</div>
                 <h2 class="s-title reveal">Tech Stack</h2>
             </div>
             <div class="tech-wrap reveal">
-                <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
-                <div class="tech-tag"><i class="fas fa-database"></i> SQL</div>
+                <!-- AI & Intelligence -->
+                <div class="tech-category">AI &amp; Intelligence</div>
                 <div class="tech-tag"><i class="fas fa-brain"></i> Generative AI</div>
-                <div class="tech-tag"><i class="fab fa-microsoft"></i> Microsoft Azure AI</div>
+                <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Azure AI</div>
+                <div class="tech-tag"><i class="fas fa-cloud"></i> Google Cloud</div>
+
+                <!-- Development & Deployment -->
+                <div class="tech-category">Development &amp; Deployment</div>
+                <div class="tech-tag"><i class="fas fa-bolt"></i> FastAPI</div>
+                <div class="tech-tag"><i class="fas fa-database"></i> Supabase</div>
+                <div class="tech-tag"><i class="fas fa-database"></i> PostgreSQL / SQL</div>
+                <div class="tech-tag"><i class="fab fa-docker"></i> Docker</div>
+                <div class="tech-tag"><i class="fas fa-triangle-exclamation"></i> Vercel</div>
+                <div class="tech-tag"><i class="fas fa-shield-halved"></i> Cloudflare</div>
+                <div class="tech-tag"><i class="fab fa-github"></i> GitHub</div>
+
+                <!-- CRM, Ops & Business -->
+                <div class="tech-category">CRM, Ops &amp; Business Tools</div>
                 <div class="tech-tag"><i class="fab fa-salesforce"></i> Salesforce</div>
                 <div class="tech-tag"><i class="fas fa-headset"></i> Zendesk</div>
-                <div class="tech-tag"><i class="fas fa-plug"></i> Workato</div>
+                <div class="tech-tag"><i class="fas fa-headset"></i> Freshdesk</div>
                 <div class="tech-tag"><i class="fas fa-ticket"></i> ServiceNow</div>
-                <div class="tech-tag"><i class="fas fa-chart-bar"></i> Tableau</div>
+                <div class="tech-tag"><i class="fas fa-list-check"></i> ClickUp</div>
                 <div class="tech-tag"><i class="fas fa-tasks"></i> JIRA</div>
+                <div class="tech-tag"><i class="fas fa-plug"></i> Workato</div>
+
+                <!-- Analytics & Growth -->
+                <div class="tech-category">Analytics &amp; Growth</div>
+                <div class="tech-tag"><i class="fas fa-chart-bar"></i> Tableau</div>
+                <div class="tech-tag"><i class="fab fa-meta"></i> Meta Business Suite</div>
                 <div class="tech-tag"><i class="fas fa-shield-halved"></i> Okta</div>
-                <div class="tech-tag"><i class="fas fa-cloud"></i> Google Cloud</div>
             </div>
         </div>
     </section>
@@ -778,7 +925,7 @@
                 <div class="cta-left reveal">
                     <div class="s-label" style="color:var(--accent-light);">Get In Touch</div>
                     <h2>Let's Build <span>Something Together</span></h2>
-                    <p>Whether you need an AI strategy, a product co-pilot, or operational transformation — let's explore how I can help.</p>
+                    <p>Whether you need an AI strategy, a product co-pilot, or operational transformation — let's explore how I can create measurable impact for your business.</p>
                     <ul class="cta-details">
                         <li><i class="fas fa-envelope"></i> <a href="mailto:imdushyant19@yahoo.co.in">imdushyant19@yahoo.co.in</a></li>
                         <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank">linkedin.com/in/dushyant-sharma</a></li>
@@ -863,6 +1010,30 @@
             b.textContent = 'Sending...';
             b.disabled = true;
         });
+
+        /* Counter animation for stats */
+        function animateCounters() {
+            document.querySelectorAll('.stat-num').forEach(el => {
+                const text = el.textContent;
+                if (el.dataset.animated) return;
+                const num = parseInt(text);
+                if (isNaN(num)) return;
+                el.dataset.animated = '1';
+                const suffix = text.replace(/[\d]/g, '');
+                let current = 0;
+                const step = Math.ceil(num / 40);
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= num) { current = num; clearInterval(timer); }
+                    el.textContent = current + suffix;
+                }, 30);
+            });
+        }
+        const statsObs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObs.disconnect(); } });
+        }, { threshold: 0.3 });
+        const sb = document.querySelector('.stats-bar');
+        if (sb) statsObs.observe(sb);
     </script>
 </body>
 </html>
