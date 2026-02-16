@@ -3,600 +3,558 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dushyant Sharma — AI Product Builder & Solopreneur. Building Human-in-the-Loop AI products. 18+ years enterprise leadership across Healthcare, Banking, Insurance & SaaS.">
-    <meta name="keywords" content="Dushyant Sharma, AI Product Builder, Solopreneur, Weekend Builder, SaaS Leader, BFSI, US Healthcare, Insurance, CRM, Human-in-the-Loop AI, HighLevel, EagleEye, Sarathi">
+    <meta name="description" content="Dushyant Sharma — AI Product Builder & Solopreneur. From medical transcription to building AI products used by enterprise leaders. 18+ years across US Healthcare, Banking, Insurance & SaaS.">
     <meta name="author" content="Dushyant Sharma">
     <meta property="og:title" content="Dushyant Sharma — AI Product Builder & Solopreneur">
-    <meta property="og:description" content="Building Human-in-the-Loop AI products. 18+ years enterprise leadership across Healthcare, Banking, Insurance & SaaS.">
+    <meta property="og:description" content="From medical transcription to building AI products. 18+ years transforming enterprise complexity into AI-driven efficiency.">
     <meta property="og:type" content="website">
     <title>Dushyant Sharma — AI Product Builder &amp; Solopreneur</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
-            --bg: #FAFAF8;
-            --bg-alt: #F0EFEB;
-            --bg-dark: #1a1a2e;
-            --bg-dark-mid: #222240;
-            --text: #1a1a2e;
-            --text-secondary: #4a4a5c;
-            --text-light: #7a7a8c;
-            --accent: #0d9488;
-            --accent-light: #14b8a6;
-            --accent-bg: rgba(13, 148, 136, 0.08);
-            --accent-border: rgba(13, 148, 136, 0.2);
-            --white: #ffffff;
-            --border: #e8e8e0;
-            --shadow: rgba(26, 26, 46, 0.06);
-            --shadow-md: rgba(26, 26, 46, 0.12);
-            --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --mono: 'JetBrains Mono', monospace;
-            --radius: 14px;
-            --max-w: 1300px;
-            --career-accent: #4f46e5;
-            --career-accent-light: #6366f1;
-            --career-accent-bg: rgba(79, 70, 229, 0.08);
-            --career-accent-border: rgba(79, 70, 229, 0.18);
+            --bg: #FAFAF8; --bg-alt: #F0EFEB; --bg-dark: #0f0f1a; --bg-dark-mid: #1a1a2e;
+            --text: #111118; --text-sec: #444455; --text-light: #6b6b80;
+            --accent: #0d9488; --accent-light: #14b8a6; --accent-glow: rgba(13,148,136,0.35);
+            --accent-bg: rgba(13,148,136,0.07); --accent-border: rgba(13,148,136,0.2);
+            --white: #ffffff; --border: #e4e4dc;
+            --shadow: rgba(17,17,24,0.06); --shadow-md: rgba(17,17,24,0.12); --shadow-lg: rgba(17,17,24,0.18);
+            --font: 'Inter', system-ui, sans-serif; --mono: 'JetBrains Mono', monospace;
+            --radius: 16px; --max-w: 1320px;
+            --career: #4f46e5; --career-light: #818cf8; --career-bg: rgba(79,70,229,0.07);
+            --career-border: rgba(79,70,229,0.18);
         }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
-        body {
-            font-family: var(--font);
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
         a { color: var(--accent); text-decoration: none; transition: 0.25s; }
         a:hover { color: var(--accent-light); }
-
-        .container { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; }
-        .section { padding: 80px 0; }
+        .container { max-width: var(--max-w); margin: 0 auto; padding: 0 44px; }
+        .section { padding: 100px 0; }
 
         /* NAV */
-        .nav {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            background: rgba(250, 250, 248, 0.88);
-            backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
-            border-bottom: 1px solid transparent;
-            padding: 16px 0; transition: all 0.3s;
-        }
-        .nav.scrolled { border-bottom-color: var(--border); box-shadow: 0 1px 16px var(--shadow); }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,250,248,0.88); backdrop-filter: blur(20px); border-bottom: 1px solid transparent; padding: 16px 0; transition: 0.3s; }
+        .nav.scrolled { border-bottom-color: var(--border); box-shadow: 0 2px 20px var(--shadow); }
         .nav .container { display: flex; align-items: center; justify-content: space-between; }
-        .nav-brand { font-size: 1.2rem; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
+        .nav-brand { font-size: 1.15rem; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
         .nav-brand span { color: var(--accent); }
-        .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
-        .nav-links a { color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; }
+        .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+        .nav-links a { color: var(--text-sec); font-size: 0.95rem; font-weight: 500; }
         .nav-links a:hover { color: var(--text); }
-        .nav-cta {
-            background: var(--accent); color: var(--white) !important;
-            padding: 10px 22px; border-radius: 10px; font-weight: 700; font-size: 0.92rem;
-            transition: all 0.3s;
-        }
-        .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(13,148,136,0.3); }
+        .nav-cta { background: var(--accent); color: var(--white) !important; padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: 0.92rem; transition: 0.3s; }
+        .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 24px var(--accent-glow); }
         .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
         .nav-toggle span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
 
-        /* HERO */
-        .hero { padding: 140px 0 72px; }
-        .hero-layout {
-            display: grid;
-            grid-template-columns: 1fr 320px;
-            gap: 64px;
-            align-items: center;
+        /* ========================= */
+        /* HERO — CINEMATIC          */
+        /* ========================= */
+        .hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(180deg, var(--bg) 0%, #f0f5f4 100%);
+            position: relative; overflow: hidden;
         }
+        .hero-bg-grid {
+            position: absolute; inset: 0;
+            background-image: radial-gradient(circle, rgba(13,148,136,0.06) 1px, transparent 1px);
+            background-size: 32px 32px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+        }
+        .hero-glow {
+            position: absolute; top: -120px; right: -80px;
+            width: 500px; height: 500px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(13,148,136,0.12), transparent 70%);
+            filter: blur(60px); pointer-events: none;
+        }
+        .hero .container { position: relative; z-index: 2; }
+        .hero-layout { display: grid; grid-template-columns: 1fr 340px; gap: 72px; align-items: center; }
         .hero-eyebrow {
-            font-family: var(--mono); font-size: 0.88rem; font-weight: 500;
-            color: var(--accent); text-transform: uppercase; letter-spacing: 3px;
-            margin-bottom: 16px;
-            display: flex; align-items: center; gap: 12px;
+            font-family: var(--mono); font-size: 0.9rem; font-weight: 600;
+            color: var(--accent); text-transform: uppercase; letter-spacing: 3.5px;
+            margin-bottom: 18px; display: flex; align-items: center; gap: 12px;
         }
-        .hero-eyebrow::before { content: ''; width: 32px; height: 2px; background: var(--accent); }
-        .hero h1 {
-            font-size: 3.4rem; font-weight: 900; color: var(--text);
-            line-height: 1.1; letter-spacing: -2px; margin-bottom: 22px;
-        }
-        .hero h1 em { font-style: normal; color: var(--accent); }
-        .hero-desc {
-            font-size: 1.2rem; color: var(--text-secondary);
-            line-height: 1.8; margin-bottom: 32px; max-width: 620px;
-        }
-        .hero-desc strong { color: var(--text); font-weight: 700; }
+        .hero-eyebrow::before { content: ''; width: 36px; height: 2.5px; background: var(--accent); border-radius: 2px; }
         .weekend-badge {
             display: inline-flex; align-items: center; gap: 10px;
-            background: linear-gradient(135deg, var(--accent-bg), rgba(13,148,136,0.16));
-            border: 1.5px solid var(--accent-border);
-            padding: 10px 22px; border-radius: 40px;
-            font-size: 0.92rem; font-weight: 700; color: var(--accent);
-            margin-bottom: 22px; letter-spacing: 0.3px;
-            animation: pulse-badge 3s ease-in-out infinite;
+            background: linear-gradient(135deg, rgba(13,148,136,0.08), rgba(13,148,136,0.18));
+            border: 1.5px solid var(--accent-border); padding: 11px 24px; border-radius: 40px;
+            font-size: 0.95rem; font-weight: 700; color: var(--accent);
+            margin-bottom: 24px; animation: pulse-glow 3s ease-in-out infinite;
         }
-        @keyframes pulse-badge {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(13,148,136,0.15); }
-            50% { box-shadow: 0 0 0 10px rgba(13,148,136,0); }
+        @keyframes pulse-glow {
+            0%,100% { box-shadow: 0 0 0 0 rgba(13,148,136,0.2); }
+            50% { box-shadow: 0 0 0 12px rgba(13,148,136,0); }
         }
-        .weekend-badge i { font-size: 1rem; }
+        .hero h1 {
+            font-size: 3.8rem; font-weight: 900; line-height: 1.06; letter-spacing: -2.5px; margin-bottom: 24px;
+        }
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--accent), #0891b2, var(--accent-light));
+            background-size: 200% 200%; -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; animation: gradient-shift 4s ease infinite;
+        }
+        @keyframes gradient-shift {
+            0%,100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .hero-desc { font-size: 1.25rem; color: var(--text-sec); line-height: 1.8; margin-bottom: 36px; max-width: 600px; }
+        .hero-desc strong { color: var(--text); font-weight: 700; }
         .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-        .btn-primary {
-            display: inline-flex; align-items: center; gap: 8px;
+        .btn-hero {
+            display: inline-flex; align-items: center; gap: 10px;
             background: var(--accent); color: var(--white);
-            padding: 15px 32px; border-radius: 12px;
-            font-weight: 700; font-size: 1.02rem; border: none; cursor: pointer; transition: all 0.3s;
+            padding: 16px 36px; border-radius: 14px;
+            font-weight: 700; font-size: 1.05rem; border: none; cursor: pointer; transition: 0.3s;
+            box-shadow: 0 4px 20px var(--accent-glow);
         }
-        .btn-primary:hover { background: var(--accent-light); color: var(--white); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(13,148,136,0.3); }
-        .btn-ghost {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: transparent; color: var(--text-secondary);
-            padding: 15px 32px; border-radius: 12px;
-            font-weight: 600; font-size: 1.02rem;
-            border: 1.5px solid var(--border); cursor: pointer; transition: all 0.3s;
+        .btn-hero:hover { background: var(--accent-light); color: var(--white); transform: translateY(-3px); box-shadow: 0 10px 32px var(--accent-glow); }
+        .btn-outline {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: transparent; color: var(--text-sec);
+            padding: 16px 36px; border-radius: 14px;
+            font-weight: 600; font-size: 1.05rem;
+            border: 1.5px solid var(--border); cursor: pointer; transition: 0.3s;
         }
-        .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
 
         /* Hero Right */
-        .hero-right { display: flex; flex-direction: column; align-items: center; gap: 18px; }
-        .profile-img {
-            width: 240px; height: 288px;
-            border-radius: 18px;
-            object-fit: cover; object-position: center 15%;
-            border: 4px solid var(--white);
-            box-shadow: 0 20px 56px var(--shadow-md), 0 2px 8px var(--shadow);
-            filter: saturate(0.88) contrast(1.06) brightness(1.02);
-            transition: all 0.4s;
+        .hero-right { display: flex; flex-direction: column; align-items: center; gap: 20px; position: relative; }
+        .hero-right::before {
+            content: ''; position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px;
+            border-radius: 24px; border: 1.5px dashed var(--accent-border);
+            animation: rotate-slow 30s linear infinite; opacity: 0.4;
         }
-        .profile-img:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 28px 72px var(--shadow-md); }
+        @keyframes rotate-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .profile-img {
+            width: 260px; height: 310px; border-radius: 20px;
+            object-fit: cover; object-position: center 15%;
+            border: 5px solid var(--white);
+            box-shadow: 0 24px 64px var(--shadow-lg);
+            filter: saturate(0.9) contrast(1.05) brightness(1.02);
+            transition: 0.5s; position: relative; z-index: 2;
+        }
+        .profile-img:hover { transform: scale(1.03) translateY(-6px); box-shadow: 0 32px 80px var(--shadow-lg); }
         .hero-role-card {
             background: var(--white); border: 1.5px solid var(--border);
-            border-radius: var(--radius); padding: 16px 22px;
+            border-radius: var(--radius); padding: 18px 24px;
             width: 100%; text-align: center;
-            box-shadow: 0 6px 20px var(--shadow);
+            box-shadow: 0 8px 28px var(--shadow); position: relative; z-index: 2;
         }
-        .hero-role-card .name { font-weight: 800; font-size: 1.1rem; color: var(--text); margin-bottom: 3px; }
-        .hero-role-card .role { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+        .hero-role-card .name { font-weight: 800; font-size: 1.15rem; color: var(--text); margin-bottom: 4px; }
+        .hero-role-card .role { font-size: 0.92rem; color: var(--accent); font-weight: 700; }
 
-        /* VALUE PROPOSITION STRIP */
-        .value-strip {
-            background: var(--bg-dark);
-            padding: 28px 0;
+        /* JOURNEY COUNTER STRIP */
+        .journey-strip {
+            background: var(--bg-dark); padding: 32px 0; position: relative; overflow: hidden;
         }
-        .value-strip .container {
-            display: flex; justify-content: center; align-items: center;
-            gap: 48px; flex-wrap: wrap;
+        .journey-strip::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(90deg, rgba(13,148,136,0.05), rgba(79,70,229,0.05), rgba(13,148,136,0.05));
+            background-size: 200% 100%; animation: gradient-shift 6s ease infinite;
         }
-        .value-item {
-            display: flex; align-items: center; gap: 10px;
-            color: rgba(255,255,255,0.8); font-size: 1rem; font-weight: 600;
+        .journey-strip .container {
+            display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;
+            position: relative; z-index: 1;
         }
-        .value-item i { color: var(--accent-light); font-size: 1rem; }
+        .journey-from {
+            font-size: 0.88rem; color: rgba(255,255,255,0.4); font-weight: 500;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .journey-arrow { color: var(--accent-light); font-size: 1.2rem; margin: 0 8px; }
+        .journey-to {
+            font-size: 1.05rem; color: #fff; font-weight: 700;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .journey-year {
+            font-family: var(--mono); font-size: 0.82rem; font-weight: 600;
+            padding: 4px 10px; border-radius: 6px;
+        }
+        .year-old { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.5); }
+        .year-new { background: rgba(13,148,136,0.2); color: var(--accent-light); }
 
-        /* ===================== */
-        /* SOLOPRENEUR IDENTITY  */
-        /* ===================== */
-
-        /* PHILOSOPHY STRIP */
-        .philosophy {
-            background: var(--accent-bg);
-            border-top: 1.5px solid var(--accent-border);
+        /* DNA STRIP — Capabilities */
+        .dna-strip {
+            background: var(--accent-bg); border-top: 1.5px solid var(--accent-border);
             border-bottom: 1.5px solid var(--accent-border);
-            padding: 44px 0; text-align: center;
+            padding: 48px 0; text-align: center;
         }
-        .philosophy h2 { font-size: 1.5rem; font-weight: 800; color: var(--text); margin-bottom: 12px; }
-        .philosophy p { font-size: 1.05rem; color: var(--text-secondary); max-width: 780px; margin: 0 auto; line-height: 1.75; }
-        .philosophy p strong { color: var(--text); }
-        .philosophy .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; }
-        .philosophy .pill {
-            background: var(--white); border: 1px solid var(--accent-border);
-            padding: 7px 16px; border-radius: 22px;
-            font-size: 0.88rem; font-weight: 600; color: var(--accent);
+        .dna-strip h2 { font-size: 1.65rem; font-weight: 800; color: var(--text); margin-bottom: 14px; letter-spacing: -0.5px; }
+        .dna-strip > .container > p { font-size: 1.1rem; color: var(--text-sec); max-width: 760px; margin: 0 auto 24px; line-height: 1.75; }
+        .dna-strip > .container > p strong { color: var(--text); }
+        .dna-grid {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px;
         }
+        .dna-pill {
+            background: var(--white); border: 1.5px solid var(--accent-border);
+            padding: 10px 20px; border-radius: 28px;
+            font-size: 0.92rem; font-weight: 700; color: var(--accent);
+            display: flex; align-items: center; gap: 7px;
+            transition: 0.3s;
+        }
+        .dna-pill:hover { transform: translateY(-3px); box-shadow: 0 6px 20px var(--shadow); border-color: var(--accent); }
+        .dna-pill i { font-size: 0.85rem; }
 
-        /* SECTION HEADERS */
+        /* ======================== */
+        /* SECTION HEADERS          */
+        /* ======================== */
         .s-label {
-            font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
+            font-family: var(--mono); font-size: 0.88rem; font-weight: 600;
             color: var(--accent); text-transform: uppercase;
-            letter-spacing: 3px; margin-bottom: 12px;
+            letter-spacing: 3.5px; margin-bottom: 14px;
         }
         .s-title {
-            font-size: 2.2rem; font-weight: 800; color: var(--text);
-            letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2;
+            font-size: 2.8rem; font-weight: 900; color: var(--text);
+            letter-spacing: -1px; margin-bottom: 18px; line-height: 1.15;
         }
-        .s-desc { font-size: 1.08rem; color: var(--text-secondary); max-width: 640px; line-height: 1.75; }
-        .s-header { margin-bottom: 48px; }
+        .s-desc { font-size: 1.15rem; color: var(--text-sec); max-width: 660px; line-height: 1.75; }
+        .s-header { margin-bottom: 56px; }
         .s-center { text-align: center; }
         .s-center .s-desc { margin: 0 auto; }
 
-        /* PRODUCTS */
-        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+        /* ======================== */
+        /* PRODUCTS — FLAGSHIP      */
+        /* ======================== */
+        .products-section { background: var(--bg); }
+        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
         .product-card {
             background: var(--white); border: 1.5px solid var(--border);
-            border-radius: var(--radius); padding: 40px 36px; transition: all 0.35s;
+            border-radius: 20px; padding: 44px 40px; transition: 0.4s;
             position: relative; overflow: hidden;
         }
         .product-card::before {
             content: ''; position: absolute; top: 0; left: 0; right: 0;
-            height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light));
+            height: 4px; background: linear-gradient(90deg, var(--accent), #0891b2, var(--accent-light));
+            background-size: 200% 100%; animation: gradient-shift 4s ease infinite;
         }
-        .product-card:hover { box-shadow: 0 20px 56px var(--shadow-md); transform: translateY(-6px); }
+        .product-card::after {
+            content: ''; position: absolute; top: -80px; right: -80px;
+            width: 200px; height: 200px; border-radius: 50%;
+            background: radial-gradient(circle, var(--accent-bg), transparent 70%);
+            opacity: 0; transition: opacity 0.4s;
+        }
+        .product-card:hover { box-shadow: 0 24px 64px var(--shadow-md); transform: translateY(-8px); }
+        .product-card:hover::after { opacity: 1; }
+        .product-top { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+        .product-logo {
+            width: 48px; height: 48px; border-radius: 12px; object-fit: contain;
+            border: 1px solid var(--border); padding: 4px; background: #fff;
+        }
         .product-badge {
-            display: inline-flex; align-items: center; gap: 6px;
+            display: inline-flex; align-items: center; gap: 5px;
             background: var(--accent-bg); color: var(--accent);
-            font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
-            padding: 6px 14px; border-radius: 8px;
-            margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase;
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 600;
+            padding: 5px 12px; border-radius: 8px;
+            letter-spacing: 1px; text-transform: uppercase;
         }
-        .product-card h3 { font-size: 1.5rem; font-weight: 800; color: var(--text); margin-bottom: 10px; }
+        .product-card h3 { font-size: 1.65rem; font-weight: 800; color: var(--text); margin-bottom: 12px; }
         .product-card h3 a { color: var(--text); }
         .product-card h3 a:hover { color: var(--accent); }
-        .product-card .pdesc { font-size: 1.02rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 22px; }
+        .product-tagline {
+            font-size: 1rem; font-weight: 700; color: var(--accent);
+            margin-bottom: 12px; font-style: italic;
+        }
+        .product-card .pdesc { font-size: 1.05rem; color: var(--text-sec); line-height: 1.75; margin-bottom: 24px; }
         .product-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
         .product-features li {
             display: flex; align-items: flex-start; gap: 10px;
-            font-size: 0.96rem; color: var(--text-secondary);
+            font-size: 0.98rem; color: var(--text-sec);
         }
         .product-features li i { color: var(--accent); margin-top: 6px; font-size: 0.5rem; }
 
-        /* WEEKEND CONSULTING HIGHLIGHT */
-        .consulting-highlight {
-            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
-            padding: 64px 0; text-align: center; position: relative; overflow: hidden;
+        /* ======================== */
+        /* CONSULTING SECTION       */
+        /* ======================== */
+        .consulting-section {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 50%, #115e59 100%);
+            padding: 100px 0; position: relative; overflow: hidden;
         }
-        .consulting-highlight::before {
+        .consulting-section::before {
             content: ''; position: absolute; inset: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08), transparent 60%),
-                        radial-gradient(circle at 80% 50%, rgba(255,255,255,0.05), transparent 50%);
+            background: radial-gradient(circle at 15% 50%, rgba(255,255,255,0.06), transparent 50%),
+                        radial-gradient(circle at 85% 40%, rgba(255,255,255,0.04), transparent 40%);
         }
-        .consulting-highlight .container { position: relative; z-index: 1; }
-        .consulting-eyebrow {
-            font-family: var(--mono); font-size: 0.85rem; font-weight: 500;
-            color: rgba(255,255,255,0.7); text-transform: uppercase;
-            letter-spacing: 3.5px; margin-bottom: 14px;
+        .consulting-bg-dots {
+            position: absolute; inset: 0;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+            background-size: 28px 28px;
         }
-        .consulting-highlight h2 {
-            font-size: 2.8rem; font-weight: 900; color: #fff;
-            letter-spacing: -1.5px; margin-bottom: 16px; line-height: 1.1;
+        .consulting-section .container { position: relative; z-index: 1; }
+        .c-label {
+            font-family: var(--mono); font-size: 0.9rem; font-weight: 600;
+            color: rgba(255,255,255,0.6); text-transform: uppercase;
+            letter-spacing: 4px; margin-bottom: 16px; text-align: center;
         }
-        .consulting-highlight p {
-            font-size: 1.15rem; color: rgba(255,255,255,0.75);
-            max-width: 680px; margin: 0 auto 36px; line-height: 1.7;
+        .consulting-section h2 {
+            font-size: 3.2rem; font-weight: 900; color: #fff; text-align: center;
+            letter-spacing: -1.5px; margin-bottom: 18px; line-height: 1.1;
         }
-        .consulting-highlight p strong { color: #fff; }
-        .consulting-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 24px; margin-top: 8px;
+        .consulting-section > .container > p {
+            font-size: 1.2rem; color: rgba(255,255,255,0.7); text-align: center;
+            max-width: 700px; margin: 0 auto 48px; line-height: 1.7;
         }
+        .consulting-section > .container > p strong { color: #fff; }
+        .consult-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
         .consult-card {
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(8px);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: var(--radius); padding: 32px 28px;
-            text-align: left; transition: all 0.3s;
+            background: rgba(255,255,255,0.08); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px; padding: 40px 32px; transition: 0.35s;
         }
-        .consult-card:hover { background: rgba(255,255,255,0.16); transform: translateY(-4px); }
-        .consult-num {
-            font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
-            color: rgba(255,255,255,0.4); margin-bottom: 14px;
-        }
+        .consult-card:hover { background: rgba(255,255,255,0.14); transform: translateY(-6px); box-shadow: 0 20px 48px rgba(0,0,0,0.2); }
+        .consult-num { font-family: var(--mono); font-size: 0.8rem; color: rgba(255,255,255,0.3); margin-bottom: 16px; }
         .consult-icon {
-            width: 48px; height: 48px; background: rgba(255,255,255,0.12); border-radius: 12px;
+            width: 56px; height: 56px; background: rgba(255,255,255,0.1); border-radius: 14px;
             display: flex; align-items: center; justify-content: center;
-            color: #fff; font-size: 1.2rem; margin-bottom: 18px;
+            color: #fff; font-size: 1.3rem; margin-bottom: 20px;
         }
-        .consult-card h3 { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 10px; line-height: 1.3; }
-        .consult-card p { font-size: 0.96rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
+        .consult-card h3 { font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 12px; line-height: 1.3; }
+        .consult-card p { font-size: 1rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
 
-        /* ========================= */
-        /* IDENTITY DIVIDER          */
-        /* ========================= */
+        /* ======================== */
+        /* IDENTITY DIVIDER         */
+        /* ======================== */
         .identity-divider {
-            background: var(--bg-dark);
-            padding: 56px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+            background: var(--bg-dark); padding: 64px 0; text-align: center;
+            position: relative; overflow: hidden;
         }
         .identity-divider::before {
-            content: '';
-            position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-            width: 80px; height: 3px;
-            background: var(--career-accent-light);
+            content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+            width: 100px; height: 3px; background: linear-gradient(90deg, transparent, var(--career-light), transparent);
         }
         .divider-eyebrow {
-            font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
-            color: var(--career-accent-light); text-transform: uppercase;
-            letter-spacing: 3.5px; margin-bottom: 14px;
+            font-family: var(--mono); font-size: 0.88rem; font-weight: 600;
+            color: var(--career-light); text-transform: uppercase;
+            letter-spacing: 4px; margin-bottom: 16px;
         }
         .identity-divider h2 {
-            font-size: 2rem; font-weight: 800; color: #fff;
-            letter-spacing: -0.5px; margin-bottom: 10px;
+            font-size: 2.4rem; font-weight: 900; color: #fff;
+            letter-spacing: -1px; margin-bottom: 12px;
         }
-        .identity-divider h2 span { color: var(--career-accent-light); }
-        .identity-divider p {
-            font-size: 1.02rem; color: rgba(255,255,255,0.5);
-            max-width: 580px; margin: 0 auto;
-        }
+        .identity-divider h2 span { color: var(--career-light); }
+        .identity-divider p { font-size: 1.08rem; color: rgba(255,255,255,0.45); max-width: 600px; margin: 0 auto; }
 
-        /* =================== */
-        /* CAREER IDENTITY     */
-        /* =================== */
-
-        /* CAREER CURRENT ROLE */
-        .career-current {
-            padding: 64px 0 56px;
-            background: var(--bg);
-        }
+        /* ======================== */
+        /* CURRENT ROLE — BIG       */
+        /* ======================== */
+        .career-current { padding: 72px 0 64px; background: var(--bg); }
         .current-role-card {
-            display: flex; align-items: center; gap: 36px;
-            background: var(--white); border: 1.5px solid var(--border);
-            border-radius: 16px; padding: 40px 44px;
-            box-shadow: 0 6px 32px var(--shadow);
-            border-left: 5px solid var(--career-accent);
-            position: relative;
+            display: flex; align-items: center; gap: 40px;
+            background: var(--white); border: 2px solid var(--border);
+            border-radius: 20px; padding: 48px 52px;
+            box-shadow: 0 8px 40px var(--shadow);
+            border-left: 6px solid var(--career);
+            position: relative; overflow: hidden;
         }
-        .current-role-glow {
-            position: absolute; top: -2px; right: -2px; bottom: -2px;
-            width: 120px; border-radius: 0 16px 16px 0;
-            background: linear-gradient(90deg, transparent, var(--career-accent-bg));
+        .current-role-card::after {
+            content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 160px;
+            background: linear-gradient(90deg, transparent, var(--career-bg));
             pointer-events: none;
         }
         .current-role-logo {
-            width: 96px; height: 96px; object-fit: contain;
-            border-radius: 14px; flex-shrink: 0;
-            background: #fff; padding: 10px;
-            border: 1.5px solid var(--career-accent-border);
-            box-shadow: 0 4px 16px var(--shadow);
+            width: 110px; height: 110px; object-fit: contain;
+            border-radius: 16px; flex-shrink: 0; background: #fff;
+            padding: 12px; border: 2px solid var(--career-border);
+            box-shadow: 0 6px 24px var(--shadow);
         }
-        .current-role-info { flex: 1; }
+        .current-role-info { flex: 1; position: relative; z-index: 1; }
         .current-role-tag {
-            display: inline-flex; align-items: center; gap: 6px;
-            background: var(--career-accent-bg); color: var(--career-accent);
-            font-family: var(--mono); font-size: 0.78rem; font-weight: 700;
-            padding: 6px 14px; border-radius: 8px; margin-bottom: 10px;
-            text-transform: uppercase; letter-spacing: 1px;
-            animation: pulse-role 3s ease-in-out infinite;
+            display: inline-flex; align-items: center; gap: 7px;
+            background: var(--career-bg); color: var(--career);
+            font-family: var(--mono); font-size: 0.82rem; font-weight: 700;
+            padding: 7px 16px; border-radius: 10px; margin-bottom: 12px;
+            text-transform: uppercase; letter-spacing: 1.2px;
+            animation: pulse-glow-career 3s ease-in-out infinite;
         }
-        @keyframes pulse-role {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(79,70,229,0.15); }
-            50% { box-shadow: 0 0 0 8px rgba(79,70,229,0); }
+        @keyframes pulse-glow-career {
+            0%,100% { box-shadow: 0 0 0 0 rgba(79,70,229,0.2); }
+            50% { box-shadow: 0 0 0 10px rgba(79,70,229,0); }
         }
-        .current-role-info h3 {
-            font-size: 1.45rem; font-weight: 800; color: var(--text); margin-bottom: 4px;
-        }
-        .current-role-info .company-name {
-            font-size: 1.05rem; font-weight: 700; color: var(--career-accent); margin-bottom: 8px;
-        }
-        .current-role-info .company-desc {
-            font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-bottom: 8px;
-        }
-        .current-role-info p {
-            font-size: 1rem; color: var(--text-secondary); line-height: 1.7;
-        }
+        .current-role-info h3 { font-size: 1.65rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+        .current-role-info .company-name { font-size: 1.15rem; font-weight: 700; color: var(--career); margin-bottom: 6px; }
+        .current-role-info .company-desc { font-size: 0.92rem; color: var(--text-light); font-style: italic; margin-bottom: 10px; }
+        .current-role-info p { font-size: 1.05rem; color: var(--text-sec); line-height: 1.75; }
 
-        /* STATS BAR */
-        .stats-bar { background: var(--bg-dark); padding: 36px 0; }
+        /* STATS */
+        .stats-bar { background: var(--bg-dark); padding: 40px 0; }
         .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-        .stat-item { text-align: center; padding: 10px 20px; position: relative; }
-        .stat-item:not(:last-child)::after {
-            content: ''; position: absolute; right: 0; top: 10%; height: 80%;
-            width: 1px; background: rgba(255,255,255,0.1);
-        }
-        .stat-num { font-size: 2.2rem; font-weight: 900; color: var(--career-accent-light); line-height: 1; margin-bottom: 6px; }
-        .stat-lbl { font-size: 0.82rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 500; }
+        .stat-item { text-align: center; padding: 12px 20px; position: relative; }
+        .stat-item:not(:last-child)::after { content: ''; position: absolute; right: 0; top: 10%; height: 80%; width: 1px; background: rgba(255,255,255,0.08); }
+        .stat-num { font-size: 2.6rem; font-weight: 900; line-height: 1; margin-bottom: 8px; }
+        .stat-num.career-num { color: var(--career-light); }
+        .stat-lbl { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
 
-        /* CAREER JOURNEY */
+        /* ======================== */
+        /* CAREER JOURNEY            */
+        /* ======================== */
         .career-journey { background: var(--bg-alt); }
-        .career-label-c {
-            font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
-            color: var(--career-accent); text-transform: uppercase;
-            letter-spacing: 3px; margin-bottom: 12px;
-        }
-        .career-title {
-            font-size: 2.2rem; font-weight: 800; color: var(--text);
-            letter-spacing: -0.5px; margin-bottom: 36px; line-height: 1.2;
-        }
+        .career-label { font-family: var(--mono); font-size: 0.88rem; font-weight: 600; color: var(--career); text-transform: uppercase; letter-spacing: 3.5px; margin-bottom: 14px; }
+        .career-title { font-size: 2.8rem; font-weight: 900; color: var(--text); letter-spacing: -1px; margin-bottom: 24px; line-height: 1.15; }
+        .career-subtitle { font-size: 1.1rem; color: var(--text-sec); margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto; }
+
         .logo-track {
             display: flex; flex-wrap: wrap; justify-content: center;
-            gap: 20px; align-items: center;
-            margin-bottom: 48px;
+            gap: 22px; align-items: flex-start; margin-bottom: 56px;
         }
         .logo-item {
             display: flex; flex-direction: column; align-items: center; gap: 10px;
-            transition: all 0.3s; min-width: 100px;
+            transition: 0.4s; min-width: 110px; max-width: 120px;
         }
-        .logo-item:hover { transform: translateY(-6px); }
+        .logo-item:hover { transform: translateY(-8px); }
         .logo-item img {
-            width: 88px; height: 88px; object-fit: contain;
-            border-radius: 14px; background: var(--white);
-            border: 1.5px solid var(--border); padding: 12px;
-            box-shadow: 0 4px 14px var(--shadow);
-            transition: all 0.3s;
+            width: 100px; height: 100px; object-fit: contain;
+            border-radius: 16px; background: var(--white);
+            border: 2px solid var(--border); padding: 14px;
+            box-shadow: 0 4px 18px var(--shadow); transition: 0.4s;
         }
-        .logo-item:hover img {
-            box-shadow: 0 10px 28px var(--shadow-md);
-            border-color: var(--career-accent-border);
-        }
-        .logo-item span {
-            font-size: 0.78rem; font-weight: 600; color: var(--text-light);
-            text-align: center; max-width: 100px; line-height: 1.3;
-        }
-        .logo-item .logo-detail {
-            font-size: 0.62rem; color: var(--text-light); opacity: 0.7;
-            text-align: center; max-width: 110px; line-height: 1.25;
-            margin-top: -4px;
-        }
-        .logo-item.current img {
-            border-color: var(--career-accent);
-            border-width: 2px;
-            box-shadow: 0 6px 24px rgba(79,70,229,0.15);
-        }
-        .logo-item.current span { color: var(--career-accent); font-weight: 800; }
-        .career-arrow {
-            color: var(--border); font-size: 1rem;
-        }
+        .logo-item:hover img { box-shadow: 0 12px 36px var(--shadow-md); border-color: var(--career-border); }
+        .logo-item span { font-size: 0.82rem; font-weight: 700; color: var(--text-light); text-align: center; line-height: 1.3; }
+        .logo-item .logo-detail { font-size: 0.65rem; color: var(--text-light); opacity: 0.65; text-align: center; line-height: 1.25; margin-top: -4px; }
+        .logo-item.current img { border-color: var(--career); border-width: 3px; box-shadow: 0 8px 32px rgba(79,70,229,0.15); }
+        .logo-item.current span { color: var(--career); font-weight: 800; }
+        .career-arrow { color: var(--border); font-size: 1.1rem; margin-top: 36px; }
 
         /* DOMAIN CARDS */
-        .domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         .domain-card {
-            background: var(--white); border: 1.5px solid var(--border);
-            border-radius: var(--radius); padding: 36px 32px;
-            transition: all 0.35s; position: relative; overflow: hidden;
+            background: var(--white); border: 2px solid var(--border);
+            border-radius: 20px; padding: 40px 36px; transition: 0.4s;
+            position: relative; overflow: hidden;
         }
         .domain-card::before {
             content: ''; position: absolute; top: 0; left: 0; right: 0;
-            height: 4px; background: var(--career-accent);
-            transform: scaleX(0); transition: transform 0.35s; transform-origin: left;
+            height: 4px; background: var(--career);
+            transform: scaleX(0); transition: 0.4s; transform-origin: left;
         }
         .domain-card:hover::before { transform: scaleX(1); }
-        .domain-card:hover { box-shadow: 0 16px 44px var(--shadow-md); transform: translateY(-6px); }
+        .domain-card:hover { box-shadow: 0 20px 56px var(--shadow-md); transform: translateY(-8px); }
         .domain-icon {
-            width: 48px; height: 48px; background: var(--career-accent-bg); border-radius: 12px;
+            width: 52px; height: 52px; background: var(--career-bg); border-radius: 14px;
             display: flex; align-items: center; justify-content: center;
-            color: var(--career-accent); font-size: 1.2rem; margin-bottom: 18px;
+            color: var(--career); font-size: 1.3rem; margin-bottom: 20px;
         }
-        .domain-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
-        .domain-card p { font-size: 0.96rem; color: var(--text-secondary); line-height: 1.7; }
+        .domain-card h3 { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 12px; }
+        .domain-card p { font-size: 1rem; color: var(--text-sec); line-height: 1.7; }
         .domain-tag {
-            display: inline-block; font-family: var(--mono); font-size: 0.72rem;
-            color: var(--career-accent); background: var(--career-accent-bg);
-            padding: 4px 10px; border-radius: 6px; margin-top: 14px; letter-spacing: 0.3px;
+            display: inline-block; font-family: var(--mono); font-size: 0.74rem;
+            color: var(--career); background: var(--career-bg);
+            padding: 5px 12px; border-radius: 8px; margin-top: 16px; font-weight: 600;
         }
 
-        /* TECH */
-        .tech-section { background: var(--bg-alt); }
-        .tech-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+        /* ======================== */
+        /* TECH STACK                */
+        /* ======================== */
+        .tech-section { background: var(--bg); }
+        .tech-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
         .tech-tag {
-            display: inline-flex; align-items: center; gap: 7px;
+            display: inline-flex; align-items: center; gap: 8px;
             background: var(--white); border: 1.5px solid var(--border);
-            padding: 10px 20px; border-radius: 40px;
-            font-size: 0.92rem; font-weight: 500; color: var(--text-secondary);
-            transition: all 0.25s;
+            padding: 12px 22px; border-radius: 40px;
+            font-size: 0.95rem; font-weight: 600; color: var(--text-sec); transition: 0.3s;
         }
-        .tech-tag:hover { border-color: var(--accent-border); color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 18px var(--shadow); }
-        .tech-tag i { color: var(--accent); font-size: 0.95rem; }
+        .tech-tag:hover { border-color: var(--accent-border); color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 24px var(--shadow); }
+        .tech-tag i { color: var(--accent); font-size: 1rem; }
         .tech-category {
             width: 100%; text-align: center;
-            font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+            font-family: var(--mono); font-size: 0.78rem; font-weight: 600;
             color: var(--text-light); text-transform: uppercase;
-            letter-spacing: 2px; margin: 24px 0 12px; padding-top: 20px;
-            border-top: 1px solid var(--border);
+            letter-spacing: 2.5px; margin: 28px 0 14px; padding-top: 24px;
+            border-top: 1.5px solid var(--border);
         }
         .tech-category:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
 
-        /* CONTACT */
-        .cta-section { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 80px 0; }
-        .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-        .cta-left h2 { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 16px; line-height: 1.15; }
+        /* ======================== */
+        /* CONTACT                   */
+        /* ======================== */
+        .cta-section { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 100px 0; }
+        .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+        .cta-left h2 { font-size: 2.6rem; font-weight: 900; color: #fff; margin-bottom: 18px; line-height: 1.1; letter-spacing: -1px; }
         .cta-left h2 span { color: var(--accent-light); }
-        .cta-left p { font-size: 1.05rem; color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 28px; }
-        .cta-details { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-        .cta-details li {
-            display: flex; align-items: center; gap: 14px;
-            font-size: 1rem; color: rgba(255,255,255,0.65);
-        }
-        .cta-details li i {
-            width: 40px; height: 40px;
-            background: rgba(13,148,136,0.15); border-radius: 10px;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--accent-light); font-size: 0.92rem; flex-shrink: 0;
-        }
-        .cta-details li a { color: rgba(255,255,255,0.65); }
+        .cta-left p { font-size: 1.1rem; color: rgba(255,255,255,0.5); line-height: 1.75; margin-bottom: 32px; }
+        .cta-details { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+        .cta-details li { display: flex; align-items: center; gap: 14px; font-size: 1.02rem; color: rgba(255,255,255,0.6); }
+        .cta-details li i { width: 44px; height: 44px; background: rgba(13,148,136,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent-light); font-size: 0.95rem; flex-shrink: 0; }
+        .cta-details li a { color: rgba(255,255,255,0.6); }
         .cta-details li a:hover { color: var(--accent-light); }
-        .cta-form {
-            background: var(--bg-dark-mid); border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 18px; padding: 36px;
-        }
-        .cta-form h3 { font-size: 1.2rem; color: #fff; font-weight: 700; margin-bottom: 4px; }
-        .cta-form .form-sub { font-size: 0.88rem; color: rgba(255,255,255,0.4); margin-bottom: 24px; }
-        .fg { margin-bottom: 16px; }
-        .fg label { display: block; font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.45); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-        .fg input, .fg textarea, .fg select {
-            width: 100%; background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;
-            padding: 12px 16px; font-family: var(--font); font-size: 0.95rem;
-            color: #fff; outline: none; transition: border-color 0.3s;
-        }
-        .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(13,148,136,0.15); }
-        .fg textarea { resize: vertical; min-height: 80px; }
+        .cta-form { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 40px; }
+        .cta-form h3 { font-size: 1.3rem; color: #fff; font-weight: 700; margin-bottom: 6px; }
+        .cta-form .form-sub { font-size: 0.9rem; color: rgba(255,255,255,0.35); margin-bottom: 28px; }
+        .fg { margin-bottom: 18px; }
+        .fg label { display: block; font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.4); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .fg input, .fg textarea, .fg select { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 13px 18px; font-family: var(--font); font-size: 0.98rem; color: #fff; outline: none; transition: 0.3s; }
+        .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(13,148,136,0.12); }
+        .fg textarea { resize: vertical; min-height: 84px; }
         .fg select option { background: var(--bg-dark); color: #fff; }
-        .form-btn {
-            width: 100%; background: var(--accent); color: var(--white);
-            padding: 14px; border: none; border-radius: 10px;
-            font-family: var(--font); font-size: 1rem; font-weight: 700;
-            cursor: pointer; transition: all 0.3s; margin-top: 4px;
-        }
-        .form-btn:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(13,148,136,0.3); }
-        .form-note { font-size: 0.74rem; color: rgba(255,255,255,0.3); text-align: center; margin-top: 12px; }
+        .form-btn { width: 100%; background: var(--accent); color: var(--white); padding: 15px; border: none; border-radius: 12px; font-family: var(--font); font-size: 1.02rem; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 16px var(--accent-glow); }
+        .form-btn:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 28px var(--accent-glow); }
+        .form-note { font-size: 0.76rem; color: rgba(255,255,255,0.25); text-align: center; margin-top: 14px; }
 
         /* FOOTER */
-        .footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; }
-        .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 10px; }
-        .footer-links a { color: var(--text-light); font-size: 1.1rem; }
-        .footer-links a:hover { color: var(--accent); }
-        .footer p { font-size: 0.82rem; color: var(--text-light); }
+        .footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 28px; margin-bottom: 12px; }
+        .footer-links a { color: var(--text-light); font-size: 1.15rem; transition: 0.3s; }
+        .footer-links a:hover { color: var(--accent); transform: translateY(-2px); }
+        .footer p { font-size: 0.85rem; color: var(--text-light); }
 
         /* ANIMATIONS */
-        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
         .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-d1 { transition-delay: 0.1s; }
-        .reveal-d2 { transition-delay: 0.2s; }
-        .reveal-d3 { transition-delay: 0.3s; }
-
-        /* TYPING CURSOR on hero eyebrow */
-        .typing-cursor::after {
-            content: '|'; animation: blink 1s step-end infinite; color: var(--accent); margin-left: 2px;
-        }
-        @keyframes blink { 50% { opacity: 0; } }
+        .reveal-d1 { transition-delay: 0.12s; }
+        .reveal-d2 { transition-delay: 0.24s; }
+        .reveal-d3 { transition-delay: 0.36s; }
 
         /* RESPONSIVE */
         @media (max-width: 1200px) {
-            .container { padding: 0 32px; }
-            .hero h1 { font-size: 2.8rem; }
-            .consulting-highlight h2 { font-size: 2.2rem; }
+            .container { padding: 0 36px; }
+            .hero h1 { font-size: 3.2rem; }
+            .s-title, .career-title { font-size: 2.4rem; }
+            .consulting-section h2 { font-size: 2.6rem; }
         }
         @media (max-width: 1024px) {
-            .hero-layout { grid-template-columns: 1fr 260px; gap: 40px; }
-            .profile-img { width: 200px; height: 240px; }
-            .domain-grid, .consulting-grid { grid-template-columns: 1fr 1fr; }
-            .current-role-card { flex-direction: column; text-align: center; gap: 24px; }
-            .current-role-glow { display: none; }
+            .hero-layout { grid-template-columns: 1fr 280px; gap: 48px; }
+            .profile-img { width: 220px; height: 264px; }
+            .domain-grid, .consult-grid { grid-template-columns: 1fr 1fr; }
+            .current-role-card { flex-direction: column; text-align: center; gap: 28px; }
+            .current-role-card::after { display: none; }
         }
         @media (max-width: 768px) {
-            .section { padding: 56px 0; }
+            .section { padding: 64px 0; }
             .container { padding: 0 24px; }
-            .hero { padding: 110px 0 52px; }
-            .hero-layout { grid-template-columns: 1fr; gap: 28px; }
+            .hero { padding: 120px 0 56px; }
+            .hero-layout { grid-template-columns: 1fr; gap: 32px; }
             .hero-right { order: -1; flex-direction: row; gap: 16px; }
+            .hero-right::before { display: none; }
             .profile-img { width: 100px; height: 120px; border-radius: 14px; }
             .hero-role-card { text-align: left; flex: 1; }
-            .hero h1 { font-size: 2.1rem; }
-            .s-title, .career-title { font-size: 1.6rem; }
-            .stats-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+            .hero h1 { font-size: 2.2rem; letter-spacing: -1.5px; }
+            .s-title, .career-title { font-size: 1.8rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
             .stat-item:nth-child(2)::after { display: none; }
-            .domain-grid, .consulting-grid, .products-grid { grid-template-columns: 1fr; }
+            .domain-grid, .consult-grid, .products-grid { grid-template-columns: 1fr; }
             .cta-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .nav-links.active {
                 display: flex; flex-direction: column;
                 position: absolute; top: 100%; left: 0; right: 0;
                 background: rgba(250,250,248,0.98); backdrop-filter: blur(16px);
-                padding: 20px 28px; gap: 14px;
+                padding: 20px 28px; gap: 16px;
                 border-bottom: 1px solid var(--border);
             }
             .nav-toggle { display: flex; }
             .hero-btns { flex-direction: column; }
-            .btn-primary, .btn-ghost { justify-content: center; }
+            .btn-hero, .btn-outline { justify-content: center; }
             .logo-track { gap: 14px; }
             .career-arrow { display: none; }
-            .current-role-card { flex-direction: column; text-align: center; gap: 20px; padding: 28px 24px; }
-            .identity-divider h2 { font-size: 1.5rem; }
-            .consulting-highlight h2 { font-size: 1.8rem; }
-            .value-strip .container { gap: 20px; }
-            .value-item { font-size: 0.85rem; }
+            .current-role-card { flex-direction: column; text-align: center; gap: 20px; padding: 32px 24px; }
+            .identity-divider h2 { font-size: 1.7rem; }
+            .consulting-section h2 { font-size: 2rem; }
+            .consulting-section { padding: 72px 0; }
+            .journey-strip .container { flex-direction: column; gap: 10px; }
         }
         @media (max-width: 480px) {
-            .hero h1 { font-size: 1.75rem; }
-            .stat-num { font-size: 1.7rem; }
-            .logo-item img { width: 64px; height: 64px; padding: 10px; }
-            .consulting-highlight h2 { font-size: 1.5rem; }
+            .hero h1 { font-size: 1.85rem; }
+            .stat-num { font-size: 2rem; }
+            .logo-item img { width: 72px; height: 72px; padding: 10px; }
+            .consulting-section h2 { font-size: 1.6rem; }
+            .s-title, .career-title { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -619,18 +577,18 @@
         </div>
     </nav>
 
-    <!-- ======================================== -->
-    <!--  IDENTITY 1: SOLOPRENEUR / PRODUCT BUILDER  -->
-    <!-- ======================================== -->
-
-    <!-- HERO -->
+    <!-- ================================================ -->
+    <!--  HERO — CINEMATIC SOLOPRENEUR IDENTITY            -->
+    <!-- ================================================ -->
     <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
         <div class="container">
             <div class="hero-layout">
                 <div>
-                    <div class="hero-eyebrow typing-cursor">Solopreneur &amp; AI Product Builder</div>
+                    <div class="hero-eyebrow" id="heroEyebrow">Solopreneur &amp; AI Product Builder</div>
                     <div class="weekend-badge"><i class="fas fa-rocket"></i> Building AI Products on Weekends</div>
-                    <h1>I Build <em>AI Products</em> That Solve Real Problems</h1>
+                    <h1>I Build <span class="gradient-text">AI Products</span> That Solve Real Problems</h1>
                     <p class="hero-desc">
                         Solopreneur by passion, builder by instinct. I architect and ship
                         <strong>Human-in-the-Loop AI products</strong> that bring enterprise-grade intelligence
@@ -638,98 +596,122 @@
                         baked into every decision layer.
                     </p>
                     <div class="hero-btns">
-                        <a href="#products" class="btn-primary"><i class="fas fa-boxes-stacked"></i> See My Products</a>
-                        <a href="#contact" class="btn-ghost"><i class="fas fa-calendar-check"></i> Book a Consultation</a>
+                        <a href="#products" class="btn-hero"><i class="fas fa-boxes-stacked"></i> See My Products</a>
+                        <a href="#contact" class="btn-outline"><i class="fas fa-calendar-check"></i> Book a Consultation</a>
                     </div>
                 </div>
                 <div class="hero-right">
-                    <img src="profile.jpg" alt="Dushyant Sharma" class="profile-img" width="240" height="288">
+                    <img src="profile.jpg"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/profile.jpg';"
+                         alt="Dushyant Sharma" class="profile-img" loading="eager">
                     <div class="hero-role-card">
                         <div class="name">Dushyant Sharma</div>
-                        <div class="role"><i class="fas fa-rocket" style="font-size:0.72rem;margin-right:4px;"></i> AI Product Builder &amp; Owner</div>
+                        <div class="role"><i class="fas fa-rocket" style="font-size:0.75rem;margin-right:4px;"></i> AI Product Builder &amp; Owner</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- VALUE PROPOSITION STRIP -->
-    <div class="value-strip">
+    <!-- JOURNEY COUNTER STRIP -->
+    <div class="journey-strip">
         <div class="container">
-            <div class="value-item"><i class="fas fa-brain"></i> Thinks in Systems</div>
-            <div class="value-item"><i class="fas fa-shield-halved"></i> Privacy-First Architect</div>
-            <div class="value-item"><i class="fas fa-lightbulb"></i> Human-in-the-Loop AI</div>
-            <div class="value-item"><i class="fas fa-cubes"></i> Zero-to-One Builder</div>
-        </div>
-    </div>
-
-    <!-- AI PHILOSOPHY -->
-    <div class="philosophy">
-        <div class="container">
-            <h2><i class="fas fa-shield-halved" style="color:var(--accent);margin-right:10px;font-size:1.15rem;"></i> Human-in-the-Loop AI — Built for Trust</h2>
-            <p>Every product I build follows one principle: <strong>Responsive AI with human oversight.</strong> No black-box decisions. Every workflow includes human checkpoints, full audit trails, and privacy-first data architecture — because enterprise AI must be <strong>explainable, secure, and compliant.</strong></p>
-            <div class="pills">
-                <span class="pill"><i class="fas fa-lock" style="margin-right:5px;font-size:0.7rem;"></i> Privacy-First Design</span>
-                <span class="pill"><i class="fas fa-eye" style="margin-right:5px;font-size:0.7rem;"></i> Human Oversight</span>
-                <span class="pill"><i class="fas fa-clipboard-check" style="margin-right:5px;font-size:0.7rem;"></i> Audit Trails</span>
-                <span class="pill"><i class="fas fa-user-shield" style="margin-right:5px;font-size:0.7rem;"></i> Regulatory Compliance</span>
+            <div class="journey-from">
+                <span class="journey-year year-old">2007</span> Medical Transcription, Heartland
+            </div>
+            <div class="journey-arrow"><i class="fas fa-arrow-right-long"></i><i class="fas fa-arrow-right-long"></i><i class="fas fa-arrow-right-long"></i></div>
+            <div class="journey-to">
+                <span class="journey-year year-new">2026</span> Building AI Products &amp; Leading Global Ops
             </div>
         </div>
     </div>
 
-    <!-- AI PRODUCTS -->
-    <section class="section" id="products">
+    <!-- BUILDER'S DNA -->
+    <div class="dna-strip">
+        <div class="container">
+            <h2><i class="fas fa-shield-halved" style="color:var(--accent);margin-right:10px;"></i> Human-in-the-Loop AI — Built for Trust</h2>
+            <p>Every product I build follows one principle: <strong>Responsive AI with human oversight.</strong> No black-box decisions. Full audit trails. Privacy-first architecture — because enterprise AI must be <strong>explainable, secure, and compliant.</strong></p>
+            <div class="dna-grid">
+                <div class="dna-pill"><i class="fas fa-lock"></i> Privacy-First Design</div>
+                <div class="dna-pill"><i class="fas fa-eye"></i> Human Oversight</div>
+                <div class="dna-pill"><i class="fas fa-clipboard-check"></i> Audit Trails</div>
+                <div class="dna-pill"><i class="fas fa-user-shield"></i> Regulatory Compliance</div>
+                <div class="dna-pill"><i class="fas fa-code"></i> End-to-End Builder</div>
+                <div class="dna-pill"><i class="fas fa-cubes"></i> Zero-to-One Products</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================ -->
+    <!--  PRODUCTS — FLAGSHIP SHOWCASE                     -->
+    <!-- ================================================ -->
+    <section class="section products-section" id="products">
         <div class="container">
             <div class="s-header s-center">
                 <div class="s-label reveal">Built, Shipped &amp; Running</div>
                 <h2 class="s-title reveal">Products I Own</h2>
-                <p class="s-desc reveal">I don't just advise — I build and own production-grade AI products that are live and solving real problems today.</p>
+                <p class="s-desc reveal">Not advice. Not consulting decks. These are live, production-grade AI products I designed, built, and own end-to-end — from architecture to deployment.</p>
             </div>
             <div class="products-grid">
                 <div class="product-card reveal reveal-d1">
-                    <div class="product-badge"><i class="fas fa-signal"></i> Signal Detection</div>
-                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;opacity:0.4;"></i></a></h3>
-                    <p class="pdesc">AI-powered signal detection for managers — instant visibility into team performance without micromanaging.</p>
+                    <div class="product-top">
+                        <img src="eagleeye-logo.png"
+                             onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/eagleeye-logo.png';"
+                             alt="EagleEye" class="product-logo">
+                        <div class="product-badge"><i class="fas fa-signal"></i> Signal Intelligence</div>
+                    </div>
+                    <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
+                    <div class="product-tagline">"Own the Signal. Master the Chaos."</div>
+                    <p class="pdesc">A God-View for executive leadership — AI that filters 1,000+ daily notifications across WhatsApp, Slack, Jira, and Email into the 3–5 signals that actually need your attention. Built for Founders, CEOs, CFOs, CPOs, COOs, VPs, and Directors.</p>
                     <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Real-time performance signal detection</li>
-                        <li><i class="fas fa-circle"></i> AI-driven anomaly alerts for early intervention</li>
-                        <li><i class="fas fa-circle"></i> Privacy-first — no invasive monitoring</li>
-                        <li><i class="fas fa-circle"></i> Built for SaaS support &amp; ops leaders</li>
+                        <li><i class="fas fa-circle"></i> Morning Brief: Your entire day synthesized in 5 minutes</li>
+                        <li><i class="fas fa-circle"></i> Urgent Filter: Critical escalations surfaced in seconds</li>
+                        <li><i class="fas fa-circle"></i> Blocker Detection: AI identifies bottlenecks before you ask</li>
+                        <li><i class="fas fa-circle"></i> Read-only, AES-256 encrypted, SOC 2 ready — enterprise grade</li>
+                        <li><i class="fas fa-circle"></i> 7 integrations: WhatsApp, Slack, Jira, Email, Teams, Asana, GitHub</li>
                     </ul>
                 </div>
                 <div class="product-card reveal reveal-d2">
-                    <div class="product-badge"><i class="fas fa-chart-bar"></i> AI Trading</div>
+                    <div class="product-top">
+                        <div class="product-logo" style="display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:var(--accent);background:var(--accent-bg);border-color:var(--accent-border);">S</div>
+                        <div class="product-badge"><i class="fas fa-chart-bar"></i> AI Trading</div>
+                    </div>
                     <h3>Sarathi</h3>
-                    <p class="pdesc">AI-driven trading assistant for Indian stock market (NSE) — technical analysis meets regulatory compliance.</p>
+                    <div class="product-tagline">"Your AI Trading Co-Pilot"</div>
+                    <p class="pdesc">AI-driven trading assistant for Indian stock market (NSE) — multi-indicator technical analysis with built-in risk management and human-in-the-loop trade confirmation.</p>
                     <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> NSE-focused with full Indian market compliance</li>
-                        <li><i class="fas fa-circle"></i> Multi-indicator technical analysis engine</li>
-                        <li><i class="fas fa-circle"></i> Risk management &amp; position-sizing rules</li>
-                        <li><i class="fas fa-circle"></i> Human-in-the-loop trade confirmation</li>
+                        <li><i class="fas fa-circle"></i> NSE-focused with full Indian market regulatory compliance</li>
+                        <li><i class="fas fa-circle"></i> Multi-indicator technical analysis engine (RSI, MACD, VWAP)</li>
+                        <li><i class="fas fa-circle"></i> Automated risk management &amp; position-sizing rules</li>
+                        <li><i class="fas fa-circle"></i> Human-in-the-loop trade confirmation — no black-box trades</li>
+                        <li><i class="fas fa-circle"></i> Real-time Telegram alerts with confidence scoring</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- WEEKEND CONSULTING — HIGHLIGHTED -->
-    <section class="consulting-highlight" id="consulting">
+    <!-- ================================================ -->
+    <!--  WEEKEND CONSULTING — CINEMATIC TEAL              -->
+    <!-- ================================================ -->
+    <section class="consulting-section" id="consulting">
+        <div class="consulting-bg-dots"></div>
         <div class="container">
-            <div class="consulting-eyebrow reveal">Weekend Consulting</div>
-            <h2 class="reveal">Available for Strategic <br>AI Engagements</h2>
+            <div class="c-label reveal">Weekend Passion — AI Products Building &amp; Consulting</div>
+            <h2 class="reveal">Available for Strategic<br>AI Engagements</h2>
             <p class="reveal">Hands-on, high-impact consulting to move your organization from legacy workflows to <strong>AI-powered operations</strong> with measurable ROI.</p>
-            <div class="consulting-grid">
+            <div class="consult-grid">
                 <div class="consult-card reveal reveal-d1">
                     <div class="consult-num">01</div>
                     <div class="consult-icon"><i class="fas fa-compass"></i></div>
                     <h3>AI Strategy &amp; Roadmap</h3>
-                    <p>Building Human-in-the-Loop AI architecture — phased deployment prioritizing quick wins and long-term scale.</p>
+                    <p>Building Human-in-the-Loop AI architecture — phased deployment with quick wins and long-term enterprise scale.</p>
                 </div>
                 <div class="consult-card reveal reveal-d2">
                     <div class="consult-num">02</div>
                     <div class="consult-icon"><i class="fas fa-cubes"></i></div>
                     <h3>AI Product Ownership</h3>
-                    <p>Full transition from legacy workflows to Agentic AI. I own the product lifecycle — from discovery to launch.</p>
+                    <p>Full lifecycle from discovery to launch. I build, ship, and iterate — not just advise from the sidelines.</p>
                 </div>
                 <div class="consult-card reveal reveal-d3">
                     <div class="consult-num">03</div>
@@ -741,32 +723,31 @@
         </div>
     </section>
 
-    <!-- ======================================== -->
-    <!--  IDENTITY DIVIDER                         -->
-    <!-- ======================================== -->
+    <!-- ================================================ -->
+    <!--  IDENTITY DIVIDER                                 -->
+    <!-- ================================================ -->
     <div class="identity-divider reveal">
         <div class="container">
             <div class="divider-eyebrow">The Career Behind the Builder</div>
             <h2>18+ Years of <span>Enterprise Leadership</span></h2>
-            <p>The solopreneur products above are powered by nearly two decades of hands-on enterprise experience below.</p>
+            <p>The solopreneur products above are powered by nearly two decades of hands-on enterprise experience across continents and industries.</p>
         </div>
     </div>
 
-    <!-- ======================================== -->
-    <!--  IDENTITY 2: FULL-TIME CAREER             -->
-    <!-- ======================================== -->
-
-    <!-- CURRENT ROLE -->
+    <!-- ================================================ -->
+    <!--  CURRENT FULL-TIME ROLE                           -->
+    <!-- ================================================ -->
     <section class="career-current" id="career">
         <div class="container">
             <div class="current-role-card reveal">
-                <div class="current-role-glow"></div>
-                <img src="GHL.png" alt="HighLevel" class="current-role-logo">
+                <img src="GHL.png"
+                     onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/GHL.png';"
+                     alt="HighLevel" class="current-role-logo">
                 <div class="current-role-info">
-                    <div class="current-role-tag"><i class="fas fa-briefcase" style="font-size:0.6rem;margin-right:4px;"></i> Current Full-Time Role</div>
+                    <div class="current-role-tag"><i class="fas fa-briefcase" style="font-size:0.62rem;margin-right:4px;"></i> Current Full-Time Role</div>
                     <h3>Senior Manager — Global Customer Support</h3>
                     <div class="company-name">HighLevel</div>
-                    <div class="company-desc">AI-as-a-Service, all-in-one marketing CRM platform designed to help businesses streamline their digital marketing efforts</div>
+                    <div class="company-desc">AI-as-a-Service, all-in-one marketing CRM platform helping businesses streamline digital marketing efforts</div>
                     <p>Leading global support operations, driving AI-powered workflows, and maintaining 95% enterprise CSAT across the full product suite.</p>
                 </div>
             </div>
@@ -777,74 +758,93 @@
     <div class="stats-bar">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item"><div class="stat-num">18+</div><div class="stat-lbl">Years Experience</div></div>
-                <div class="stat-item"><div class="stat-num">95%</div><div class="stat-lbl">Enterprise CSAT</div></div>
-                <div class="stat-item"><div class="stat-num">35%</div><div class="stat-lbl">Backlog Reduced</div></div>
-                <div class="stat-item"><div class="stat-num">$5M</div><div class="stat-lbl">ARR via Support</div></div>
+                <div class="stat-item"><div class="stat-num career-num" data-target="18" data-suffix="+">0+</div><div class="stat-lbl">Years Experience</div></div>
+                <div class="stat-item"><div class="stat-num career-num" data-target="95" data-suffix="%">0%</div><div class="stat-lbl">Enterprise CSAT</div></div>
+                <div class="stat-item"><div class="stat-num career-num" data-target="35" data-suffix="%">0%</div><div class="stat-lbl">Backlog Reduced</div></div>
+                <div class="stat-item"><div class="stat-num career-num" data-target="5" data-suffix="M" data-prefix="$">$0M</div><div class="stat-lbl">ARR via Support</div></div>
             </div>
         </div>
     </div>
 
-    <!-- CAREER JOURNEY -->
+    <!-- ================================================ -->
+    <!--  CAREER JOURNEY                                   -->
+    <!-- ================================================ -->
     <section class="section career-journey">
         <div class="container">
             <div class="s-header s-center">
-                <div class="career-label-c reveal">Career Journey</div>
+                <div class="career-label reveal">Career Journey</div>
                 <h2 class="career-title reveal">Brands I've Built With</h2>
+                <p class="career-subtitle reveal">From medical transcription in 2007 to building AI products in 2026 — every role shaped the builder I am today.</p>
             </div>
             <div class="logo-track reveal">
                 <div class="logo-item">
-                    <img src="Heartland.png" alt="Heartland Information Services">
+                    <img src="Heartland.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Heartland.png';"
+                         alt="Heartland Information Services">
                     <span>Heartland</span>
-                    <div class="logo-detail">Medical Transcription Solutions, USA</div>
+                    <div class="logo-detail">Medical Transcription, USA</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="RAK%20Bank.png" alt="RAK Bank">
+                    <img src="RAK%20Bank.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/RAK%20Bank.png';"
+                         alt="RAK Bank">
                     <span>RAK Bank</span>
                     <div class="logo-detail">Banking, Dubai</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="Genpact.png" alt="Genpact">
+                    <img src="Genpact.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Genpact.png';"
+                         alt="Genpact">
                     <span>Genpact</span>
                     <div class="logo-detail">Global IT Services, India</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="DXC%20Tech.png" alt="DXC Technology">
+                    <img src="DXC%20Tech.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/DXC%20Tech.png';"
+                         alt="DXC Technology">
                     <span>DXC Technology</span>
                     <div class="logo-detail">Enterprise IT Services</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="Hexaware.png" alt="Hexaware Technologies">
+                    <img src="Hexaware.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Hexaware.png';"
+                         alt="Hexaware Technologies">
                     <span>Hexaware</span>
                     <div class="logo-detail">Digital Transformation</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="CSOD.png" alt="Cornerstone OnDemand">
+                    <img src="CSOD.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/CSOD.png';"
+                         alt="Cornerstone OnDemand">
                     <span>Cornerstone</span>
-                    <div class="logo-detail">Cloud AI People Development</div>
+                    <div class="logo-detail">Cloud AI People Dev</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item">
-                    <img src="DH.png" alt="Definitive Healthcare">
+                    <img src="DH.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/DH.png';"
+                         alt="Definitive Healthcare">
                     <span>Definitive HC</span>
-                    <div class="logo-detail">NASDAQ: DH — AI Healthcare Analytics</div>
+                    <div class="logo-detail">NASDAQ: DH, AI Healthcare</div>
                 </div>
                 <div class="career-arrow"><i class="fas fa-chevron-right"></i></div>
                 <div class="logo-item current">
-                    <img src="GHL.png" alt="HighLevel">
+                    <img src="GHL.png"
+                         onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/GHL.png';"
+                         alt="HighLevel">
                     <span>HighLevel</span>
-                    <div class="logo-detail">AI-as-a-Service Marketing CRM</div>
+                    <div class="logo-detail">AI Marketing CRM</div>
                 </div>
             </div>
 
-            <!-- DOMAIN EXPERTISE — THE INDUSTRY WHISPERER -->
-            <div class="s-header s-center" style="margin-top:24px;">
-                <div class="career-label-c reveal">Deep Domain Intelligence</div>
+            <!-- DOMAIN EXPERTISE — INDUSTRY WHISPERER -->
+            <div class="s-header s-center" style="margin-top:32px;">
+                <div class="career-label reveal">Deep Domain Intelligence</div>
                 <h2 class="career-title reveal">The Industry Whisperer</h2>
             </div>
             <div class="domain-grid">
@@ -852,7 +852,7 @@
                     <div class="domain-icon"><i class="fas fa-hospital"></i></div>
                     <h3>US Healthcare &amp; Commercial Intelligence</h3>
                     <p>Advanced analytics for hospital systems, physician groups, and commercial intelligence platforms — driving data-driven decisions across the US healthcare ecosystem.</p>
-                    <span class="domain-tag">Healthcare Analytics · HIT · Medical Transcription</span>
+                    <span class="domain-tag">Healthcare Analytics · HIT · Med Transcription</span>
                 </div>
                 <div class="domain-card reveal reveal-d2">
                     <div class="domain-icon"><i class="fas fa-landmark"></i></div>
@@ -870,11 +870,9 @@
         </div>
     </section>
 
-    <!-- ======================================== -->
-    <!--  SHARED SECTIONS                          -->
-    <!-- ======================================== -->
-
-    <!-- TECH STACK -->
+    <!-- ================================================ -->
+    <!--  TECH STACK                                       -->
+    <!-- ================================================ -->
     <section class="section tech-section" id="tech">
         <div class="container">
             <div class="s-header s-center">
@@ -882,25 +880,23 @@
                 <h2 class="s-title reveal">Tech Stack</h2>
             </div>
             <div class="tech-wrap reveal">
-                <!-- AI & Intelligence -->
                 <div class="tech-category">AI &amp; Intelligence</div>
                 <div class="tech-tag"><i class="fas fa-brain"></i> Generative AI</div>
                 <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
                 <div class="tech-tag"><i class="fab fa-microsoft"></i> Azure AI</div>
                 <div class="tech-tag"><i class="fas fa-cloud"></i> Google Cloud</div>
 
-                <!-- Development & Deployment -->
                 <div class="tech-category">Development &amp; Deployment</div>
                 <div class="tech-tag"><i class="fas fa-bolt"></i> FastAPI</div>
                 <div class="tech-tag"><i class="fas fa-database"></i> Supabase</div>
-                <div class="tech-tag"><i class="fas fa-database"></i> PostgreSQL / SQL</div>
+                <div class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</div>
                 <div class="tech-tag"><i class="fab fa-docker"></i> Docker</div>
-                <div class="tech-tag"><i class="fas fa-triangle-exclamation"></i> Vercel</div>
+                <div class="tech-tag"><i class="fas fa-globe"></i> Vercel</div>
                 <div class="tech-tag"><i class="fas fa-shield-halved"></i> Cloudflare</div>
                 <div class="tech-tag"><i class="fab fa-github"></i> GitHub</div>
+                <div class="tech-tag"><i class="fas fa-code"></i> VS Code</div>
 
-                <!-- CRM, Ops & Business -->
-                <div class="tech-category">CRM, Ops &amp; Business Tools</div>
+                <div class="tech-category">CRM, Ops &amp; Collaboration</div>
                 <div class="tech-tag"><i class="fab fa-salesforce"></i> Salesforce</div>
                 <div class="tech-tag"><i class="fas fa-headset"></i> Zendesk</div>
                 <div class="tech-tag"><i class="fas fa-headset"></i> Freshdesk</div>
@@ -909,16 +905,19 @@
                 <div class="tech-tag"><i class="fas fa-tasks"></i> JIRA</div>
                 <div class="tech-tag"><i class="fas fa-plug"></i> Workato</div>
 
-                <!-- Analytics & Growth -->
                 <div class="tech-category">Analytics &amp; Growth</div>
                 <div class="tech-tag"><i class="fas fa-chart-bar"></i> Tableau</div>
+                <div class="tech-tag"><i class="fas fa-chart-pie"></i> Looker Studio</div>
+                <div class="tech-tag"><i class="fas fa-chart-area"></i> Domo</div>
                 <div class="tech-tag"><i class="fab fa-meta"></i> Meta Business Suite</div>
                 <div class="tech-tag"><i class="fas fa-shield-halved"></i> Okta</div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ================================================ -->
+    <!--  CONTACT                                          -->
+    <!-- ================================================ -->
     <section class="cta-section" id="contact">
         <div class="container">
             <div class="cta-grid">
@@ -978,20 +977,25 @@
                 <a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:imdushyant19@yahoo.co.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/kumar26dushyant-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://eagleeye.work" target="_blank" aria-label="EagleEye"><i class="fas fa-eye"></i></a>
             </div>
             <p>&copy; 2026 Dushyant Sharma &middot; AI Product Builder &amp; Solopreneur</p>
         </div>
     </footer>
 
     <script>
+    (function() {
+        /* NAV SCROLL */
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));
 
+        /* MOBILE MENU */
         const toggle = document.getElementById('navToggle');
         const links = document.getElementById('navLinks');
         toggle.addEventListener('click', () => links.classList.toggle('active'));
         links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('active')));
 
+        /* SMOOTH SCROLL */
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', e => {
                 e.preventDefault();
@@ -1000,33 +1004,28 @@
             });
         });
 
-        const obs = new IntersectionObserver(entries => {
+        /* REVEAL ON SCROLL — with spring feel */
+        const revealObs = new IntersectionObserver(entries => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-        document.getElementById('contactForm').addEventListener('submit', function() {
-            const b = this.querySelector('.form-btn');
-            b.textContent = 'Sending...';
-            b.disabled = true;
-        });
-
-        /* Counter animation for stats */
+        /* ANIMATED STAT COUNTERS */
         function animateCounters() {
-            document.querySelectorAll('.stat-num').forEach(el => {
-                const text = el.textContent;
-                if (el.dataset.animated) return;
-                const num = parseInt(text);
-                if (isNaN(num)) return;
-                el.dataset.animated = '1';
-                const suffix = text.replace(/[\d]/g, '');
+            document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+                if (el.dataset.done) return;
+                el.dataset.done = '1';
+                const target = parseInt(el.dataset.target);
+                const suffix = el.dataset.suffix || '';
+                const prefix = el.dataset.prefix || '';
                 let current = 0;
-                const step = Math.ceil(num / 40);
+                const duration = 2000;
+                const step = target / (duration / 16);
                 const timer = setInterval(() => {
                     current += step;
-                    if (current >= num) { current = num; clearInterval(timer); }
-                    el.textContent = current + suffix;
-                }, 30);
+                    if (current >= target) { current = target; clearInterval(timer); }
+                    el.textContent = prefix + Math.floor(current) + suffix;
+                }, 16);
             });
         }
         const statsObs = new IntersectionObserver(entries => {
@@ -1034,6 +1033,56 @@
         }, { threshold: 0.3 });
         const sb = document.querySelector('.stats-bar');
         if (sb) statsObs.observe(sb);
+
+        /* TYPED EYEBROW — cycle through multiple titles */
+        const titles = [
+            'Solopreneur & AI Product Builder',
+            'Human-in-the-Loop AI Architect',
+            'End-to-End Product Owner',
+            'Privacy-First AI Builder'
+        ];
+        let titleIndex = 0;
+        const eyebrow = document.getElementById('heroEyebrow');
+        function typeTitle() {
+            titleIndex = (titleIndex + 1) % titles.length;
+            const text = titles[titleIndex];
+            eyebrow.style.opacity = '0';
+            eyebrow.style.transform = 'translateY(-8px)';
+            setTimeout(() => {
+                eyebrow.innerHTML = text;
+                eyebrow.style.opacity = '1';
+                eyebrow.style.transform = 'translateY(0)';
+            }, 400);
+        }
+        eyebrow.style.transition = 'opacity 0.4s, transform 0.4s';
+        setInterval(typeTitle, 3500);
+
+        /* TILT ON HOVER for product cards */
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = `translateY(-8px) perspective(1000px) rotateX(${y * -4}deg) rotateY(${x * 4}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        /* CONTACT FORM */
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            const b = this.querySelector('.form-btn');
+            b.textContent = 'Sending...';
+            b.disabled = true;
+        });
+
+        /* PARALLAX on hero glow */
+        window.addEventListener('scroll', () => {
+            const glow = document.querySelector('.hero-glow');
+            if (glow) glow.style.transform = `translate(0, ${scrollY * 0.15}px)`;
+        });
+    })();
     </script>
 </body>
 </html>
