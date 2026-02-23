@@ -11,6 +11,7 @@
     <title>Dushyant Sharma — AI Product Builder &amp; Solopreneur</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <style>
         :root {
             --bg: #FAFAF8; --bg-alt: #F0EFEB; --bg-dark: #0f0f1a; --bg-dark-mid: #1a1a2e;
@@ -610,6 +611,227 @@
             .consulting-section h2 { font-size: 1.6rem; }
             .s-title, .career-title { font-size: 1.5rem; }
         }
+
+        /* ========================= */
+        /* RESUME PDF TEMPLATE       */
+        /* ========================= */
+        .resume-template {
+            display: none;
+            font-family: 'Inter', system-ui, sans-serif;
+            color: #111118;
+            background: #ffffff;
+            max-width: 800px;
+            padding: 48px;
+            line-height: 1.6;
+        }
+        .resume-template.generating { display: block; }
+        .resume-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid #0d9488;
+        }
+        .resume-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 3px solid #0d9488;
+        }
+        .resume-header-info { flex: 1; }
+        .resume-name {
+            font-size: 28px;
+            font-weight: 900;
+            color: #111118;
+            margin: 0 0 4px 0;
+            letter-spacing: -1px;
+        }
+        .resume-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0d9488;
+            margin: 0 0 12px 0;
+        }
+        .resume-tagline {
+            font-size: 14px;
+            color: #444455;
+            margin: 0 0 12px 0;
+        }
+        .resume-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 12px;
+            color: #444455;
+        }
+        .resume-contact span { display: flex; align-items: center; gap: 6px; }
+        .resume-contact i { color: #0d9488; font-size: 11px; }
+        .resume-section {
+            margin-bottom: 24px;
+        }
+        .resume-section-title {
+            font-size: 14px;
+            font-weight: 800;
+            color: #0d9488;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 1.5px solid #e4e4dc;
+        }
+        .resume-summary {
+            font-size: 13px;
+            color: #444455;
+            margin: 0;
+        }
+        .resume-dna-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .resume-dna-pill {
+            background: rgba(13,148,136,0.08);
+            color: #0d9488;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+        .resume-role {
+            margin-bottom: 20px;
+        }
+        .resume-role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .resume-role-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #111118;
+            margin: 0;
+        }
+        .resume-role-company {
+            font-size: 13px;
+            font-weight: 600;
+            color: #4f46e5;
+            margin: 2px 0 0 0;
+        }
+        .resume-role-date {
+            font-size: 12px;
+            color: #6b6b80;
+            text-align: right;
+        }
+        .resume-role-desc {
+            font-size: 12px;
+            color: #444455;
+            margin: 0;
+        }
+        .resume-role-highlights {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0 0 0;
+        }
+        .resume-role-highlights li {
+            font-size: 12px;
+            color: #444455;
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 4px;
+        }
+        .resume-role-highlights li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #0d9488;
+            font-weight: 700;
+        }
+        .resume-products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .resume-product {
+            background: #f8f8f6;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 3px solid #0d9488;
+        }
+        .resume-product-name {
+            font-size: 13px;
+            font-weight: 700;
+            color: #111118;
+            margin: 0 0 4px 0;
+        }
+        .resume-product-desc {
+            font-size: 11px;
+            color: #444455;
+            margin: 0;
+        }
+        .resume-creds-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .resume-cred {
+            font-size: 12px;
+            color: #444455;
+        }
+        .resume-cred strong {
+            color: #111118;
+            font-weight: 600;
+        }
+        .resume-tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .resume-tech-tag {
+            background: #e4e4dc;
+            color: #444455;
+            font-size: 10px;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+        .resume-career-track {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+        .resume-career-company {
+            font-size: 11px;
+            font-weight: 600;
+            color: #444455;
+            padding: 4px 10px;
+            background: #f0f0ee;
+            border-radius: 6px;
+        }
+        .resume-career-company.current {
+            background: rgba(13,148,136,0.12);
+            color: #0d9488;
+        }
+        .resume-career-arrow {
+            color: #c4c4c4;
+            font-size: 10px;
+        }
+        .resume-domains {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .resume-domain-tag {
+            background: rgba(79,70,229,0.08);
+            color: #4f46e5;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -652,7 +874,7 @@
                     </p>
                     <div class="hero-btns">
                         <a href="#products" class="btn-hero"><i class="fas fa-boxes-stacked"></i> See My Products</a>
-                        <a href="Resume_Dushyant-Sharma_PM%20(1).htm" target="_blank" class="btn-outline"><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+                        <a href="javascript:void(0)" onclick="downloadResume()" class="btn-outline"><i class="fas fa-file-arrow-down"></i> Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-right">
@@ -1187,7 +1409,179 @@
             const glow = document.querySelector('.hero-glow');
             if (glow) glow.style.transform = `translate(0, ${scrollY * 0.15}px)`;
         });
+
+        /* PDF RESUME DOWNLOAD */
+        window.downloadResume = function() {
+            const resumeEl = document.getElementById('resumeTemplate');
+            resumeEl.classList.add('generating');
+            
+            const opt = {
+                margin: [0.3, 0.4, 0.3, 0.4],
+                filename: 'Dushyant_Sharma_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true, logging: false },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+            
+            html2pdf().set(opt).from(resumeEl).save().then(() => {
+                resumeEl.classList.remove('generating');
+            });
+        }
     })();
     </script>
+
+    <!-- HIDDEN RESUME TEMPLATE FOR PDF GENERATION -->
+    <div id="resumeTemplate" class="resume-template">
+        <!-- HEADER -->
+        <div class="resume-header">
+            <img src="Profile%20photo.png"
+                 onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Profile%20photo.png';"
+                 alt="Dushyant Sharma" class="resume-photo">
+            <div class="resume-header-info">
+                <h1 class="resume-name">Dushyant Sharma</h1>
+                <p class="resume-title">Technical Product &amp; Ops Executive | AI Product Builder</p>
+                <p class="resume-tagline">18+ years leading global operations. Builder by instinct. I architect and ship Human-in-the-Loop AI products that bring enterprise-grade intelligence to real-world operations.</p>
+                <div class="resume-contact">
+                    <span><i class="fas fa-envelope"></i> imdushyant19@yahoo.co.in</span>
+                    <span><i class="fas fa-phone"></i> +91-8875674400</span>
+                    <span><i class="fab fa-linkedin"></i> linkedin.com/in/dushyant-sharma-89659b23</span>
+                    <span><i class="fas fa-globe"></i> India (Available Globally)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CORE COMPETENCIES -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Core Competencies</h2>
+            <div class="resume-dna-grid">
+                <span class="resume-dna-pill">Privacy-First Design</span>
+                <span class="resume-dna-pill">Human Oversight</span>
+                <span class="resume-dna-pill">GDPR-Ready Logic</span>
+                <span class="resume-dna-pill">EU AI Act Aligned</span>
+                <span class="resume-dna-pill">SOC 2 Architecture</span>
+                <span class="resume-dna-pill">End-to-End Builder</span>
+                <span class="resume-dna-pill">Zero-to-One Products</span>
+                <span class="resume-dna-pill">Audit Trails</span>
+            </div>
+        </div>
+
+        <!-- CURRENT ROLE -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Professional Experience</h2>
+            <div class="resume-role">
+                <div class="resume-role-header">
+                    <div>
+                        <h3 class="resume-role-title">Senior Manager — Global Customer Support</h3>
+                        <p class="resume-role-company">HighLevel (AI-as-a-Service Marketing CRM)</p>
+                    </div>
+                    <div class="resume-role-date">Current</div>
+                </div>
+                <p class="resume-role-desc">Heading global customer support operations — managing 4 Managers, 1 Team Lead, and 60+ Tech Support Engineers across multiple time zones, ensuring 24/7 coverage.</p>
+                <ul class="resume-role-highlights">
+                    <li>Running industry-unique Zoom-first frontline support model — live agents delivering real-time support at scale</li>
+                    <li>Consistently exceeding all KPIs: CSAT, FRT, AHT, resolution rate, and SLA adherence</li>
+                    <li>Collaborating with WFM for hourly agent capacity planning, shift optimization, and 24/7 volume management</li>
+                    <li>Mentoring managers and team leads — fostering leadership growth and ownership culture</li>
+                    <li>Leading continuous improvement: process re-engineering, knowledge base optimization, QA frameworks, AI workflow automation</li>
+                    <li>Spearheading cross-functional collaboration with Product, Engineering, and Success teams</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CAREER JOURNEY -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Career Journey</h2>
+            <div class="resume-career-track">
+                <span class="resume-career-company">Heartland</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company">RAK Bank</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company">Genpact</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company">DXC Technology</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company">Hexaware</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company">Cornerstone</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company">Definitive HC</span>
+                <span class="resume-career-arrow">→</span>
+                <span class="resume-career-company current">HighLevel</span>
+            </div>
+        </div>
+
+        <!-- DOMAIN EXPERTISE -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Domain Expertise</h2>
+            <div class="resume-domains">
+                <span class="resume-domain-tag">US Healthcare &amp; Commercial Intelligence</span>
+                <span class="resume-domain-tag">Banking &amp; Financial Services</span>
+                <span class="resume-domain-tag">US Insurance (P&amp;C, Life, Health)</span>
+                <span class="resume-domain-tag">SaaS &amp; Cloud Platforms</span>
+            </div>
+        </div>
+
+        <!-- PRODUCTS BUILT -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Products I Own</h2>
+            <div class="resume-products-grid">
+                <div class="resume-product">
+                    <h4 class="resume-product-name">EagleEye.work</h4>
+                    <p class="resume-product-desc">AI Signal Intelligence for executives — filters 1,000+ daily notifications into actionable insights. Integrates WhatsApp, Slack, Jira, Email, Teams, Asana, GitHub.</p>
+                </div>
+                <div class="resume-product">
+                    <h4 class="resume-product-name">Sarathi Business Tech</h4>
+                    <p class="resume-product-desc">Modern CRM for wealth management — automating client relationships, compliance workflows, and portfolio touchpoints with privacy-first architecture.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREDENTIALS -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Credentials &amp; Certifications</h2>
+            <div class="resume-creds-grid">
+                <div class="resume-cred"><strong>AI-Driven Operations</strong> — Generative AI Strategy (Microsoft &amp; LinkedIn)</div>
+                <div class="resume-cred"><strong>Process Excellence</strong> — Lean Six Sigma (Genpact)</div>
+                <div class="resume-cred"><strong>Agile Leadership</strong> — PMI-aligned Agile Project Management</div>
+                <div class="resume-cred"><strong>Regulated Industry</strong> — P&amp;C Insurance Specialist (The Institutes)</div>
+            </div>
+        </div>
+
+        <!-- TECH STACK -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Tech Stack</h2>
+            <div class="resume-tech-tags">
+                <span class="resume-tech-tag">Generative AI</span>
+                <span class="resume-tech-tag">LLM/RAG</span>
+                <span class="resume-tech-tag">Python</span>
+                <span class="resume-tech-tag">FastAPI</span>
+                <span class="resume-tech-tag">PostgreSQL</span>
+                <span class="resume-tech-tag">Redis</span>
+                <span class="resume-tech-tag">Docker</span>
+                <span class="resume-tech-tag">AWS</span>
+                <span class="resume-tech-tag">Supabase</span>
+                <span class="resume-tech-tag">n8n</span>
+                <span class="resume-tech-tag">Make</span>
+                <span class="resume-tech-tag">Zapier</span>
+                <span class="resume-tech-tag">HighLevel CRM</span>
+                <span class="resume-tech-tag">Freshdesk</span>
+                <span class="resume-tech-tag">Zendesk</span>
+                <span class="resume-tech-tag">Jira</span>
+            </div>
+        </div>
+
+        <!-- KEY METRICS -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Key Achievements</h2>
+            <div class="resume-tech-tags">
+                <span class="resume-dna-pill">18+ Years Experience</span>
+                <span class="resume-dna-pill">95% Enterprise CSAT</span>
+                <span class="resume-dna-pill">35% Backlog Reduced</span>
+                <span class="resume-dna-pill">$5M ARR via Support</span>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
