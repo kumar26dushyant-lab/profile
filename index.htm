@@ -490,6 +490,27 @@
         .tech-category:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
 
         /* ======================== */
+        /* CREDENTIALS               */
+        /* ======================== */
+        .credentials-section { background: var(--bg-alt); }
+        .cred-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .cred-card {
+            background: var(--white); border: 1.5px solid var(--border);
+            border-radius: 16px; padding: 28px 24px; transition: 0.35s;
+            text-align: center;
+        }
+        .cred-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px var(--shadow-md); border-color: var(--accent-border); }
+        .cred-icon {
+            width: 52px; height: 52px; margin: 0 auto 16px;
+            background: var(--accent-bg); border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent); font-size: 1.2rem;
+        }
+        .cred-card h4 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.35; }
+        .cred-card p { font-size: 0.88rem; color: var(--text-light); line-height: 1.55; }
+        .cred-card .cred-source { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); margin-top: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* ======================== */
         /* CONTACT                   */
         /* ======================== */
         .cta-section { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 100px 0; }
@@ -540,6 +561,7 @@
             .hero-layout { grid-template-columns: 1fr 280px; gap: 48px; }
             .profile-img { width: 220px; height: 264px; }
             .domain-grid, .consult-grid { grid-template-columns: 1fr 1fr; }
+            .cred-grid { grid-template-columns: 1fr 1fr; }
             .current-role-card { flex-direction: column; align-items: center; text-align: center; gap: 24px; }
             .current-role-card::after { display: none; }
             .role-highlights li { text-align: left; }
@@ -558,6 +580,7 @@
             .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
             .stat-item:nth-child(2)::after { display: none; }
             .domain-grid, .consult-grid, .products-grid { grid-template-columns: 1fr; }
+            .cred-grid { grid-template-columns: 1fr; }
             .cta-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .nav-links.active {
@@ -599,7 +622,8 @@
                 <li><a href="#products">Products</a></li>
                 <li><a href="#consulting">Consulting</a></li>
                 <li><a href="#career">Career</a></li>
-                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="https://linkedin.com/in/dushyant-sharma-89659b23" target="_blank"><i class="fab fa-linkedin" style="font-size:1.1rem;"></i></a></li>
                 <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -617,18 +641,18 @@
         <div class="container">
             <div class="hero-layout">
                 <div>
-                    <div class="hero-eyebrow" id="heroEyebrow">Solopreneur &amp; AI Product Builder</div>
-                    <div class="weekend-badge"><i class="fas fa-rocket"></i> Building AI Products on Weekends</div>
-                    <h1>I Build <span class="gradient-text">AI Products</span> That Solve Real Problems</h1>
+                    <div class="hero-eyebrow" id="heroEyebrow">Technical Product &amp; Ops Executive</div>
+                    <div class="weekend-badge"><i class="fas fa-rocket"></i> Technical Leadership with a Founder's Mindset</div>
+                    <h1>I Build <span class="gradient-text">AI Products</span> That Scale Organizations</h1>
                     <p class="hero-desc">
-                        Solopreneur by passion, builder by instinct. I architect and ship
+                        18+ years leading global operations. Builder by instinct. I architect and ship
                         <strong>Human-in-the-Loop AI products</strong> that bring enterprise-grade intelligence
-                        to real-world operations — with <strong>privacy, security, and human oversight</strong>
-                        baked into every decision layer.
+                        to real-world operations — with <strong>GDPR-ready, privacy-first architecture</strong>
+                        and full human oversight.
                     </p>
                     <div class="hero-btns">
                         <a href="#products" class="btn-hero"><i class="fas fa-boxes-stacked"></i> See My Products</a>
-                        <a href="#contact" class="btn-outline"><i class="fas fa-calendar-check"></i> Book a Consultation</a>
+                        <a href="Resume_Dushyant-Sharma_PM%20(1).htm" target="_blank" class="btn-outline"><i class="fas fa-file-arrow-down"></i> Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-right">
@@ -666,7 +690,9 @@
                 <div class="dna-pill"><i class="fas fa-lock"></i> Privacy-First Design</div>
                 <div class="dna-pill"><i class="fas fa-eye"></i> Human Oversight</div>
                 <div class="dna-pill"><i class="fas fa-clipboard-check"></i> Audit Trails</div>
-                <div class="dna-pill"><i class="fas fa-user-shield"></i> Regulatory Compliance</div>
+                <div class="dna-pill"><i class="fas fa-globe-europe"></i> GDPR-Ready Logic</div>
+                <div class="dna-pill"><i class="fas fa-scale-balanced"></i> EU AI Act Aligned</div>
+                <div class="dna-pill"><i class="fas fa-shield-check"></i> SOC 2 Architecture</div>
                 <div class="dna-pill"><i class="fas fa-code"></i> End-to-End Builder</div>
                 <div class="dna-pill"><i class="fas fa-cubes"></i> Zero-to-One Products</div>
             </div>
@@ -705,17 +731,17 @@
                 <div class="product-card reveal reveal-d2">
                     <div class="product-top">
                         <div class="product-logo" style="display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:var(--accent);background:var(--accent-bg);border-color:var(--accent-border);">S</div>
-                        <div class="product-badge"><i class="fas fa-chart-bar"></i> AI Trading</div>
+                        <div class="product-badge"><i class="fas fa-briefcase"></i> Wealth CRM</div>
                     </div>
-                    <h3>Sarathi</h3>
-                    <div class="product-tagline">"Your AI Trading Co-Pilot"</div>
-                    <p class="pdesc">AI-driven trading assistant for Indian stock market (NSE) — multi-indicator technical analysis with built-in risk management and human-in-the-loop trade confirmation.</p>
+                    <h3>Sarathi Business Tech</h3>
+                    <div class="product-tagline">"Relationships That Compound"</div>
+                    <p class="pdesc">A modern CRM built for wealth management firms and independent financial advisors — automating client relationships, compliance workflows, and portfolio touchpoints so you can focus on what matters: growing AUM.</p>
                     <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> NSE-focused with full Indian market regulatory compliance</li>
-                        <li><i class="fas fa-circle"></i> Multi-indicator technical analysis engine (RSI, MACD, VWAP)</li>
-                        <li><i class="fas fa-circle"></i> Automated risk management &amp; position-sizing rules</li>
-                        <li><i class="fas fa-circle"></i> Human-in-the-loop trade confirmation — no black-box trades</li>
-                        <li><i class="fas fa-circle"></i> Real-time Telegram alerts with confidence scoring</li>
+                        <li><i class="fas fa-circle"></i> Client lifecycle automation from onboarding to annual reviews</li>
+                        <li><i class="fas fa-circle"></i> Compliance-ready audit trails for SEBI, AMFI, and RBI regulations</li>
+                        <li><i class="fas fa-circle"></i> Smart follow-up engine with portfolio milestone triggers</li>
+                        <li><i class="fas fa-circle"></i> WhatsApp &amp; Email integration for seamless client communication</li>
+                        <li><i class="fas fa-circle"></i> Privacy-first architecture with end-to-end encryption</li>
                     </ul>
                 </div>
             </div>
@@ -728,9 +754,9 @@
     <section class="consulting-section" id="consulting">
         <div class="consulting-bg-dots"></div>
         <div class="container">
-            <div class="c-label reveal">Weekend Passion — AI Products Building &amp; Consulting</div>
-            <h2 class="reveal">Available for Strategic<br>AI Engagements</h2>
-            <p class="reveal">Hands-on, high-impact consulting to move your organization from legacy workflows to <strong>AI-powered operations</strong> with measurable ROI.</p>
+            <div class="c-label reveal">Strategic AI Engagements</div>
+            <h2 class="reveal">Available for High-Impact<br>AI Transformation</h2>
+            <p class="reveal">Hands-on, results-driven consulting to move your organization from legacy workflows to <strong>AI-powered operations</strong> with measurable ROI and full regulatory compliance.</p>
             <div class="consult-grid">
                 <div class="consult-card reveal reveal-d1">
                     <div class="consult-num">01</div>
@@ -956,6 +982,45 @@
     </section>
 
     <!-- ================================================ -->
+    <!--  CREDENTIALS & CERTIFICATIONS                     -->
+    <!-- ================================================ -->
+    <section class="section credentials-section" id="credentials">
+        <div class="container">
+            <div class="s-header s-center">
+                <div class="s-label reveal">Strategic Pillars & Expertise</div>
+                <h2 class="s-title reveal">Credentials & Certifications</h2>
+                <p class="s-desc reveal">A "Triple-Threat" toolkit: AI-driven Strategy + Lean Operations + Regulated Industry Expertise</p>
+            </div>
+            <div class="cred-grid reveal">
+                <div class="cred-card">
+                    <div class="cred-icon"><i class="fas fa-brain"></i></div>
+                    <h4>AI-Driven Operations</h4>
+                    <p>Certified in Generative AI Strategy, specializing in bridging LLM capabilities and executive ROI</p>
+                    <div class="cred-source">Microsoft & LinkedIn</div>
+                </div>
+                <div class="cred-card">
+                    <div class="cred-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Process Excellence at Scale</h4>
+                    <p>Lean Six Sigma certified with a track record of zero-defect operations in high-growth environments</p>
+                    <div class="cred-source">Genpact</div>
+                </div>
+                <div class="cred-card">
+                    <div class="cred-icon"><i class="fas fa-arrows-spin"></i></div>
+                    <h4>Agile Technical Leadership</h4>
+                    <p>PMI-aligned Agile Project Management, ensuring rapid deployment and cross-functional synergy</p>
+                    <div class="cred-source">PMI & LinkedIn</div>
+                </div>
+                <div class="cred-card">
+                    <div class="cred-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h4>Regulated Industry Intelligence</h4>
+                    <p>Specialized in Property & Casualty Insurance, bringing deep domain knowledge to InsurTech transformation</p>
+                    <div class="cred-source">The Institutes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================ -->
     <!--  CONTACT                                          -->
     <!-- ================================================ -->
     <section class="cta-section" id="contact">
@@ -1076,10 +1141,10 @@
 
         /* TYPED EYEBROW — cycle through multiple titles */
         const titles = [
-            'Solopreneur & AI Product Builder',
-            'Human-in-the-Loop AI Architect',
-            'End-to-End Product Owner',
-            'Privacy-First AI Builder'
+            'Technical Product & Ops Executive',
+            'Global Operations Leader',
+            'AI-Driven Transformation Expert',
+            'Builder Who Manages at Scale'
         ];
         let titleIndex = 0;
         const eyebrow = document.getElementById('heroEyebrow');
