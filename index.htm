@@ -832,6 +832,70 @@
             padding: 6px 12px;
             border-radius: 20px;
         }
+        /* ======================== */
+        /* PRODUCT CARDS — VISUAL   */
+        /* ======================== */
+        .product-stats { display:flex; gap:10px; flex-wrap:wrap; margin: 4px 0 18px; }
+        .product-stat { background: var(--accent-bg); border:1px solid var(--accent-border); border-radius: 10px; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; color: var(--accent); display:flex; align-items:center; gap:6px; }
+        .product-stat .num { font-family: var(--mono); font-weight: 800; }
+        .product-stat.nidaan { background: rgba(124,58,237,0.07); border-color: rgba(124,58,237,0.2); color: #7c3aed; }
+
+        .product-features-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px 16px; }
+        .pf-item { display:flex; align-items:flex-start; gap:10px; font-size:0.92rem; color: var(--text-sec); line-height:1.45; }
+        .pf-icon { width:28px; height:28px; border-radius:8px; background:var(--accent-bg); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:0.78rem; flex-shrink:0; }
+        .pf-icon.nidaan { background: rgba(124,58,237,0.08); color: #7c3aed; }
+        @media (max-width: 600px){ .product-features-grid { grid-template-columns:1fr; } }
+
+        .product-cta { display:inline-flex; align-items:center; gap:6px; margin-top:20px; font-size:0.88rem; font-weight:700; color: var(--accent); padding: 8px 14px; border-radius:10px; border:1px solid var(--accent-border); background: var(--accent-bg); transition: 0.25s; text-decoration:none; }
+        .product-cta:hover { transform: translateX(4px); background: var(--accent); color: #fff; }
+        .product-cta.nidaan { color: #7c3aed; border-color: rgba(124,58,237,0.2); background: rgba(124,58,237,0.07); }
+        .product-cta.nidaan:hover { background: #7c3aed; color: #fff; }
+
+        /* ======================== */
+        /* HERO CANVAS PARTICLES    */
+        /* ======================== */
+        #heroCanvas { position:absolute; inset:0; width:100%; height:100%; z-index:1; pointer-events:none; opacity:0.7; }
+
+        /* ======================== */
+        /* HERO LOAD STAGGER        */
+        /* ======================== */
+        @keyframes hero-fadein {
+            from { opacity:0; transform:translateY(22px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+        .hero .hero-eyebrow { animation: hero-fadein 0.7s ease 0.15s both; }
+        .hero .global-badge { animation: hero-fadein 0.7s ease 0.30s both; }
+        .hero h1            { animation: hero-fadein 0.7s ease 0.45s both; }
+        .hero .hero-desc    { animation: hero-fadein 0.7s ease 0.60s both; }
+        .hero .hero-btns    { animation: hero-fadein 0.7s ease 0.75s both; }
+        .hero-right         { animation: hero-fadein 0.8s ease 0.50s both; }
+
+        /* ======================== */
+        /* SCROLL-SPY NAV           */
+        /* ======================== */
+        .nav-links a.nav-active:not(.nav-cta) {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ======================== */
+        /* CARD SHIMMER ON ENTRY    */
+        /* ======================== */
+        .shimmer-layer {
+            position:absolute; inset:0; border-radius:inherit;
+            background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.6) 50%, transparent 65%);
+            transform: translateX(-160%); z-index:5; pointer-events:none;
+        }
+        @keyframes shimmer-sweep {
+            from { transform: translateX(-160%); }
+            to   { transform: translateX(230%); }
+        }
+        .product-card.shimmer-play .shimmer-layer {
+            animation: shimmer-sweep 0.9s cubic-bezier(0.4,0,0.2,1) forwards;
+        }
+
+        /* MAGNETIC NAV — enable transforms */
+        .nav-links li a { display:inline-block; }
     </style>
 </head>
 <body>
@@ -884,10 +948,10 @@
                                 <img src="eagleeye-logo.png" onerror="this.style.display='none'" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="EagleEye logo"> EagleEye
                             </a>
                             <a href="https://sarathi-ai.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--accent-bg);border:1px solid var(--accent-border);color:var(--accent);font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="Sarathi-AI.com">
-                                <i class="fas fa-chart-line" style="font-size:0.7rem;"></i> Sarathi-AI
+                                <img src="Sarathi-AI-%20logo.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Sarathi-AI-%20logo.png';" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="Sarathi-AI logo"> Sarathi-AI
                             </a>
                             <a href="https://nidaanpartner.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.2);color:#7c3aed;font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="NidaanPartner.com">
-                                <i class="fas fa-heart-pulse" style="font-size:0.7rem;"></i> NidaanPartner
+                                <img src="nidaan-logo.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/nidaan-logo.png';" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="NidaanPartner logo"> NidaanPartner
                             </a>
                         </div>
                     </div>
@@ -942,46 +1006,68 @@
                     </div>
                     <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
                     <div class="product-tagline">"Own the Signal. Master the Chaos."</div>
-                    <p class="pdesc">A God-View for executive leadership — AI that filters 1,000+ daily notifications across WhatsApp, Slack, Jira, and Email into the 3–5 signals that actually need your attention. Built for Founders, CEOs, CFOs, CPOs, COOs, VPs, and Directors.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Morning Brief: Your entire day synthesized in 5 minutes</li>
-                        <li><i class="fas fa-circle"></i> Urgent Filter: Critical escalations surfaced in seconds</li>
-                        <li><i class="fas fa-circle"></i> Blocker Detection: AI identifies bottlenecks before you ask</li>
-                        <li><i class="fas fa-circle"></i> Read-only, AES-256 encrypted, SOC 2 ready — enterprise grade</li>
-                        <li><i class="fas fa-circle"></i> 7 integrations: WhatsApp, Slack, Jira, Email, Teams, Asana, GitHub</li>
-                    </ul>
+                    <div class="product-stats">
+                        <div class="product-stat"><span class="num">1,000+</span> signals/day</div>
+                        <div class="product-stat"><span class="num">7</span> integrations</div>
+                        <div class="product-stat"><span class="num">SOC 2</span> ready</div>
+                    </div>
+                    <p class="pdesc">An AI signal-intelligence layer for executives. Filters 1,000+ daily notifications across WhatsApp, Slack, Jira, Email, Teams, Asana &amp; GitHub into the 3–5 signals that actually need your attention. Built for Founders, CEOs, CFOs, CPOs, COOs, VPs &amp; Directors.</p>
+                    <div class="product-features-grid">
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-bolt"></i></div><span>Morning Brief: entire day synthesized in 5 minutes</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-plug"></i></div><span>7 integrations: WhatsApp, Slack, Jira, Email, Teams, Asana, GitHub</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-shield-halved"></i></div><span>Read-only, AES-256 encrypted, SOC 2 ready</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-bell"></i></div><span>Urgent Filter: critical escalations surfaced in seconds</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-eye"></i></div><span>Blocker Detection: AI flags bottlenecks before you ask</span></div>
+                    </div>
+                    <a href="https://eagleeye.work" target="_blank" class="product-cta">Visit site <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="product-card reveal reveal-d2">
                     <div class="product-top">
-                        <div class="product-logo" style="display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:var(--accent);background:var(--accent-bg);border-color:var(--accent-border);">S</div>
-                        <div class="product-badge"><i class="fas fa-briefcase"></i> Wealth CRM</div>
+                        <img src="Sarathi-AI-%20logo.png"
+                             onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Sarathi-AI-%20logo.png';"
+                             alt="Sarathi-AI" class="product-logo">
+                        <div class="product-badge"><i class="fas fa-microphone-lines"></i> Voice-First CRM</div>
                     </div>
                     <h3><a href="https://sarathi-ai.com" target="_blank" aria-label="Visit Sarathi-AI.com (opens in new tab)">Sarathi-AI.com <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
-                    <div class="product-tagline">"Relationships That Compound"</div>
-                    <p class="pdesc">A modern CRM built for wealth management firms and independent financial advisors — automating client relationships, compliance workflows, and portfolio touchpoints so you can focus on what matters: growing AUM.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Client lifecycle automation from onboarding to annual reviews</li>
-                        <li><i class="fas fa-circle"></i> Compliance-ready audit trails for global financial regulations</li>
-                        <li><i class="fas fa-circle"></i> Smart follow-up engine with portfolio milestone triggers</li>
-                        <li><i class="fas fa-circle"></i> WhatsApp &amp; Email integration for seamless client communication</li>
-                        <li><i class="fas fa-circle"></i> Privacy-first architecture with end-to-end encryption</li>
-                    </ul>
+                    <div class="product-tagline">"Speak. Sell. Scale."</div>
+                    <div class="product-stats">
+                        <div class="product-stat"><span class="num">2M+</span> advisors</div>
+                        <div class="product-stat"><span class="num">2</span> languages</div>
+                        <div class="product-stat"><span class="num">₹199</span>/mo</div>
+                    </div>
+                    <p class="pdesc">A voice-first WhatsApp &amp; Telegram CRM built for India's <strong>2M+ insurance advisors and financial agents</strong>. Manage leads, renewals, reminders, and client reports just by speaking — in Hindi, English, or both. No app to install. No learning curve. Just talk.</p>
+                    <div class="product-features-grid">
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-microphone"></i></div><span>Voice-driven lead, policy &amp; renewal management on WhatsApp/Telegram</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-language"></i></div><span>Bilingual (Hindi + English) — built natively for India's insurance market</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-file-pdf"></i></div><span>Branded reports + SIP / EMI / HLV calculators with instant PDF &amp; WhatsApp share</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-bell"></i></div><span>Automated follow-ups &amp; reminders so leads never go cold</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-rupee-sign"></i></div><span>Affordable at ₹199/month — CRM accessible to every independent advisor</span></div>
+                    </div>
+                    <a href="https://sarathi-ai.com" target="_blank" class="product-cta">Visit site <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="product-card reveal reveal-d3">
                     <div class="product-top">
-                        <div class="product-logo" style="display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:900;color:#7c3aed;background:rgba(124,58,237,0.08);border-radius:12px;border:1px solid rgba(124,58,237,0.2);">🩺</div>
-                        <div class="product-badge" style="background:rgba(124,58,237,0.08);color:#7c3aed;"><i class="fas fa-heart-pulse"></i> Health Tech</div>
+                        <img src="nidaan-logo.png"
+                             onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/nidaan-logo.png';"
+                             alt="NidaanPartner" class="product-logo">
+                        <div class="product-badge" style="background:rgba(124,58,237,0.08);color:#7c3aed;"><i class="fas fa-gavel"></i> Claim Recovery</div>
                     </div>
                     <h3><a href="https://nidaanpartner.com" target="_blank" aria-label="Visit NidaanPartner.com (opens in new tab)">NidaanPartner.com <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
-                    <div class="product-tagline">"Empowering Every Diagnosis"</div>
-                    <p class="pdesc">An AI-powered platform connecting patients with the right diagnostic partners — streamlining health assessments, lab referrals, and medical coordination for clinics and independent practitioners.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Smart diagnostic routing based on patient symptoms and location</li>
-                        <li><i class="fas fa-circle"></i> Lab &amp; clinic partner network with real-time availability</li>
-                        <li><i class="fas fa-circle"></i> Automated follow-up reminders and report delivery</li>
-                        <li><i class="fas fa-circle"></i> HIPAA-aware privacy-first patient data handling</li>
-                        <li><i class="fas fa-circle"></i> Practitioner dashboard with AI-assisted case prioritization</li>
-                    </ul>
+                    <div class="product-tagline" style="color:#7c3aed;">"Your client's claim was rejected? Nidaan fights it."</div>
+                    <div class="product-stats">
+                        <div class="product-stat nidaan"><span class="num">95%+</span> success rate</div>
+                        <div class="product-stat nidaan"><span class="num">5,000+</span> cases</div>
+                        <div class="product-stat nidaan"><span class="num">₹0</span> until you win</div>
+                    </div>
+                    <p class="pdesc">India's specialist insurance claim dispute resolution platform — lawyers, qualified doctors, and IRDAI Ombudsman experts under one roof fighting the claims the system wants to bury. <strong>Representation across IRDAI, Consumer Courts, and High Courts</strong> in MP, Chhattisgarh &amp; Rajasthan.</p>
+                    <div class="product-features-grid">
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-trophy"></i></div><span>95%+ success rate — 5,000+ policyholders helped, 2,000+ claims settled (Health, Life, Motor, Property)</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-user-tie"></i></div><span>Multi-disciplinary panel: lawyers, qualified doctors, IRDAI Ombudsman specialists &amp; licensed surveyors</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-handshake"></i></div><span>Success-fee model: first consultation free; fee charged only after successful claim recovery — zero risk</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-scale-balanced"></i></div><span>Full-spectrum coverage: IRDAI Ombudsman, Consumer Courts, High Courts, TPA &amp; hospital disputes</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-bolt"></i></div><span>Advisor-native: refer disputed claims in under 3 minutes via dashboard — keep client trust intact</span></div>
+                    </div>
+                    <a href="https://nidaanpartner.com" target="_blank" class="product-cta nidaan">Visit site <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -1422,6 +1508,151 @@
                 resumeEl.classList.remove('generating');
             });
         }
+
+        /* ──────────────────────────────────────────
+           HERO CANVAS — Neural Pulse particle field
+           GPU-accelerated canvas, reacts to mouse
+        ─────────────────────────────────────────── */
+        (function() {
+            const hero = document.querySelector('.hero');
+            if (!hero) return;
+            const canvas = document.createElement('canvas');
+            canvas.id = 'heroCanvas';
+            hero.insertBefore(canvas, hero.firstChild);
+            const ctx = canvas.getContext('2d');
+            let W, H, particles;
+            let mx = -9999, my = -9999;
+            const isMobile = window.innerWidth < 768;
+            const COUNT = isMobile ? 38 : 72;
+
+            function resize() {
+                W = canvas.width = hero.offsetWidth;
+                H = canvas.height = hero.offsetHeight;
+            }
+
+            function createParticles() {
+                particles = Array.from({ length: COUNT }, () => ({
+                    x: Math.random() * W, y: Math.random() * H,
+                    vx: (Math.random() - 0.5) * 0.55,
+                    vy: (Math.random() - 0.5) * 0.55,
+                    r: Math.random() * 1.6 + 0.5,
+                    a: Math.random() * 0.45 + 0.12
+                }));
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+                for (let i = 0; i < COUNT; i++) {
+                    const p = particles[i];
+                    const dx = mx - p.x, dy = my - p.y;
+                    const distSq = dx * dx + dy * dy;
+                    if (distSq < 16900 && distSq > 0) { // within 130px radius
+                        const dist = Math.sqrt(distSq);
+                        p.vx += (dx / dist) * 0.02;
+                        p.vy += (dy / dist) * 0.02;
+                    }
+                    p.vx *= 0.976; p.vy *= 0.976;
+                    const spd = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+                    if (spd > 2) { p.vx = p.vx / spd * 2; p.vy = p.vy / spd * 2; }
+                    p.x += p.vx; p.y += p.vy;
+                    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+                    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(13,148,136,${p.a})`;
+                    ctx.fill();
+                }
+                // Draw connection lines between close particles
+                const threshold = isMobile ? 5625 : 7225; // 75^2 or 85^2
+                const threshSqrt = isMobile ? 75 : 85;
+                for (let i = 0; i < COUNT - 1; i++) {
+                    for (let j = i + 1; j < COUNT; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const d = dx * dx + dy * dy;
+                        if (d < threshold) {
+                            const alpha = 0.18 * (1 - Math.sqrt(d) / threshSqrt);
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(13,148,136,${alpha})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.stroke();
+                        }
+                    }
+                }
+                requestAnimationFrame(draw);
+            }
+
+            hero.addEventListener('mousemove', e => {
+                const r = hero.getBoundingClientRect();
+                mx = e.clientX - r.left;
+                my = e.clientY - r.top;
+            });
+            hero.addEventListener('mouseleave', () => { mx = -9999; my = -9999; });
+
+            resize(); createParticles(); draw();
+            window.addEventListener('resize', () => { resize(); createParticles(); });
+        })();
+
+        /* ──────────────────────────────────────────
+           SCROLL-SPY NAV — highlights active section
+        ─────────────────────────────────────────── */
+        (function() {
+            const navLinks = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
+            const sectionIds = ['hero', 'products', 'consulting', 'career', 'credentials', 'contact'];
+            const spyObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        const id = '#' + e.target.id;
+                        navLinks.forEach(a => a.classList.toggle('nav-active', a.getAttribute('href') === id));
+                    }
+                });
+            }, { threshold: 0.25, rootMargin: '-5% 0px -65% 0px' });
+            sectionIds.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) spyObs.observe(el);
+            });
+        })();
+
+        /* ──────────────────────────────────────────
+           SHIMMER ON CARD ENTRY — one-shot sweep
+        ─────────────────────────────────────────── */
+        (function() {
+            document.querySelectorAll('.product-card').forEach(card => {
+                const shimmer = document.createElement('div');
+                shimmer.className = 'shimmer-layer';
+                card.appendChild(shimmer);
+                const obs = new IntersectionObserver(entries => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting) {
+                            setTimeout(() => card.classList.add('shimmer-play'), 180);
+                            obs.unobserve(card);
+                        }
+                    });
+                }, { threshold: 0.22 });
+                obs.observe(card);
+            });
+        })();
+
+        /* ──────────────────────────────────────────
+           MAGNETIC NAV LINKS — subtle pull effect
+        ─────────────────────────────────────────── */
+        (function() {
+            document.querySelectorAll('.nav-links li a:not(.nav-cta)').forEach(link => {
+                link.addEventListener('mousemove', e => {
+                    const r = link.getBoundingClientRect();
+                    const x = (e.clientX - r.left - r.width / 2) * 0.28;
+                    const y = (e.clientY - r.top - r.height / 2) * 0.28;
+                    link.style.transform = `translate(${x}px,${y}px)`;
+                    link.style.transition = 'transform 0.1s';
+                });
+                link.addEventListener('mouseleave', () => {
+                    link.style.transform = '';
+                    link.style.transition = 'transform 0.5s cubic-bezier(0.34,1.56,0.64,1)';
+                });
+            });
+        })();
     })();
     </script>
 
@@ -1519,11 +1750,11 @@
                 </div>
                 <div class="resume-product">
                     <h4 class="resume-product-name">Sarathi-AI.com</h4>
-                    <p class="resume-product-desc">Modern CRM for wealth management — automating client relationships, compliance workflows, and portfolio touchpoints with privacy-first architecture.</p>
+                    <p class="resume-product-desc">Voice-first WhatsApp &amp; Telegram CRM for India's 2M+ insurance advisors. Bilingual (Hindi/English), voice-driven lead &amp; renewal management, branded reports, ₹199/mo.</p>
                 </div>
                 <div class="resume-product">
                     <h4 class="resume-product-name">NidaanPartner.com</h4>
-                    <p class="resume-product-desc">AI-powered health diagnostic platform connecting patients with lab &amp; clinic partners. Health Tech | Privacy-first architecture.</p>
+                    <p class="resume-product-desc">India's specialist insurance claim dispute resolution platform — lawyers, doctors &amp; IRDAI Ombudsman experts. 95%+ success rate, 5,000+ cases, success-fee model (charged only after winning).</p>
                 </div>
             </div>
         </div>
