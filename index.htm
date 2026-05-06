@@ -832,6 +832,24 @@
             padding: 6px 12px;
             border-radius: 20px;
         }
+        /* ======================== */
+        /* PRODUCT CARDS — VISUAL   */
+        /* ======================== */
+        .product-stats { display:flex; gap:10px; flex-wrap:wrap; margin: 4px 0 18px; }
+        .product-stat { background: var(--accent-bg); border:1px solid var(--accent-border); border-radius: 10px; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; color: var(--accent); display:flex; align-items:center; gap:6px; }
+        .product-stat .num { font-family: var(--mono); font-weight: 800; }
+        .product-stat.nidaan { background: rgba(124,58,237,0.07); border-color: rgba(124,58,237,0.2); color: #7c3aed; }
+
+        .product-features-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px 16px; }
+        .pf-item { display:flex; align-items:flex-start; gap:10px; font-size:0.92rem; color: var(--text-sec); line-height:1.45; }
+        .pf-icon { width:28px; height:28px; border-radius:8px; background:var(--accent-bg); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:0.78rem; flex-shrink:0; }
+        .pf-icon.nidaan { background: rgba(124,58,237,0.08); color: #7c3aed; }
+        @media (max-width: 600px){ .product-features-grid { grid-template-columns:1fr; } }
+
+        .product-cta { display:inline-flex; align-items:center; gap:6px; margin-top:20px; font-size:0.88rem; font-weight:700; color: var(--accent); padding: 8px 14px; border-radius:10px; border:1px solid var(--accent-border); background: var(--accent-bg); transition: 0.25s; text-decoration:none; }
+        .product-cta:hover { transform: translateX(4px); background: var(--accent); color: #fff; }
+        .product-cta.nidaan { color: #7c3aed; border-color: rgba(124,58,237,0.2); background: rgba(124,58,237,0.07); }
+        .product-cta.nidaan:hover { background: #7c3aed; color: #fff; }
     </style>
 </head>
 <body>
@@ -884,10 +902,10 @@
                                 <img src="eagleeye-logo.png" onerror="this.style.display='none'" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="EagleEye logo"> EagleEye
                             </a>
                             <a href="https://sarathi-ai.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--accent-bg);border:1px solid var(--accent-border);color:var(--accent);font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="Sarathi-AI.com">
-                                <i class="fas fa-chart-line" style="font-size:0.7rem;"></i> Sarathi-AI
+                                <img src="Sarathi-AI-%20logo.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Sarathi-AI-%20logo.png';" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="Sarathi-AI logo"> Sarathi-AI
                             </a>
                             <a href="https://nidaanpartner.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.2);color:#7c3aed;font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="NidaanPartner.com">
-                                <i class="fas fa-heart-pulse" style="font-size:0.7rem;"></i> NidaanPartner
+                                <img src="nidaan-logo.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/nidaan-logo.png';" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="NidaanPartner logo"> NidaanPartner
                             </a>
                         </div>
                     </div>
@@ -942,46 +960,68 @@
                     </div>
                     <h3><a href="https://eagleeye.work" target="_blank">EagleEye.work <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
                     <div class="product-tagline">"Own the Signal. Master the Chaos."</div>
-                    <p class="pdesc">A God-View for executive leadership — AI that filters 1,000+ daily notifications across WhatsApp, Slack, Jira, and Email into the 3–5 signals that actually need your attention. Built for Founders, CEOs, CFOs, CPOs, COOs, VPs, and Directors.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Morning Brief: Your entire day synthesized in 5 minutes</li>
-                        <li><i class="fas fa-circle"></i> Urgent Filter: Critical escalations surfaced in seconds</li>
-                        <li><i class="fas fa-circle"></i> Blocker Detection: AI identifies bottlenecks before you ask</li>
-                        <li><i class="fas fa-circle"></i> Read-only, AES-256 encrypted, SOC 2 ready — enterprise grade</li>
-                        <li><i class="fas fa-circle"></i> 7 integrations: WhatsApp, Slack, Jira, Email, Teams, Asana, GitHub</li>
-                    </ul>
+                    <div class="product-stats">
+                        <div class="product-stat"><span class="num">1,000+</span> signals/day</div>
+                        <div class="product-stat"><span class="num">7</span> integrations</div>
+                        <div class="product-stat"><span class="num">SOC 2</span> ready</div>
+                    </div>
+                    <p class="pdesc">An AI signal-intelligence layer for executives. Filters 1,000+ daily notifications across WhatsApp, Slack, Jira, Email, Teams, Asana &amp; GitHub into the 3–5 signals that actually need your attention. Built for Founders, CEOs, CFOs, CPOs, COOs, VPs &amp; Directors.</p>
+                    <div class="product-features-grid">
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-bolt"></i></div><span>Morning Brief: entire day synthesized in 5 minutes</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-plug"></i></div><span>7 integrations: WhatsApp, Slack, Jira, Email, Teams, Asana, GitHub</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-shield-halved"></i></div><span>Read-only, AES-256 encrypted, SOC 2 ready</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-bell"></i></div><span>Urgent Filter: critical escalations surfaced in seconds</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-eye"></i></div><span>Blocker Detection: AI flags bottlenecks before you ask</span></div>
+                    </div>
+                    <a href="https://eagleeye.work" target="_blank" class="product-cta">Visit site <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="product-card reveal reveal-d2">
                     <div class="product-top">
-                        <div class="product-logo" style="display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:var(--accent);background:var(--accent-bg);border-color:var(--accent-border);">S</div>
-                        <div class="product-badge"><i class="fas fa-briefcase"></i> Wealth CRM</div>
+                        <img src="Sarathi-AI-%20logo.png"
+                             onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Sarathi-AI-%20logo.png';"
+                             alt="Sarathi-AI" class="product-logo">
+                        <div class="product-badge"><i class="fas fa-microphone-lines"></i> Voice-First CRM</div>
                     </div>
                     <h3><a href="https://sarathi-ai.com" target="_blank" aria-label="Visit Sarathi-AI.com (opens in new tab)">Sarathi-AI.com <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
-                    <div class="product-tagline">"Relationships That Compound"</div>
-                    <p class="pdesc">A modern CRM built for wealth management firms and independent financial advisors — automating client relationships, compliance workflows, and portfolio touchpoints so you can focus on what matters: growing AUM.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Client lifecycle automation from onboarding to annual reviews</li>
-                        <li><i class="fas fa-circle"></i> Compliance-ready audit trails for global financial regulations</li>
-                        <li><i class="fas fa-circle"></i> Smart follow-up engine with portfolio milestone triggers</li>
-                        <li><i class="fas fa-circle"></i> WhatsApp &amp; Email integration for seamless client communication</li>
-                        <li><i class="fas fa-circle"></i> Privacy-first architecture with end-to-end encryption</li>
-                    </ul>
+                    <div class="product-tagline">"Speak. Sell. Scale."</div>
+                    <div class="product-stats">
+                        <div class="product-stat"><span class="num">2M+</span> advisors</div>
+                        <div class="product-stat"><span class="num">2</span> languages</div>
+                        <div class="product-stat"><span class="num">₹199</span>/mo</div>
+                    </div>
+                    <p class="pdesc">A voice-first WhatsApp &amp; Telegram CRM built for India's <strong>2M+ insurance advisors and financial agents</strong>. Manage leads, renewals, reminders, and client reports just by speaking — in Hindi, English, or both. No app to install. No learning curve. Just talk.</p>
+                    <div class="product-features-grid">
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-microphone"></i></div><span>Voice-driven lead, policy &amp; renewal management on WhatsApp/Telegram</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-language"></i></div><span>Bilingual (Hindi + English) — built natively for India's insurance market</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-file-pdf"></i></div><span>Branded reports + SIP / EMI / HLV calculators with instant PDF &amp; WhatsApp share</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-bell"></i></div><span>Automated follow-ups &amp; reminders so leads never go cold</span></div>
+                        <div class="pf-item"><div class="pf-icon"><i class="fas fa-rupee-sign"></i></div><span>Affordable at ₹199/month — CRM accessible to every independent advisor</span></div>
+                    </div>
+                    <a href="https://sarathi-ai.com" target="_blank" class="product-cta">Visit site <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="product-card reveal reveal-d3">
                     <div class="product-top">
-                        <div class="product-logo" style="display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:900;color:#7c3aed;background:rgba(124,58,237,0.08);border-radius:12px;border:1px solid rgba(124,58,237,0.2);">🩺</div>
+                        <img src="nidaan-logo.png"
+                             onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/nidaan-logo.png';"
+                             alt="NidaanPartner" class="product-logo">
                         <div class="product-badge" style="background:rgba(124,58,237,0.08);color:#7c3aed;"><i class="fas fa-heart-pulse"></i> Health Tech</div>
                     </div>
                     <h3><a href="https://nidaanpartner.com" target="_blank" aria-label="Visit NidaanPartner.com (opens in new tab)">NidaanPartner.com <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
-                    <div class="product-tagline">"Empowering Every Diagnosis"</div>
-                    <p class="pdesc">An AI-powered platform connecting patients with the right diagnostic partners — streamlining health assessments, lab referrals, and medical coordination for clinics and independent practitioners.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-circle"></i> Smart diagnostic routing based on patient symptoms and location</li>
-                        <li><i class="fas fa-circle"></i> Lab &amp; clinic partner network with real-time availability</li>
-                        <li><i class="fas fa-circle"></i> Automated follow-up reminders and report delivery</li>
-                        <li><i class="fas fa-circle"></i> HIPAA-aware privacy-first patient data handling</li>
-                        <li><i class="fas fa-circle"></i> Practitioner dashboard with AI-assisted case prioritization</li>
-                    </ul>
+                    <div class="product-tagline" style="color:#7c3aed;">"Diagnostics, Delivered to Your Doorstep."</div>
+                    <div class="product-stats">
+                        <div class="product-stat nidaan"><span class="num">Pan-India</span></div>
+                        <div class="product-stat nidaan"><span class="num">Home</span> collection</div>
+                        <div class="product-stat nidaan"><span class="num">AI-routed</span></div>
+                    </div>
+                    <p class="pdesc">An AI-driven diagnostics platform digitising India's healthcare testing — online lab booking, <strong>home sample collection</strong>, instant digital reports, and curated preventive-health packages. Bringing affordable, reliable diagnostics to <strong>Tier 2 &amp; 3 cities</strong> where access has historically been the biggest barrier.</p>
+                    <div class="product-features-grid">
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-flask-vial"></i></div><span>Book lab tests &amp; preventive health packages online in seconds</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-house-medical"></i></div><span>Home sample collection across India — no clinic visits needed</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-file-waveform"></i></div><span>Instant digital reports with AI-assisted insights</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-user-doctor"></i></div><span>Curated panels: diabetes, liver, vitamin, senior health &amp; more</span></div>
+                        <div class="pf-item"><div class="pf-icon nidaan"><i class="fas fa-shield-halved"></i></div><span>Privacy-first patient data handling, partnered lab &amp; clinic network</span></div>
+                    </div>
+                    <a href="https://nidaanpartner.com" target="_blank" class="product-cta nidaan">Visit site <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -1519,7 +1559,7 @@
                 </div>
                 <div class="resume-product">
                     <h4 class="resume-product-name">Sarathi-AI.com</h4>
-                    <p class="resume-product-desc">Modern CRM for wealth management — automating client relationships, compliance workflows, and portfolio touchpoints with privacy-first architecture.</p>
+                    <p class="resume-product-desc">Voice-first WhatsApp &amp; Telegram CRM for India's 2M+ insurance advisors. Bilingual (Hindi/English), voice-driven lead &amp; renewal management, branded reports, ₹199/mo.</p>
                 </div>
                 <div class="resume-product">
                     <h4 class="resume-product-name">NidaanPartner.com</h4>
