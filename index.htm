@@ -151,9 +151,10 @@
         pdf.save('Dushyant-Sharma-Profile.pdf');
       }catch(err){
         console.error('PDF generation failed:',err);
-        const msg=typeof html2canvas==='undefined'||!window.jspdf?.jsPDF
-          ?'PDF export is unavailable — required export libraries failed to load. Please refresh the page and try again.'
-          :'PDF export encountered an error. Please try again.\n\nDetails: '+err.message;
+        let msg;
+        if(typeof html2canvas==='undefined') msg='PDF export is unavailable — the canvas rendering library (html2canvas) failed to load. Please refresh the page and try again.';
+        else if(!window.jspdf?.jsPDF) msg='PDF export is unavailable — the PDF generation library (jsPDF) failed to load. Please refresh the page and try again.';
+        else msg='PDF export encountered an error. Please try again.\n\nDetails: '+err.message;
         alert(msg);
       }finally{
         btn.innerHTML=origHTML;
