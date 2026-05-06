@@ -1152,7 +1152,7 @@
                             <a href="https://sarathi-ai.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--accent-bg);border:1px solid var(--accent-border);color:var(--accent);font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="Sarathi-AI.com">
                                 <img src="Sarathi-AI-%20logo.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/Sarathi-AI-%20logo.png';" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="Sarathi-AI logo"> Sarathi-AI
                             </a>
-                            <a href="https://nidaanpartner.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.2);color:#7c3aed;font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="India's specialist insurance claim dispute resolution platform" aria-label="India's specialist insurance claim dispute resolution platform">
+                            <a href="https://nidaanpartner.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.2);color:#7c3aed;font-size:0.75rem;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none;" title="India's specialist insurance claim dispute resolution platform">
                                 <img src="nidaan-logo.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/kumar26dushyant-lab/profile/main/nidaan-logo.png';" style="width:14px;height:14px;border-radius:3px;object-fit:contain;" alt="NidaanPartner logo"> NidaanPartner
                             </a>
                         </div>
@@ -1254,7 +1254,7 @@
                              alt="NidaanPartner" class="product-logo">
                         <div class="product-badge" style="background:rgba(124,58,237,0.08);color:#7c3aed;"><i class="fas fa-gavel"></i> Insurance Claim Justice</div>
                     </div>
-                    <h3><a href="https://nidaanpartner.com" target="_blank" aria-label="Visit NidaanPartner.com — India's specialist insurance claim dispute resolution platform (opens in new tab)">NidaanPartner.com <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
+                    <h3><a href="https://nidaanpartner.com" target="_blank" aria-label="Visit NidaanPartner.com">NidaanPartner.com <i class="fas fa-arrow-up-right-from-square" style="font-size:0.8rem;opacity:0.35;"></i></a></h3>
                     <div class="product-tagline" style="color:#7c3aed;">"Your client's claim was rejected? Nidaan fights it — so you don't have to."</div>
                     <div class="product-stats">
                         <div class="product-stat nidaan"><span class="num">95%+</span> success rate</div>
@@ -1786,11 +1786,18 @@
                 }));
             }
 
+            let animating = true;
+            document.addEventListener('visibilitychange', () => {
+                if (!document.hidden && !animating) { animating = true; requestAnimationFrame(draw); }
+                else if (document.hidden) { animating = false; }
+            });
+
             function draw() {
-                if (document.hidden) { requestAnimationFrame(draw); return; }
+                if (!animating) return;
                 ctx.clearRect(0, 0, W, H);
                 const isDark = document.documentElement.hasAttribute('data-theme');
                 const pColor = isDark ? '59,130,246' : '13,148,136';
+                /* dark mode particles use ~40% more opacity for visibility on deep-black background */
                 const pAlphaMulti = isDark ? 1.4 : 1;
                 for (let i = 0; i < COUNT; i++) {
                     const p = particles[i];
@@ -1841,7 +1848,8 @@
             });
             hero.addEventListener('mouseleave', () => { mx = -9999; my = -9999; });
 
-            resize(); createParticles(); draw();
+            resize(); createParticles();
+            requestAnimationFrame(draw);
             window.addEventListener('resize', () => { resize(); createParticles(); });
         })();
 
