@@ -134,22 +134,24 @@
             el.classList.contains('noise')||
             el.id==='particles'
         });
-        const {jsPDF}=window.jspdf;
+        const jsPDF=window.jspdf?.jsPDF;
+        if(!jsPDF) throw new Error('jsPDF not loaded');
         const pdf=new jsPDF({orientation:'portrait',unit:'pt',format:'a4'});
         const pageW=pdf.internal.pageSize.getWidth();
         const pageH=pdf.internal.pageSize.getHeight();
         const imgData=captureCanvas.toDataURL('image/jpeg',0.92);
         const totalImgH=captureCanvas.height*(pageW/captureCanvas.width);
-        let yOff=0,page=0;
+        let yOff=0,firstPage=true;
         while(yOff<totalImgH){
-          if(page++)pdf.addPage();
+          if(!firstPage) pdf.addPage();
+          firstPage=false;
           pdf.addImage(imgData,'JPEG',0,-yOff,pageW,totalImgH);
           yOff+=pageH;
         }
         pdf.save('Dushyant-Sharma-Profile.pdf');
       }catch(err){
         console.error('PDF generation failed:',err);
-        alert('PDF export failed. Please try again or use your browser\'s Print → Save as PDF option.');
+        alert('PDF export failed. Please try again.');
       }finally{
         btn.innerHTML=origHTML;
         btn.disabled=false;
