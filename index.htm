@@ -108,6 +108,82 @@
     @keyframes signalPing{0%{transform:scale(1);opacity:1}100%{transform:scale(2.4);opacity:0}}
     .signal{position:absolute;top:18px;right:18px;width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.25);color:var(--cyan);font-size:1.7rem;z-index:2;cursor:default}
     .signal::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(34,211,238,.45);animation:signalPing 2.2s ease-out infinite}
+
+    /* ─── Enhanced mobile layout (placed last so nothing overrides these) ─── */
+    @media(max-width:720px){
+      /* Hero: reduce top padding and bottom breathing room */
+      .hero{padding-top:90px;padding-bottom:50px}
+      /* Shrink decorative orbs so they don't crowd small viewports */
+      .orb1{width:180px;height:180px}
+      .orb2{width:140px;height:140px}
+      .orb3{width:100px;height:100px}
+      /* Tighten hero card and profile image wrap */
+      .hero-card{padding:20px}
+      .profile-img-wrap{padding:14px}
+      /* Shorter profile image — still tall enough to look good */
+      .profile-img{height:280px}
+      /* Shrink signal indicator so it doesn't overlap the image */
+      .signal{width:52px;height:52px;font-size:1.1rem;top:10px;right:10px}
+      /* Profile badge: pull in from card edges */
+      .profile-badge{left:12px;right:12px;bottom:12px;padding:12px}
+      /* Always show exactly 2 career-journey logo tiles per row */
+      .logo-track{gap:14px}
+      .logo-item{width:calc(50% - 7px);min-height:128px}
+      .logo-item img{width:80px;height:68px}
+      /* Reduce current-role card padding */
+      .current-card{padding:22px 16px}
+      /* Slightly tighter vertical rhythm */
+      section{padding:68px 0}
+      /* Eyebrow: prevent overflow on very narrow screens */
+      .eyebrow{font-size:.7rem;letter-spacing:2px;flex-wrap:wrap;gap:6px}
+      /* Touch-friendly nav link height */
+      .nav-links a{min-height:44px;display:flex;align-items:center}
+    }
+
+    /* ─── 480 px: very small phones ─── */
+    @media(max-width:480px){
+      .hero{padding-top:76px;padding-bottom:36px}
+      /* Slightly smaller heading on tiny screens */
+      h1{font-size:2.1rem;letter-spacing:-.04em}
+      .typing{font-size:.88rem}
+      .hero-desc{font-size:.9rem}
+      /* Stack CTA buttons vertically, full-width */
+      .hero-actions{flex-direction:column;gap:10px}
+      .hero-actions .btn{width:100%;justify-content:center}
+      /* Tighten profile card further */
+      .hero-card{padding:14px}
+      .profile-img-wrap{padding:10px}
+      .profile-img{height:230px}
+      .signal{width:42px;height:42px;font-size:.9rem;top:8px;right:8px}
+      .profile-badge{left:10px;right:10px;bottom:10px;padding:10px 12px}
+      .profile-badge strong{font-size:.92rem}
+      .profile-badge span{font-size:.72rem}
+      .product-mini a{padding:5px 8px;font-size:.68rem}
+      /* Impact dashboard: 2 × 2 grid instead of 4 stacked items */
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .metric{padding:16px 10px}
+      .metric strong{font-size:1.3rem}
+      .metric span{font-size:.7rem;letter-spacing:.5px}
+      /* Tighter section spacing */
+      section{padding:52px 0}
+      .section-head{margin-bottom:32px}
+      .title{font-size:1.6rem}
+      .desc{font-size:.88rem}
+      /* Career journey tiles */
+      .logo-item{min-height:120px}
+      .logo-item img{width:66px;height:54px}
+      .logo-label{font-size:.6rem}
+      /* Current-role card */
+      .current-card{padding:18px 12px}
+      .current-logo{width:96px;height:96px}
+      /* Contact section */
+      .contact-panel{padding:14px;gap:18px}
+      .submit{justify-self:stretch}
+      .submit.btn{width:100%;justify-content:center}
+      /* Nav */
+      .nav-inner{padding:10px 14px}
+      .brand{font-size:.88rem}
+    }
   </style>
 </head>
 <body>
